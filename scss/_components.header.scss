@@ -5,9 +5,17 @@
 */
 
 .c-header {
-    background-color: #fff;
+    background-color: rgba(palette(color-neutral,xxxx-light),.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
-    @include mq(bp3) {
-        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
-    }
+    //@include mq(bp3) {
+    //    @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    //}
+}
+
+.c-header__container {
+    max-width: none;
 }

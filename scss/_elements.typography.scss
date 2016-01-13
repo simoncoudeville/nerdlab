@@ -65,7 +65,7 @@ $horizontal-rule-border-color  : palette(color-neutral,light) !default;
 $horizontal-rule-margin-top    : 0 !default;
 $horizontal-rule-margin-bottom : $alpha-leading !default;
 
-$link-transition               : none !default;
+$link-transition               : all $animation-duration-alpha $animation-easing-alpha !default;
 
 $link-decoration               : none !default;
 $link-decoration--hover        : underline !default;

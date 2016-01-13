@@ -15,6 +15,11 @@
     }
 }
 
+@mixin uppercase {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 // UI mixins.
 
 // Cross browser background opacity.

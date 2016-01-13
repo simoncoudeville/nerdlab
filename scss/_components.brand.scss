@@ -11,14 +11,10 @@
  */
 
 .c-logo {
-    display: block;
-    width: 157px; /* [1] */
     margin-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../img/svg/logo.svg');
-    text-indent: -99999px; /* [2] */
-    @include text-dimensions($alpha-font-size,1,0,1.25,1.25);
+    font-weight: $delta-font-weight;
+    color: palette(color-neutral, x-dark);
+    @include uppercase;
 
     .c-header & {
         @include margin-left($columns-gutter);
@@ -41,4 +37,31 @@
 
     .c-logo__link {
         display: block;
+        height: 5.5rem;
+        width: 10.25rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include text-dimensions($alpha-font-size,1);
+
+        @include mq(bp3) {
+            @include padding-lr(2,2);
+        }
+    }
+
+    .c-logo__mark {
+        display: block;
+        width: 6.25rem;
+        height: 1.875rem;
+        //position: absolute;
+        background: transparent url(../img/svg/glasses.svg) 50% 50% no-repeat;
+        background-size: cover;
+        transition: all $animation-duration-gamma $animation-easing-beta;
+
+        .c-logo__link:hover & {
+            transform: rotate(-10deg)
+        }
+
     }

@@ -10,7 +10,7 @@
 
     @include mq(bp3) {
         display: block;
-        @include margin-right($columns-gutter * -1);
+        @include margin-right($columns-gutter * 1);
     }
 
     &.is-visible {
@@ -61,9 +61,10 @@
         display: block;
         color: palette(color-alpha);
         text-decoration: none;
-        font-weight: $beta-font-weight;
+        font-weight: $delta-font-weight;
+        @include uppercase;
         @include padding-lr($columns-gutter, $columns-gutter);
-        @include text-dimensions($alpha-font-size,1,0,1,1);
+        @include text-dimensions($ms-1,1,0,1,1);
 
         @include mq(bp1) {
             @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
@@ -75,12 +76,14 @@
         }
 
         @include mq(bp4) {
+            @include padding-tb(2,2);
             @include padding-lr($columns-gutter, $columns-gutter);
         }
 
         &:hover,
         .is-selected & {
-            color: palette(color-alpha,dark);
+            text-decoration: none;
+            color: palette(color-beta);
         }
     }
 

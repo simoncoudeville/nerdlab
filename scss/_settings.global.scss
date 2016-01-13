@@ -31,13 +31,15 @@ $ms14                       : 100 !default;
 
 // Basic font settings
 
-$alpha-font-family          : sans-serif;
+$alpha-font-family          : 'purista-web', sans-serif;
 $beta-font-family           : serif;
 
 $alpha-font-size            : $ms0;
 
-$alpha-font-weight          : 400;
-$beta-font-weight           : 700;
+$alpha-font-weight          : 300;
+$beta-font-weight           : 400;
+$gamma-font-weight          : 600;
+$delta-font-weight          : 700;
 
 $alpha-line-height          : 1.5;
 
@@ -48,7 +50,7 @@ $beta-leading               : 2;
 // UI
 // ---
 
-$radius                     : 5px;
+$radius                     : 1px;
 $border-width               : 1px;
 $border-style               : solid;
 
@@ -107,6 +109,16 @@ $increments: (
     delta                   : 1.5,
     epsilon                 : 2
 ) !default;
+
+// ---
+// Animations
+// ---
+
+$animation-duration-alpha   : .1s;
+$animation-duration-beta    : .2s;
+$animation-duration-gamma   : .3s;
+$animation-easing-alpha     : ease-in-out;
+$animation-easing-beta      : cubic-bezier(.68, -.55, .265, 1.55); // bouncy
 
 // ---
 // Tools
