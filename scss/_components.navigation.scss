@@ -6,9 +6,10 @@
 
 .c-nav-main {
     display: none;
+    //flex-basis: 100%;
     font-family: $alpha-font-family;
 
-    @include mq(bp3) {
+    @include mq(bp4) {
         display: block;
         @include margin-right($columns-gutter * 1);
     }
@@ -20,7 +21,7 @@
     .c-header & {
 
         @if $flexbox == false {
-            @include mq(bp3) {
+            @include mq(bp4) {
                 float: right;
             }
         }
@@ -28,11 +29,11 @@
 }
 
     .c-nav-main__list {
-        border: 1px dotted palette(color-neutral,light);
+        border: 1px solid palette(color-neutral,xx-light);
         border-width: 1px 0;
         margin-bottom: 0;
 
-        @include mq(bp3) {
+        @include mq(bp4) {
             border: 0;
 
             @if $flexbox {
@@ -43,10 +44,10 @@
 
     .c-nav-main__item {
         & + & {
-            border-top: 1px dotted palette(color-neutral,light);
+            border-top: 1px solid palette(color-neutral,xx-light);
         }
 
-        @include mq(bp3) {
+        @include mq(bp4) {
             @if $flexbox == false {
                 float: left;
             }
@@ -70,7 +71,7 @@
             @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
         }
 
-        @include mq(bp3) {
+        @include mq(bp4) {
             @include padding-tb(1.25,1.25);
             @include padding-lr($columns-gutter, $columns-gutter);
         }
@@ -80,10 +81,16 @@
             @include padding-lr($columns-gutter, $columns-gutter);
         }
 
+        &,
+        &:visited {
+            color: palette(color-neutral,x-dark);
+        }
+
         &:hover,
+        &:focus,
         .is-selected & {
             text-decoration: none;
-            color: palette(color-beta);
+            color: palette(color-alpha);
         }
     }
 
@@ -91,15 +98,16 @@
     user-select: none;
     display: block;
     color: palette(color-alpha);
-    background-color: palette(color-neutral,x-light);
     outline: 0;
-    border-radius: $radius;
     border: none;
     position: absolute;
     top: 0;
     right: 0;
+    height: 5.5rem;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
     @include padding-lr($columns-gutter,$columns-gutter);
-    @include text-dimensions($alpha-font-size,1,0,1.25,1.25);
 
     &.is-active {
         color: palette(color-neutral);
@@ -109,7 +117,55 @@
         @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
     }
 
-    @include mq(bp3) {
+    @include mq(bp4) {
         display: none;
+    }
+}
+
+$trigger-line-height:        3px;
+$trigger-line-offset:        8px;
+$trigger-color:              palette(color-neutral,xx-dark);
+$trigger-active-color:       palette(color-neutral,xx-dark);
+$trigger-animation-duration: $animation-duration-gamma;
+
+.c-nav-main-trigger__icon {
+    position: relative;
+    display: block;
+    width: 1.5rem;
+    height: $trigger-line-height;
+    background-color: $trigger-color;
+    transition-property: all;
+    transition-duration: $trigger-animation-duration;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: $trigger-line-height;
+        position: absolute;
+        background-color: $trigger-color;
+        transition-property: all;
+        transition-duration: $trigger-animation-duration;
+    }
+
+    &:before {
+        transform: translateY($trigger-line-offset * -1);
+    }
+
+    &:after {
+        transform: translateY($trigger-line-offset);
+    }
+
+    .c-nav-main-trigger.is-active & {
+        transform: rotate(135deg);
+
+        &:before {
+            transform: rotate(90deg);
+        }
+
+        &:after {
+            transform: rotate(90deg);
+        }
     }
 }
