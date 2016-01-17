@@ -3,3 +3,19 @@
     ---
     Hacks and quick fixes
 */
+
+.c-stats__title {
+    font-weight: $delta-font-weight;
+    font-family: $alpha-font-family;
+    margin-bottom: 0;
+    color: palette(color-neutral);
+    @include ms-2;
+    @include uppercase;
+}
+
+.c-stats__number {
+    font-family: $gamma-font-family;
+    color: palette(color-beta);
+    font-weight: $alpha-font-weight;
+    @include ms7;
+}

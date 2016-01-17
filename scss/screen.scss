@@ -24,6 +24,7 @@
 @import 'tools.functions';
 @import 'tools.mixins';
 @import 'tools.spacing';
+@import 'tools.ms';
 @import 'tools.typography';
 
 /* Generic */
@@ -50,10 +51,10 @@
 }
 
 /* Components */
+@import 'components.row';
 @import 'components.header';
 @import 'components.navigation';
 @import 'components.brand';
-@import 'components.row';
 @import 'components.icons';
 @import 'components.alerts';
 @import 'components.buttons';
@@ -70,9 +71,11 @@
 
 /* Utilities */
 @import 'utilities.widths';
+@import 'utilities.max-widths';
 @import 'utilities.push';
 @import 'utilities.pull';
 @import 'utilities.order';
+@import 'utilities.ms';
 @import 'utilities.spacing';
 @import 'utilities.align';
 @import 'utilities.flex';

@@ -23,16 +23,17 @@ $ms5                        : 31 !default;
 $ms6                        : 37 !default;
 $ms7                        : 42 !default;
 $ms8                        : 50 !default;
-$ms10                       : 56 !default;
-$ms11                       : 67 !default;
-$ms12                       : 75 !default;
-$ms13                       : 89 !default;
-$ms14                       : 100 !default;
+$ms9                        : 56 !default;
+$ms10                       : 67 !default;
+$ms11                       : 75 !default;
+$ms12                       : 89 !default;
+$ms13                       : 100 !default;
 
 // Basic font settings
 
 $alpha-font-family          : 'purista-web', sans-serif;
-$beta-font-family           : serif;
+$beta-font-family           : 'nudista-web', sans-serif;
+$gamma-font-family          : 'kulturista-web', sans-serif;
 
 $alpha-font-size            : $ms0;
 
@@ -93,7 +94,9 @@ $columns: (
     3,
     4,
     5,
-    6
+    6,
+    8,
+    12
 ) !default;
 
 // want to use flexbox?

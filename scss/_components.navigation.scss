@@ -78,6 +78,7 @@
 
         @include mq(bp4) {
             @include padding-tb(2,2);
+            //@include text-dimensions($ms-2,1);
             @include padding-lr($columns-gutter, $columns-gutter);
         }
 

@@ -15,11 +15,20 @@
 
 }
 
-.c-row--alpha {
-    background-color: palette(color-neutral,x-light);
+
+.c-row--md {
+    @include mq(bp3) {
+        @include padding-tb(4,3);
+    }
 }
 
-.c-row--beta {
-    color: palette(color-neutral,light);
-    background-color: palette(color-neutral,dark);
+.c-row--lg {
+
+    @include mq(bp3) {
+        @include padding-tb(4,3);
+    }
+
+    @include mq(bp5) {
+        @include padding-tb(6,5);
+    }
 }

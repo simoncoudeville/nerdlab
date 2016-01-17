@@ -45,8 +45,6 @@
         display: block;
         width: 6.25rem;
         height: 1.875rem;
-        //width: 100px;
-        //height: 30px;
         background: transparent url(../img/svg/glasses.svg) 50% 50% no-repeat;
         background-size: contain;
         transition: all $animation-duration-gamma $animation-easing-beta;
@@ -54,5 +52,10 @@
         .c-logo__link:hover & {
             transform: rotate(-10deg)
         }
-
     }
+
+.c-nerdlab {
+    font-family: $alpha-font-family;
+    font-weight: $delta-font-weight;
+    @include uppercase;
+}
