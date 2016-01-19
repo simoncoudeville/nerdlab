@@ -8,11 +8,21 @@
 // Variables
 // ---
 
+//$h1-font-family                : $delta-font-family !default;
+//$h1-font-weight                : $delta-font-weight !default;
+
+//$h1-font-family                : $gamma-font-family !default;
+//$h1-font-weight                : $alpha-font-weight !default;
+
+//$h1-font-family                : $beta-font-family !default;
+//$h1-font-weight                : $alpha-font-weight !default;
+
 $h1-font-family                : $alpha-font-family !default;
 $h1-font-weight                : $delta-font-weight !default;
+
 $h1-font-size                  : $ms6 !default;
 $h1-line-height                : 2 !default;
-$h1-margin-bottom              : $alpha-leading !default;
+$h1-margin-bottom              : $beta-leading !default;
 
 $h2-font-family                : $alpha-font-family !default;
 $h2-font-weight                : $alpha-font-weight !default;
@@ -85,6 +95,7 @@ $link-outline--focus           : thin dotted !default;
 h1 {
     font-family: $h1-font-family;
     font-weight: $h1-font-weight;
+    @include uppercase;
     @include ms4;
     //@include text-dimensions($h1-font-size,$h1-line-height);
     @include margin-bottom($h1-margin-bottom);

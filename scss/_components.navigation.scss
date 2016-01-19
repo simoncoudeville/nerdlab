@@ -11,7 +11,8 @@
 
     @include mq(bp4) {
         display: block;
-        @include margin-right($columns-gutter * 1);
+        //@include margin-right($columns-gutter * 1);
+        //@include margin-lr($columns-gutter * 1);
     }
 
     &.is-visible {
@@ -19,6 +20,14 @@
     }
 
     .c-header & {
+
+        &:first-of-type {
+            order:1;
+        }
+
+        &:last-of-type {
+            order:3;
+        }
 
         @if $flexbox == false {
             @include mq(bp4) {
@@ -74,6 +83,10 @@
         @include mq(bp4) {
             @include padding-tb(1.25,1.25);
             @include padding-lr($columns-gutter, $columns-gutter);
+
+            //.c-nav-main__item:first-child & {
+            //    padding-left: 0;
+            //}
         }
 
         @include mq(bp4) {
@@ -84,7 +97,7 @@
 
         &,
         &:visited {
-            color: palette(color-neutral,x-dark);
+            color: palette(color-neutral,xx-dark);
         }
 
         &:hover,
@@ -159,7 +172,7 @@ $trigger-animation-duration: $animation-duration-gamma;
     }
 
     .c-nav-main-trigger.is-active & {
-        transform: rotate(135deg);
+        transform: rotate(45deg);
 
         &:before {
             transform: rotate(90deg);

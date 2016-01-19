@@ -31,9 +31,17 @@ $ms13                       : 100 !default;
 
 // Basic font settings
 
+//$alpha-font-family          : 'FF DIN Pro Bold', sans-serif;
 $alpha-font-family          : 'purista-web', sans-serif;
-$beta-font-family           : 'nudista-web', sans-serif;
+//$alpha-font-family          : 'PF Din Mono Medium', sans-serif;
+//$beta-font-family           : 'nudista-web', sans-serif;
+//$beta-font-family           : 'Inconsolata', mono;
+//$beta-font-family           : 'Maison Neue Mono', mono;
+$beta-font-family           : 'PF Din Mono Light', mono;
+//$beta-font-family           : 'Input Mono Ex Lt', mono;
+//$beta-font-family           : 'Droid Sans Mono', monospace;
 $gamma-font-family          : 'kulturista-web', sans-serif;
+$delta-font-family          : 'republic-web', sans-serif;
 
 $alpha-font-size            : $ms0;
 
@@ -95,7 +103,9 @@ $columns: (
     4,
     5,
     6,
+    7,
     8,
+    10,
     12
 ) !default;
 
@@ -118,11 +128,11 @@ $increments: (
 // Animations
 // ---
 
-$animation-duration-alpha   : .1s;
-$animation-duration-beta    : .2s;
-$animation-duration-gamma   : .3s;
-$animation-easing-alpha     : ease-in-out;
-$animation-easing-beta      : cubic-bezier(.68, -.55, .265, 1.55); // bouncy
+$animation-duration-alpha   : .125s;
+$animation-duration-beta    : .25s;
+$animation-duration-gamma   : .375s;
+$animation-easing-alpha     : $ease-in-out-cubic;
+$animation-easing-beta      : $ease-in-out-back;
 
 // ---
 // Tools

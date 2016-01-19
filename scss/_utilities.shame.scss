@@ -4,6 +4,29 @@
     Hacks and quick fixes
 */
 
+#mfPreviewBar {
+    display: none;
+}
+
+@font-face{
+    font-family:'Maison Neue Mono';
+    src: url('../fonts/MaisonNeueTRIAL-Mono.otf'); /* everyone else take this */
+}
+
+.c-main {
+    background-color: #fff;
+    @include padding-top(5.5);
+
+    @include mq(bp4) {
+        @include padding-top(7.5);
+    }
+
+}
+
+.c-stats {
+    text-align: center;
+}
+
 .c-stats__title {
     font-weight: $delta-font-weight;
     font-family: $alpha-font-family;
@@ -14,8 +37,13 @@
 }
 
 .c-stats__number {
-    font-family: $gamma-font-family;
-    color: palette(color-beta);
+    //font-family: $gamma-font-family;
+    font-family: $alpha-font-family;
     font-weight: $alpha-font-weight;
+
+    //font-family: $delta-font-family;
+    //font-weight: $delta-font-weight;
+
+    color: palette(color-beta);
     @include ms7;
 }

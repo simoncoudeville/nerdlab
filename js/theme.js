@@ -4,8 +4,9 @@ var chopstick =
     init: function()
     {
         chopstick.loadObject(chopstick.mobileNav, 'chopstick.mobileNav');
-        chopstick.loadObject(chopstick.hide, 'chopstick.hide');
-        chopstick.loadObject(chopstick.toggle, 'chopstick.toggle');
+        // chopstick.loadObject(chopstick.hide, 'chopstick.hide');
+        // chopstick.loadObject(chopstick.toggle, 'chopstick.toggle');
+        chopstick.loadObject(chopstick.headerScroll, 'chopstick.headerScroll');
 
         console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
     },

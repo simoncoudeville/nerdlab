@@ -4,8 +4,9 @@ var chopstick =
     init: function()
     {
         chopstick.loadObject(chopstick.mobileNav, 'chopstick.mobileNav');
-        chopstick.loadObject(chopstick.hide, 'chopstick.hide');
-        chopstick.loadObject(chopstick.toggle, 'chopstick.toggle');
+        // chopstick.loadObject(chopstick.hide, 'chopstick.hide');
+        // chopstick.loadObject(chopstick.toggle, 'chopstick.toggle');
+        chopstick.loadObject(chopstick.headerScroll, 'chopstick.headerScroll');
 
         console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
     },
@@ -36,6 +37,34 @@ var chopstick =
                 obj.init();
             }
         }
+    }
+};
+
+var headerScrollSettings
+chopstick.headerScroll =
+{
+    settings:
+    {
+        headerScroll: $('.js-header')
+    },
+
+    init: function()
+    {
+        headerScrollSettings = chopstick.headerScroll.settings;
+        chopstick.headerScroll.headerScrollContent();
+    },
+
+    headerScrollContent: function ()
+    {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 30) {
+                headerScrollSettings.headerScroll.addClass("shrink");
+            } else {
+                headerScrollSettings.headerScroll.removeClass("shrink");
+            }
+        });
     }
 };
 

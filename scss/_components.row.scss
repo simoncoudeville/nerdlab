@@ -5,6 +5,8 @@
 */
 
 .c-row {
+    //max-width: 1500px;
+    //margin: 0 auto;
     @include padding-tb($alpha-leading,0);
     @include padding-lr($columns-gutter,$columns-gutter);
 
@@ -23,7 +25,6 @@
 }
 
 .c-row--lg {
-
     @include mq(bp3) {
         @include padding-tb(4,3);
     }
@@ -31,4 +32,18 @@
     @include mq(bp5) {
         @include padding-tb(6,5);
     }
+}
+
+.c-row--xl {
+    @include mq(bp3) {
+        @include padding-tb(4,3);
+    }
+
+    @include mq(bp5) {
+        @include padding-tb(10,9);
+    }
+}
+
+.c-row--full {
+    height: calc(100vh - 5.5rem);
 }
