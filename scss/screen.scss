@@ -72,6 +72,9 @@
 @import 'plugins.syntax';
 @import 'plugins.googlemaps';
 
+/* Scope */
+@import 'scope.content';
+
 /* Utilities */
 @import 'utilities.widths';
 @import 'utilities.max-widths';

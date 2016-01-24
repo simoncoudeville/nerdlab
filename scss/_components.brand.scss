@@ -19,7 +19,7 @@
     @include uppercase;
 
     .c-header & {
-        order: 2;
+        //order: 2;
         @if $flexbox == false {
             @include mq(bp3) {
                 float: left;
@@ -52,9 +52,6 @@
         background-size: contain;
         transition: all $animation-duration-gamma $animation-easing-beta;
         transform: rotate(-10deg) translate3d(0,0,0);
-        //transition-delay: .1s;
-        //-webkit-backface-visibility: hidden;
-	    //-webkit-perspective: 1000;
 
         .c-logo__link:hover & {
             transform: rotate(0deg);
@@ -68,6 +65,9 @@
 
 .c-nerdlab {
     font-family: $alpha-font-family;
-    font-weight: $delta-font-weight;
+    //font-weight: $delta-font-weight;
+    //font-weight: $gamma-font-weight;
+    font-weight: $jota-font-weight;
+    margin-right: -4px;
     @include uppercase;
 }

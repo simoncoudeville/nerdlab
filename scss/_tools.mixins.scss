@@ -17,7 +17,9 @@
 
 @mixin uppercase {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    //letter-spacing: 4px;
+    letter-spacing: .1675rem;
+    //letter-spacing: 2px;
 }
 
 // UI mixins.

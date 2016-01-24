@@ -1,0 +1,19 @@
+/*
+    Scope: Content
+    ---
+    Content specific styles
+*/
+
+.s-content {
+
+    a {
+        display: inline-block;
+
+        &:hover {
+            //text-decoration: none;
+            //background-color: palette(color-alpha);
+            //color: palette(color-neutral,xxxx-light);
+        }
+    }
+
+}

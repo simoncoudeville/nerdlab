@@ -17,7 +17,7 @@ chopstick.headerScroll =
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 30) {
+            if (scroll >= 40) {
                 headerScrollSettings.headerScroll.addClass("shrink");
             } else {
                 headerScrollSettings.headerScroll.removeClass("shrink");

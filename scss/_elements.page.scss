@@ -9,7 +9,7 @@
 // ---
 
 $html-font-family                   : $beta-font-family !default;
-$html-font-weight                   : $beta-font-weight !default;
+$html-font-weight                   : $alpha-font-weight !default;
 $html-font-size                     : $alpha-font-size !default;
 $html-line-height                   : $alpha-line-height !default;
 
@@ -18,7 +18,7 @@ $html-responsive-font-breakpoint    : bp5 !default;
 $html-responsive-font-magnification : 112.5% !default;
 
 $html-background-color              : palette(color-neutral,xxxx-light) !default;
-$body-color                         : palette(color-neutral,x-light) !default;
+$body-color                         : palette(color-neutral,xx-dark) !default;
 
 $body-font-smoothing                : true !default;
 
@@ -42,6 +42,9 @@ html {
 
 body {
     color: $body-color;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    //@include padding-lr(1,1);
 
     @if $body-font-smoothing == true {
         -webkit-font-smoothing: antialiased;

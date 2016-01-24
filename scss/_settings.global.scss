@@ -32,23 +32,27 @@ $ms13                       : 100 !default;
 // Basic font settings
 
 //$alpha-font-family          : 'FF DIN Pro Bold', sans-serif;
-$alpha-font-family          : 'purista-web', sans-serif;
+//$alpha-font-family          : 'purista-web', sans-serif;
 //$alpha-font-family          : 'PF Din Mono Medium', sans-serif;
+//$alpha-font-family           : 'Input Sans', sans-serif;
+$alpha-font-family           : 'Input Sans Narrow', sans-serif;
+//$alpha-font-family           : 'Input Mono', monospace;
 //$beta-font-family           : 'nudista-web', sans-serif;
 //$beta-font-family           : 'Inconsolata', mono;
 //$beta-font-family           : 'Maison Neue Mono', mono;
-$beta-font-family           : 'PF Din Mono Light', mono;
-//$beta-font-family           : 'Input Mono Ex Lt', mono;
+//$beta-font-family           : 'PF Din Mono Light', mono;
+$beta-font-family           : 'Input Mono', monospace;
 //$beta-font-family           : 'Droid Sans Mono', monospace;
 $gamma-font-family          : 'kulturista-web', sans-serif;
 $delta-font-family          : 'republic-web', sans-serif;
 
 $alpha-font-size            : $ms0;
 
-$alpha-font-weight          : 300;
-$beta-font-weight           : 400;
-$gamma-font-weight          : 600;
-$delta-font-weight          : 700;
+$alpha-font-weight          : 200;
+$beta-font-weight          : 300;
+$gamma-font-weight           : 400;
+$delta-font-weight          : 600;
+$jota-font-weight          : 700;
 
 $alpha-line-height          : 1.5;
 
@@ -73,7 +77,7 @@ $z-indexes: (
     beta                    : 2,
     gamma                   : 3,
     delta                   : 4,
-    epsilon                 : 5
+    jota                 : 5
 ) !default;
 
 // ---
@@ -98,6 +102,7 @@ $columns-gutter             : 1 !default;
 
 // Define the amount of columns in the grid
 $columns: (
+    1,
     2,
     3,
     4,
@@ -121,7 +126,7 @@ $increments: (
     beta                    : .5,
     gamma                   : 1,
     delta                   : 1.5,
-    epsilon                 : 2
+    jota                    : 2
 ) !default;
 
 // ---

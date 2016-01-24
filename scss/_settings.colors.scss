@@ -18,7 +18,7 @@ $color-error                : #FF4136 !default;
 $color-success              : #2ECC40 !default;
 $color-notice               : #FF851B !default;
 
-$color-neutral              : hsl(hue($color-alpha),10,50) !default;
+$color-neutral              : hsl(hue($color-alpha),7.5,50) !default;
 
 // Palettes
 $palettes: (
@@ -36,6 +36,7 @@ $palettes: (
         xxxx-dark           : hsl(hue($color-neutral),saturation($color-neutral),2.5)
     ),
     color-alpha: (
+        xxx-light           : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha + 90)),
         xx-light            : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha + 75)),
         x-light             : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha + 50)),
         light               : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha + 25)),
@@ -45,6 +46,7 @@ $palettes: (
         xx-dark             : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha - 75))
     ),
     color-beta: (
+        xxx-light           : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta + 90)),
         xx-light            : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta + 75)),
         x-light             : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta + 50)),
         light               : hsl(hue($color-beta),saturation($color-beta),lightness($color-beta + 25)),

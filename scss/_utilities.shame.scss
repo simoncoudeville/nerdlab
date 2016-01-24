@@ -15,11 +15,11 @@
 
 .c-main {
     background-color: #fff;
-    @include padding-top(5.5);
+    @include padding-top(3);
 
-    @include mq(bp4) {
-        @include padding-top(7.5);
-    }
+    //@include mq(bp4) {
+    //    @include padding-top(7.5);
+    //}
 
 }
 
@@ -46,4 +46,25 @@
 
     color: palette(color-beta);
     @include ms7;
+}
+
+.c-intro {
+    //display: flex;
+    //justify-content:
+
+    //@include mq(bp3) {
+    //    @include padding-tb(4.5,7);
+    //}
+    //
+    //@include mq(bp4) {
+    //    @include padding-tb(7.5,10);
+    //}
+    //
+    //@include mq(bp5) {
+    //    @include padding-tb(12.5,15);
+    //}
+
+    //@include mq(bp5) {
+    //    @include padding-tb(10,9);
+    //}
 }

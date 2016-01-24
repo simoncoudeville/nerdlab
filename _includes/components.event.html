@@ -1,0 +1,19 @@
+<article class="u-mb-gamma s-content">
+    <div class="o-grid o-grid--gutter o-flex">
+        <p class="o-grid__item u-1-of-6-bp4 u-mb-alpha">
+            {{ item.date }}
+        </p>
+        <p class="o-grid__item u-3-of-6-bp4 u-mb-alpha">
+            <a href="#!">{{ item.title }}</a>
+        </p>
+        <p class="o-grid__item u-2-of-6-bp4 u-mb-alpha u-text-align-right">
+            {{ item.place }}
+        </p>
+    </div>
+    {% if item.desc == "" %}
+    {% else %}
+        <p class="u-max-width-md u-pt-gamma u-mb-jota">
+            {{ item.desc }}
+        </p>
+    {% endif %}
+</article>
