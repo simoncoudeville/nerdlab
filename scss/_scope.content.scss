@@ -5,12 +5,14 @@
 */
 
 .s-content {
+    //text-align: justify;
 
     a {
         display: inline-block;
+        font-weight: $gamma-font-weight;
 
         &:hover {
-            //text-decoration: none;
+            text-decoration: none;
             //background-color: palette(color-alpha);
             //color: palette(color-neutral,xxxx-light);
         }

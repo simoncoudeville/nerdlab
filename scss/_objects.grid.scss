@@ -22,7 +22,7 @@ $grid-gutter    : $columns-gutter !default;
     max-width: $grid-max-width;
 
     @include mq(bp4) {
-        @include padding-left(10.25);
+        //@include padding-left(10);
     }
 
 }

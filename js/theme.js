@@ -7,6 +7,7 @@ var chopstick =
         // chopstick.loadObject(chopstick.hide, 'chopstick.hide');
         // chopstick.loadObject(chopstick.toggle, 'chopstick.toggle');
         chopstick.loadObject(chopstick.headerScroll, 'chopstick.headerScroll');
+        chopstick.loadObject(chopstick.ready, 'chopstick.ready');
 
         console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
     },

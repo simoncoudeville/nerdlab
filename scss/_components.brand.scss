@@ -10,16 +10,21 @@
  *     Text-indent is set to prevent text from showing on top of the background-image.
  */
 
+$logo-ratio: 3.3333;
+$logo-height: 1.75rem;
+$logo-width: $logo-height * $logo-ratio;
+
 .c-logo {
     margin-bottom: 0;
     font-weight: $delta-font-weight;
     color: palette(color-neutral, x-dark);
-    //border-right: 1px solid rgba(palette(color-neutral,xxxx-dark),.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     -webkit-backface-visibility: hidden;
     @include uppercase;
 
     .c-header & {
-        //order: 2;
         @if $flexbox == false {
             @include mq(bp3) {
                 float: left;
@@ -30,8 +35,8 @@
 
     .c-logo__link {
         display: block;
-        height: 5.5rem;
-        width: 10.25rem;
+        height: 5rem;
+        //width: 10rem;
 
         display: flex;
         justify-content: center;
@@ -46,15 +51,23 @@
 
     .c-logo__mark {
         display: block;
-        width: 6.25rem;
-        height: 1.875rem;
+        width: $logo-width;
+        height: $logo-height;
         background: transparent url(../img/svg/glasses.svg) 50% 50% no-repeat;
         background-size: contain;
         transition: all $animation-duration-gamma $animation-easing-beta;
-        transform: rotate(-10deg) translate3d(0,0,0);
+        transition-delay: $animation-duration-beta;
 
         .c-logo__link:hover & {
             transform: rotate(0deg);
+        }
+
+        .is-ready & {
+            transform: rotate(-10deg) translate3d(0,0,0);
+        }
+
+        .is-finished & {
+            transition-delay: $animation-duration-alpha;
         }
 
         .shrink & {
@@ -64,10 +77,6 @@
     }
 
 .c-nerdlab {
-    font-family: $alpha-font-family;
-    //font-weight: $delta-font-weight;
-    //font-weight: $gamma-font-weight;
+    font-family: $beta-font-family;
     font-weight: $jota-font-weight;
-    margin-right: -4px;
-    @include uppercase;
 }

@@ -7,6 +7,7 @@ var chopstick =
         // chopstick.loadObject(chopstick.hide, 'chopstick.hide');
         // chopstick.loadObject(chopstick.toggle, 'chopstick.toggle');
         chopstick.loadObject(chopstick.headerScroll, 'chopstick.headerScroll');
+        chopstick.loadObject(chopstick.ready, 'chopstick.ready');
 
         console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
     },
@@ -121,6 +122,29 @@ chopstick.mobileNav =
     {
         mobileNavSettings.navigation.toggleClass('is-visible');
         mobileNavSettings.trigger.toggleClass('is-active');
+    }
+};
+
+var readySettings
+chopstick.ready =
+{
+    settings:
+    {
+        ready: $('body')
+    },
+
+    init: function()
+    {
+        readySettings = chopstick.ready.settings;
+        chopstick.ready.readyContent();
+    },
+
+    readyContent: function ()
+    {
+        readySettings.ready.addClass("is-ready");
+        setTimeout(function(){
+            readySettings.ready.addClass("is-finished");
+        }, 450);
     }
 };
 

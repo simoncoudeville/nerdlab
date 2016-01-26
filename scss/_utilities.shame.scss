@@ -68,3 +68,50 @@
     //    @include padding-tb(10,9);
     //}
 }
+
+.c-main-section {
+    & + & {
+        @include padding-top(3);
+    }
+}
+
+.u-font-family-alpha {
+    font-family: $alpha-font-family;
+}
+
+.u-font-weight-alpha {
+    font-weight: $alpha-font-weight;
+}
+
+.u-font-weight-beta {
+    font-weight: $beta-font-weight;
+}
+
+.u-font-weight-gamma {
+    font-weight: $gamma-font-weight;
+}
+
+.u-font-weight-delta {
+    font-weight: $delta-font-weight;
+}
+
+.u-font-weight-jota {
+    font-weight: $jota-font-weight;
+}
+
+// footer
+
+.c-footer-link {
+    &,
+    &:visited {
+        //text-decoration: underline;
+        font-weight: $gamma-font-weight;
+        color: palette(color-neutral,xxxx-light);
+    }
+
+    &:hover {
+        text-decoration: none;
+        opacity: .75;
+        color: palette(color-neutral,xxxx-light);
+    }
+}

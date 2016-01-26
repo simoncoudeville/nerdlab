@@ -44,8 +44,12 @@
     }
 
     @include mq(bp5) {
-        @include padding-tb(15,14);
+        @include padding-tb(12,13);
     }
+
+    //@include mq(bp5) {
+    //    @include padding-tb(15,14);
+    //}
 }
 
 .c-row--full {
