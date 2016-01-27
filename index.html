@@ -45,21 +45,34 @@ section: home
     </div>
 </div> -->
 <img src="/img/photos/lab.jpg" alt="">
-<div class="c-row c-row--xl u-bgcolor-neutral-xxxx-light u-z-beta">
+<div class="c-row c-row--xl u-bgcolor-neutral-xxx-light u-z-beta">
     <div class="o-container">
-        <div class="o-grid o-grid--gutter o-flex">
-            <div class="o-grid__item u-1-of-2-bp4">
-                <p class="u-max-width-md s-content">
-                    Nerdlab is trouw aan het concept van een FabLab, een coöperatieve werkplek waar uitvinders kunnen gebruik maken van collectieve infrastructuur. Iedereen is er (gratis) welkom!
-Er worden ook regelmatige basis workshops, evenementen en grotere projecten opgezet om zo het complete traject van leren, maken, verspreiden en presenteren te ontsluiten.
-Nerdlab is geen FabLab omdat niet alle nodige machines aanwezig zijn. We doen graag alsof en onderschrijven weldegelijk The Fab Charter
-                </p>
-            </div>
-            <div class="o-grid__item u-1-of-2-bp4">
-                <p class="u-max-width-md s-content">
-                    <span class="c-nerdlab">Nerdlab</span> is in eerste plaats een Lab. Een plaats waar we de uitvinder in onszelf kunnen loslaten en projecten, die we thuis niet kunnen maken, tot een goed eind te brengen.
-De wekelijkse speeltuin wordt gehouden in het Nerdlab HQ te Gent. We hebben (zoals het hoort) een verzameling aan nieuw technologisch goed:
-                </p>
+        <div class="c-main-section">
+            <p class="u-max-width-md u-ms2 s-content">
+                <span class="c-nerdlab">Nerdlab</span> is in eerste plaats een Lab. Een plaats waar we de uitvinder in onszelf kunnen loslaten en projecten, die we thuis niet kunnen maken, tot een goed eind te brengen.
+            </p>
+        </div>
+        <div class="c-main-section">
+            <div class="o-grid o-grid--gutter o-flex">
+                <div class="o-grid__item u-1-of-2-bp4">
+                    <p class="u-max-width-md s-content">
+
+    De wekelijkse speeltuin wordt gehouden in het Nerdlab HQ te Gent. We hebben een verzameling aan nieuw technologisch goed:
+                    </p>
+                    <p>
+                        Arduino’s met sensoren, motortjes en 1000den ledjes. K-nect, Gopro en Parot Ar.Drone. Rasberry Pi. Beamers &amp; computers
+                    </p>
+                    <p>
+                        Nerdlab is always on the lookout for likeminded people, whether you're a start-up company with big ideas or an established brand ready to make a big impact. Kom eens goeiedag zeggen op <strong>woensdagavond</strong>.
+                    </p>
+                </div>
+                <div class="o-grid__item u-1-of-2-bp4">
+                    <p class="u-max-width-md s-content">
+                        Nerdlab is trouw aan het concept van een FabLab, een coöperatieve werkplek waar uitvinders kunnen gebruik maken van collectieve infrastructuur. Iedereen is er (gratis) welkom!
+    Er worden ook regelmatige basis workshops, evenementen en grotere projecten opgezet om zo het complete traject van leren, maken, verspreiden en presenteren te ontsluiten.
+    Nerdlab is geen FabLab omdat niet alle nodige machines aanwezig zijn. We doen graag alsof en onderschrijven weldegelijk The Fab Charter
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -73,8 +86,15 @@ De wekelijkse speeltuin wordt gehouden in het Nerdlab HQ te Gent. We hebben (zoa
 </div> -->
 <div id="agenda" class="c-row c-row--xl u-bgcolor-alpha-xxx-light u-z-gamma">
     <div class="o-container">
-        {% for item in site.data.events-future %}
-            {% include components.event.html %}
-        {% endfor %}
+        <div class="c-main-section">
+            <p class="u-max-width-md u-ms2 s-content">
+                <strong>Nerdlab</strong> is always on the lookout for likeminded people, whether you're a start-up company with big ideas or an established brand ready to make a big impact. Kom eens goeiedag zeggen op.
+            </p>
+        </div>
+        <div class="c-main-section">
+            {% for item in site.data.events-future %}
+                {% include components.event.html %}
+            {% endfor %}
+        </div>
     </div>
 </div>

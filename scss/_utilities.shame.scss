@@ -15,7 +15,17 @@
 
 .c-main {
     background-color: #fff;
+    //transform: translateY(100px);
+    opacity: 0;
+    transition: all $animation-duration-gamma $animation-easing-alpha;
+    transition-delay: $animation-duration-gamma;
+
     @include padding-top(3);
+
+    .is-ready & {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
     //@include mq(bp4) {
     //    @include padding-top(7.5);
@@ -114,4 +124,14 @@
         opacity: .75;
         color: palette(color-neutral,xxxx-light);
     }
+}
+
+.c-article {
+    border-bottom: 1px solid rgba(palette(color-neutral,xxxx-dark),.1);
+
+    &:last-child {
+        border: none;
+        margin-bottom: 0;
+    }
+
 }
