@@ -78,20 +78,20 @@
         color: palette(color-alpha);
         text-decoration: none;
         //font-weight: $delta-font-weight;
-        //font-family: $alpha-font-family;
+        //font-family: $beta-font-family;
         font-weight: $gamma-font-weight;
         //font-weight: $alpha-font-weight;
         //@include uppercase;
-        @include padding-lr($columns-gutter, $columns-gutter);
-        @include text-dimensions($ms-1,1,0,1,1);
+        //@include padding-lr($columns-gutter, $columns-gutter);
+        @include text-dimensions($ms0    ,1,0,1,1);
 
         @include mq(bp1) {
-            @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
+            //@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
         }
 
         @include mq(bp4) {
             @include padding-tb(1.25,1.25);
-            @include padding-lr($columns-gutter, $columns-gutter);
+            //@include padding-lr($columns-gutter, $columns-gutter);
 
             //.c-nav-main__item:first-child & {
             //    padding-left: 0;
@@ -101,7 +101,7 @@
         @include mq(bp4) {
             @include padding-tb(2,2);
             //@include text-dimensions($ms-2,1);
-            @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
+            //@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
         }
 
         &,

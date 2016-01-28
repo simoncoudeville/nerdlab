@@ -11,7 +11,8 @@
  */
 
 $logo-ratio: 3.3333;
-$logo-height: 1.75rem;
+//$logo-height: 1.75rem;
+$logo-height: 30px;
 $logo-width: $logo-height * $logo-ratio;
 
 .c-logo {
@@ -45,7 +46,7 @@ $logo-width: $logo-height * $logo-ratio;
         @include text-dimensions($alpha-font-size,1);
 
         @include mq(bp3) {
-            @include padding-lr(2,2);
+            //@include padding-lr(2,2);
         }
     }
 
@@ -77,6 +78,7 @@ $logo-width: $logo-height * $logo-ratio;
     }
 
 .c-nerdlab {
-    font-family: $beta-font-family;
+    //font-family: $beta-font-family;
+    @include uppercase;
     font-weight: $jota-font-weight;
 }

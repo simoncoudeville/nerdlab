@@ -19,6 +19,10 @@
         @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
     }
 
+    @include mq(bp4) {
+        @include padding-lr(4,4);
+    }
+
 }
 
 
@@ -26,11 +30,19 @@
     @include mq(bp3) {
         @include padding-tb(4,3);
     }
+
+    @include mq(bp4) {
+        @include padding-lr(4,4);
+    }
 }
 
 .c-row--lg {
     @include mq(bp3) {
         @include padding-tb(4,3);
+    }
+
+    @include mq(bp4) {
+        @include padding-lr(4,4);
     }
 
     @include mq(bp5) {
@@ -41,6 +53,10 @@
 .c-row--xl {
     @include mq(bp3) {
         @include padding-tb(4,3);
+    }
+
+    @include mq(bp4) {
+        @include padding-lr(4,4);
     }
 
     @include mq(bp5) {
@@ -54,8 +70,16 @@
 
 .c-row--full {
     //height: 100vh;
-    height: calc(90vh - 3rem);
+    //padding-top: 0;
+    @include padding-tb(1,1);
+
+    //padding-bottom: 0;
+    height: calc(90vh - 7.5rem);
     //height: calc(100vh - 5.5rem);
     //height: calc(100vh - 7.5rem);
     //height: calc(100vh - 8.5rem);
+
+    @include mq(bp4) {
+        @include padding-lr(4,4);
+    }
 }

@@ -20,7 +20,8 @@
     transition: all $animation-duration-gamma $animation-easing-alpha;
     transition-delay: $animation-duration-gamma;
 
-    @include padding-top(3);
+    //@include padding-top(3);
+    @include padding-top(7.5);
 
     .is-ready & {
         transform: translateY(0);
@@ -89,6 +90,11 @@
     font-family: $alpha-font-family;
 }
 
+.u-font-family-beta {
+    font-family: $beta-font-family;
+}
+
+
 .u-font-weight-alpha {
     font-weight: $alpha-font-weight;
 }
@@ -115,7 +121,7 @@
     &,
     &:visited {
         //text-decoration: underline;
-        font-weight: $gamma-font-weight;
+        font-weight: $jota-font-weight;
         color: palette(color-neutral,xxxx-light);
     }
 
@@ -128,10 +134,12 @@
 
 .c-article {
     border-bottom: 1px solid rgba(palette(color-neutral,xxxx-dark),.1);
+    @include padding-bottom(1);
 
     &:last-child {
         border: none;
         margin-bottom: 0;
+        padding-bottom: 0;
     }
 
 }
