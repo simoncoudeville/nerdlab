@@ -78,7 +78,8 @@ $breakpoints: (
     bp3                     : 680/16*1em,
     bp4                     : 960/16*1em,
     bp5                     : 1140/16*1em,
-    bp6                     : 1440/16*1em
+    bp6                     : 1440/16*1em,
+    bp7                     : 1681/16*1em
 ) !default;
 
 // ---
@@ -86,7 +87,7 @@ $breakpoints: (
 // ---
 
 // 1 times the $alpha-font-size. It's calculated in rem in _tools.spacing.scss
-$columns-gutter             : 1 !default;
+$columns-gutter             : 1.6 !default;
 
 // Define the amount of columns in the grid
 $columns: (
@@ -121,10 +122,10 @@ $increments: (
 // Animations
 // ---
 
-$animation-duration-alpha   : .125s;
-$animation-duration-beta    : .25s;
-$animation-duration-gamma   : .375s;
-$animation-duration-delta   : .5s;
+$animation-duration-alpha   : .1s;
+$animation-duration-beta    : .2s;
+$animation-duration-gamma   : .3s;
+$animation-duration-delta   : .4s;
 $animation-easing-alpha     : $ease-in-out-cubic;
 $animation-easing-beta      : $ease-in-out-back;
 

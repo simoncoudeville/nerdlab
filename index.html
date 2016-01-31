@@ -4,68 +4,22 @@ title: Homepage
 section: home
 ---
 
-<div class="c-row c-row--full u-bgcolor-alpha-xxx-light u-z-delta">
-    <div class="o-container u-align-vertical">
-        <p class="u-color-neutral-xx-dark u-max-width-sm u-ms4 u-font-weight-alpha s-content">
+<div class="c-row c-intro u-z-delta">
+    <div class="o-container">
+        <p class="c-intro__text u-color-neutral-dark u-max-width-sm u-ms2 s-content">
             <span class="c-nerdlab u-color-neutral-xxxx-dark">Nerdlab</span> loves to build new machines out of sometimes already forgotten technologies. Everything working on batteries deserves a better live. That can be a musical instrument, a barbecue tool or any other helpful object. We believe in the power of a clear idea. <!-- <a href="#!">Bekijk ons lab</a> -->
         </p>
     </div>
 </div>
-<img src="/img/photos/lab.jpg" alt="">
-<div class="c-row c-row--xl u-bgcolor-neutral-xxx-dark u-color-neutral-xxx-light u-z-beta">
+<div class="c-row c-row--special u-bgcolor-neutral-xxxx-light u-z-delta">
     <div class="o-container">
-        <!-- <div class="c-main-section">
-            <p class="u-max-width-md s-content">
-                <span class="c-nerdlab">Nerdlab</span> is in eerste plaats een Lab. Een plaats waar we de uitvinder in onszelf kunnen loslaten en projecten, die we thuis niet kunnen maken, tot een goed eind te brengen.
-            </p>
-        </div> -->
-        <div class="c-main-section">
-            <div class="o-grid o-grid--gutter o-flex">
-                <div class="o-grid__item u-1-of-2-bp4">
-                    <p class="u-max-width-md s-content">
-                        <span class="c-nerdlab">Nerdlab</span> is in eerste plaats een Lab. Een plaats waar we de uitvinder in onszelf kunnen loslaten en projecten, die we thuis niet kunnen maken, tot een goed eind te brengen. <strong>Woensdagavond</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maxime fugit ratione, necessitatibus minus laboriosam! Molestias repellendus, quaerat iusto. Necessitatibus quam facilis soluta error ex laboriosam asperiores sapiente, dolorem repellat!
-                    </p>
-                    <p class="u-max-width-md s-content">
-                        De wekelijkse speeltuin wordt gehouden in het Nerdlab HQ te Gent. We hebben een verzameling aan nieuw technologisch goed:
-                        Arduino’s met sensoren, motortjes en 1000den ledjes. K-nect, Gopro en Parot Ar.Drone. Rasberry Pi. Beamers &amp; computers
-                    </p>
-                </div>
-                <div class="o-grid__item u-1-of-2-bp4">
-                    <p class="u-max-width-md s-content">
-                        Nerdlab is trouw aan het concept van een FabLab, een coöperatieve werkplek waar uitvinders kunnen gebruik maken van collectieve infrastructuur. Iedereen is er (gratis) welkom!
-    Er worden ook regelmatige basis workshops, evenementen en grotere projecten opgezet om zo het complete traject van leren, maken, verspreiden en presenteren te ontsluiten.
-    Nerdlab is geen FabLab omdat niet alle nodige machines aanwezig zijn. We doen graag alsof en onderschrijven weldegelijk The Fab Charter
-                    </p>
-                </div>
-            </div>
-        </div>
+        <img src="/img/photos/lab.jpg" alt="">
     </div>
 </div>
-<div class="c-row c-row--full u-bgcolor-alpha-xxx-light u-z-delta">
+<div class="c-row c-row--md u-bgcolor-neutral-xxxx-light u-z-delta">
     <div class="o-container">
         <p>
             nieuwste event
         </p>
-    </div>
-</div>
-<!-- <div class="c-row c-row--full u-bgcolor-neutral-xxxx-light u-z-delta">
-    <div class="o-container u-align-vertical">
-        <p class="u-max-width-md u-ms1">
-            <span class="c-nerdlab">Nerdlab</span> loves to build new machines out of sometimes already forgotten technologies. Everything working on batteries deserves a better live. That can be a musical instrument, a barbecue tool or any other helpful object. We believe in the power of a clear idea, doing completely the opposite and learning ourselfs the skills to accomplish the undoable.
-        </p>
-    </div>
-</div> -->
-<div class="c-row c-row--xl u-bgcolor-alpha-xxx-light u-z-gamma">
-    <div class="o-container">
-        <!-- <div class="c-main-section">
-            <p class="u-max-width-sm u-ms4 s-content">
-                <strong>Nerdlab</strong> is always on the lookout for likeminded people, whether you're a start-up company with big ideas or an established brand ready to make a big impact. Kom eens goeiedag zeggen op.
-            </p>
-        </div> -->
-        <div class="c-main-section u-max-width-md u-align-horizontal">
-            {% for item in site.data.events-future %}
-                {% include components.event.html %}
-            {% endfor %}
-        </div>
     </div>
 </div>

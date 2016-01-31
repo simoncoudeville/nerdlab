@@ -35,7 +35,7 @@ $media-object-margin-bottom : $alpha-leading !default;
 
 .o-media--bb {
     border-bottom: 1px solid rgba(palette(color-neutral,xxxx-dark),.1);
-    @include padding-bottom(1);
+    //@include padding-bottom($alpha-leading);
 
     &:last-child {
         border: none;

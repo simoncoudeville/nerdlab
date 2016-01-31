@@ -13,10 +13,6 @@ $html-font-weight                   : $gamma-font-weight !default;
 $html-font-size                     : $alpha-font-size !default;
 $html-line-height                   : $alpha-line-height !default;
 
-$html-responsive-font-size          : true !default;
-$html-responsive-font-breakpoint    : bp4 !default;
-$html-responsive-font-magnification : 112.5% !default;
-
 $html-background-color              : palette(color-neutral,xxxx-light) !default;
 $body-color                         : palette(color-neutral,xx-dark) !default;
 
@@ -33,14 +29,20 @@ html {
     -webkit-overflow-scrolling: touch;
     background-color: $html-background-color;
 
-    @if $html-responsive-font-size == true {
-        @include mq($html-responsive-font-breakpoint) {
-            font-size: $alpha-font-size/16*$html-responsive-font-magnification;
-        }
+    @include mq(bp3) {
+        font-size: $alpha-font-size/16*112.5%;
     }
 
     @include mq(bp5) {
+        font-size: $alpha-font-size/16*125%;
+    }
+
+    @include mq(bp6) {
         font-size: $alpha-font-size/16*137.5%;
+    }
+
+    @include mq(bp7) {
+        font-size: $alpha-font-size/16*150%;
     }
 }
 

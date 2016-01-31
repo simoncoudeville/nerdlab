@@ -19,14 +19,6 @@
 
     .c-header & {
 
-        &:first-of-type {
-            order:1;
-        }
-
-        &:last-of-type {
-            order:3;
-        }
-
         @if $flexbox == false {
             @include mq(bp4) {
                 float: right;
@@ -52,8 +44,14 @@
     }
 
     .c-nav-main__item {
+        display: none;
+
         & + & {
             border-top: 1px solid palette(color-neutral,xx-light);
+        }
+
+        .c-header & {
+            display: none;
         }
 
         @include mq(bp4) {
@@ -63,6 +61,10 @@
 
             & + & {
                 border-top: 0;
+            }
+
+            .c-header & {
+                display: block;
             }
         }
     }
@@ -101,21 +103,12 @@
     color: palette(color-alpha);
     outline: 0;
     border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 5.5rem;
+    height: 5rem;
     background-color: transparent;
-    padding-top: 0;
-    padding-bottom: 0;
-    @include padding-lr($columns-gutter,$columns-gutter);
+    padding: 0;
 
     &.is-active {
         color: palette(color-neutral);
-    }
-
-    @include mq(bp1) {
-        @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
     }
 
     @include mq(bp4) {

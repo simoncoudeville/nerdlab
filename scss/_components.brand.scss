@@ -11,7 +11,7 @@
  */
 
 $logo-ratio: 3.3333;
-$logo-height: 30px;
+$logo-height: 1.5em;
 $logo-width: $logo-height * $logo-ratio;
 
 .c-logo {
@@ -64,6 +64,11 @@ $logo-width: $logo-height * $logo-ratio;
                 transition-delay: $animation-duration-beta;
             }
         }
+
+        @include mq(bp3) {
+
+        }
+
     }
 
 .c-nerdlab {

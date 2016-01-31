@@ -18,10 +18,10 @@
     appearance: none; /* [1] */
     -webkit-font-smoothing: antialiased; /* [2] */
     -moz-osx-font-smoothing: grayscale; /* [2] */
-    background-color: palette(color-neutral,x-light);
+    background-color: palette(color-neutral,xxxx-light);
     border-radius: $radius;
-    border: $border-width $border-style palette(color-neutral);
-    color: palette(color-neutral,dark);
+    border: $border-width $border-style palette(color-neutral,xxx-light);
+    color: palette(color-neutral,xxx-light);
     font-family: $alpha-font-family;
     margin: 0;
     width: 100%;

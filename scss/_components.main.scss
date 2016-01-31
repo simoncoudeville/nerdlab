@@ -4,23 +4,70 @@
     Main content section of the website
 */
 
+@keyframes mainTransitionIn {
+    0% {
+            opacity: 0;
+            transform: translateY(20px);
+            //transform: scale(0.99);
+    }
+
+    100% {
+            opacity: 1;
+            transform: translateY(0);
+            //transform: scale(1);
+    }
+}
+
+@keyframes mainTransitionOut {
+    0% {
+            opacity: 1;
+            transform: translateY(0);
+            //transform: scale(1);
+    }
+
+    100% {
+            opacity: 0;
+            transform: translateY(20px);
+            //transform: scale(0.99);
+    }
+}
+
 .c-main {
     background-color: #fff;
     backface-visibility: hidden;
     animation-fill-mode: both;
     animation-duration: $animation-duration-gamma;
-    animation-name: fadeIn;
+    animation-name: mainTransitionIn;
     animation-timing-function: $animation-easing-alpha;
-    @include padding-top(7.5);
+    @include padding-top(5);
 
     .is-exiting & {
-        animation-name: fadeOut;
-        //animation-direction: alternate-reverse;
+        animation-name: mainTransitionOut;
+        //animation-direction: reverse;
     }
+
+    @include mq(bp4) {
+        @include padding-top(7.5);
+    }
+
 }
 
 .c-main-section {
-    & + & {
-        @include padding-top(3);
+    @include mq(bp3) {
+        & + & {
+            @include padding-top(1);
+        }
+    }
+
+    @include mq(bp5) {
+        & + & {
+            @include padding-top(2);
+        }
+    }
+
+    @include mq(bp6) {
+        & + & {
+            @include padding-top(3);
+        }
     }
 }

@@ -1,8 +1,27 @@
 <div class="js-header c-row c-header-row u-z-jota">
     <div class="o-container c-header-container">
         <div class="c-header">
-
-            {% include components.nav-main.html %}
+            {% include components.logo.html %}
+            <button class="c-nav-main-trigger js-nav-trigger">
+                <span class="c-nav-main-trigger__icon"></span>
+                <span class="is-accessible-hidden">Menu</span>
+            </button>
+            <!-- {% include components.nav-main.html %} -->
+            <div class="c-nav-main__item {% if page.url contains "fablab" %}is-selected{% endif %} js-nav-main-item">
+                <a href="fablab.html" class="c-nav-main__link">Fablab</a>
+            </div>
+            <div class="c-nav-main__item {% if page.url contains "agenda" %}is-selected{% endif %} js-nav-main-item">
+                <a href="agenda.html" class="c-nav-main__link">Agenda</a>
+            </div>
+            <div class="c-nav-main__item {% if page.url contains "styleguide" %}is-selected{% endif %} js-nav-main-item">
+                <a href="projecten.html" class="c-nav-main__link">Projecten</a>
+            </div>
+            <div class="c-nav-main__item {% if page.url contains "styleguide" %}is-selected{% endif %} js-nav-main-item">
+                <a href="projecten.html" class="c-nav-main__link">Diensten</a>
+            </div>
+            <div class="c-nav-main__item {% if page.url contains "flexbox" %}is-selected{% endif %} js-nav-main-item">
+                <a href="flexbox.html" class="c-nav-main__link">Contact</a>
+            </div>
         </div>
     </div>
 </div>

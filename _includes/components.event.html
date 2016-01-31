@@ -1,15 +1,15 @@
 <article class="s-content o-media o-media--bb u-mb-gamma">
     <div class="o-grid o-grid--gutter o-flex">
-        <p class="o-grid__item u-4-of-6-bp4 u-mb-beta">
+        <p class="o-grid__item u-4-of-6-bp4">
             {{ item.date }} - <strong>{{ item.title }}</strong>
         </p>
-        <p class="o-grid__item u-2-of-6-bp4 u-mb-beta u-text-align-right">
+        <p class="o-grid__item u-2-of-6-bp4 u-text-align-right">
             {{ item.place }}
         </p>
     </div>
     {% if item.desc != "" %}
-        <p class="u-max-width-md u-mb-beta">
+        <!-- <p class="u-max-width-md">
             {{ item.desc }} {% if item.link != "" %}<a href="{{ item.link }}">Meer info</a>{% endif %}
-        </p>
+        </p> -->
     {% endif %}
 </article>

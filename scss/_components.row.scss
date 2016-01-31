@@ -6,27 +6,53 @@
 
 .c-row {
     position: relative;
+    @include clearfix;
     @include padding-tb($alpha-leading,0);
     @include padding-lr($columns-gutter,$columns-gutter);
 
-    @include mq(bp1) {
-        @include padding-tb($alpha-leading * 2,$alpha-leading);
-        @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+    @include mq(bp2) {
+        @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
     }
 
-    @include mq(bp4) {
-        @include padding-lr(4,4);
+    @include mq(bp5) {
+        @include padding-lr($columns-gutter * 3, $columns-gutter * 3);
+    }
+
+    @include mq(bp6) {
+        @include padding-lr($columns-gutter * 4, $columns-gutter * 4);
+    }
+
+    @include mq(bp7) {
+        @include padding-lr($columns-gutter * 5, $columns-gutter * 5);
     }
 }
 
 .c-row--md {
-    @include mq(bp3) {
-        @include padding-tb(4,3);
+
+    @include mq(bp2) {
+        @include padding-tb($alpha-leading * 2, $alpha-leading);
     }
 
-    @include mq(bp4) {
-        @include padding-lr(4,4);
+    @include mq(bp5) {
+        @include padding-tb($alpha-leading * 3, $alpha-leading * 2);
     }
+
+    @include mq(bp6) {
+        @include padding-tb($alpha-leading * 4, $alpha-leading * 3);
+    }
+
+    @include mq(bp7) {
+        @include padding-tb($alpha-leading * 5, $alpha-leading * 4);
+    }
+
+    //@include mq(bp3) {
+    //    @include padding-lr(4,4);
+    //}
+}
+
+.c-row--special {
+    padding-right: 0;
+    padding-top: 0;
 }
 
 .c-row--lg {
@@ -34,11 +60,11 @@
         @include padding-tb(4,3);
     }
 
-    @include mq(bp4) {
+    @include mq(bp5) {
         @include padding-lr(4,4);
     }
 
-    @include mq(bp5) {
+    @include mq(bp6) {
         @include padding-tb(6,5);
     }
 }
@@ -48,7 +74,7 @@
         @include padding-tb(4,3);
     }
 
-    @include mq(bp4) {
+    @include mq(bp5) {
         @include padding-lr(4,4);
     }
 
@@ -60,8 +86,4 @@
 .c-row--full {
     height: calc(90vh - 7.5rem);
     @include padding-tb(1,1);
-
-    @include mq(bp4) {
-        @include padding-lr(4,4);
-    }
 }

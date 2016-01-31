@@ -1,0 +1,21 @@
+/*
+    Components: Intro
+    ---
+    Site intro
+*/
+
+.c-intro {
+    @include mq(bp3) {
+        height: calc(90vh - 5rem);
+    }
+
+    @include mq(bp4) {
+        display: flex;
+        align-items: center;
+        height: calc(90vh - 7.5rem);
+
+        .o-container {
+            margin-left: 0;
+        }
+    }
+}
