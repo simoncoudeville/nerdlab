@@ -11,7 +11,6 @@
  */
 
 $logo-ratio: 3.3333;
-//$logo-height: 1.75rem;
 $logo-height: 30px;
 $logo-width: $logo-height * $logo-ratio;
 
@@ -22,7 +21,7 @@ $logo-width: $logo-height * $logo-ratio;
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     @include uppercase;
 
     .c-header & {
@@ -37,17 +36,10 @@ $logo-width: $logo-height * $logo-ratio;
     .c-logo__link {
         display: block;
         height: 5rem;
-        //width: 10rem;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         @include text-dimensions($alpha-font-size,1);
-
-        @include mq(bp3) {
-            //@include padding-lr(2,2);
-        }
     }
 
     .c-logo__mark {
@@ -56,25 +48,22 @@ $logo-width: $logo-height * $logo-ratio;
         height: $logo-height;
         background: transparent url(../img/svg/glasses.svg) 50% 50% no-repeat;
         background-size: contain;
-        transition: all $animation-duration-gamma $animation-easing-beta;
+        transition: all $animation-duration-beta $animation-easing-alpha;
         transition-delay: $animation-duration-beta;
-
-        .c-logo__link:hover & {
-            transform: rotate(0deg);
-        }
-
-        .is-ready & {
-            transform: rotate(-10deg) translate3d(0,0,0);
-        }
-
-        .is-finished & {
-            transition-delay: $animation-duration-alpha;
-        }
+        transform: rotate(-10deg);
 
         .shrink & {
             transform: rotate(0deg);
-        }
 
+            .is-exiting & {
+                transform: rotate(-10deg);
+                transition-delay: $animation-duration-delta;
+            }
+
+            .is-finished & {
+                transition-delay: $animation-duration-beta;
+            }
+        }
     }
 
 .c-nerdlab {

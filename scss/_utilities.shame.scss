@@ -4,36 +4,6 @@
     Hacks and quick fixes
 */
 
-#mfPreviewBar {
-    display: none;
-}
-
-@font-face{
-    font-family:'Maison Neue Mono';
-    src: url('../fonts/MaisonNeueTRIAL-Mono.otf'); /* everyone else take this */
-}
-
-.c-main {
-    background-color: #fff;
-    //transform: translateY(100px);
-    opacity: 0;
-    transition: all $animation-duration-gamma $animation-easing-alpha;
-    transition-delay: $animation-duration-gamma;
-
-    //@include padding-top(3);
-    @include padding-top(7.5);
-
-    .is-ready & {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    //@include mq(bp4) {
-    //    @include padding-top(7.5);
-    //}
-
-}
-
 .c-stats {
     text-align: center;
 }
@@ -57,33 +27,6 @@
 
     color: palette(color-beta);
     @include ms7;
-}
-
-.c-intro {
-    //display: flex;
-    //justify-content:
-
-    //@include mq(bp3) {
-    //    @include padding-tb(4.5,7);
-    //}
-    //
-    //@include mq(bp4) {
-    //    @include padding-tb(7.5,10);
-    //}
-    //
-    //@include mq(bp5) {
-    //    @include padding-tb(12.5,15);
-    //}
-
-    //@include mq(bp5) {
-    //    @include padding-tb(10,9);
-    //}
-}
-
-.c-main-section {
-    & + & {
-        @include padding-top(3);
-    }
 }
 
 .u-font-family-alpha {

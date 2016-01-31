@@ -138,9 +138,10 @@ $increments: (
 // Animations
 // ---
 
-$animation-duration-alpha   : .15s;
-$animation-duration-beta    : .30s;
-$animation-duration-gamma   : .45s;
+$animation-duration-alpha   : .125s;
+$animation-duration-beta    : .25s;
+$animation-duration-gamma   : .375s;
+$animation-duration-delta   : .5s;
 $animation-easing-alpha     : $ease-in-out-cubic;
 $animation-easing-beta      : $ease-in-out-back;
 

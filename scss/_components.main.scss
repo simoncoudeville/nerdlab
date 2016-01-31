@@ -1,0 +1,28 @@
+/*
+    Components: Main
+    ---
+    Main content section of the website
+*/
+
+.c-main {
+    background-color: #fff;
+    backface-visibility: hidden;
+    animation-fill-mode: both;
+    animation-duration: $animation-duration-gamma;
+    animation-name: fadeIn;
+    animation-timing-function: $animation-easing-alpha;
+    @include padding-top(7.5);
+
+    .is-exiting & {
+        animation-name: fadeOut;
+        //animation-direction: alternate-reverse;
+    }
+
+}
+
+
+.c-main-section {
+    & + & {
+        @include padding-top(3);
+    }
+}

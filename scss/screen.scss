@@ -16,12 +16,10 @@
  *  Utilities: contains helpers and overrides
  */
 
-// easing variables
-@import 'tools.easing';
-
 // Settings
 @import 'settings.global';
 @import 'settings.colors';
+@import 'settings.easing';
 
 // Tools
 @import 'tools.functions';
@@ -36,6 +34,7 @@
 @import 'generic.box-sizing';
 
 /* Elements */
+@import 'elements.keyframes';
 @import 'elements.page';
 @import 'elements.typography';
 @import 'elements.images';
@@ -58,6 +57,7 @@
 @import 'components.header';
 @import 'components.navigation';
 @import 'components.brand';
+@import 'components.main';
 @import 'components.icons';
 @import 'components.alerts';
 @import 'components.buttons';
