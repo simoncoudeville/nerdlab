@@ -1,27 +1,14 @@
-var headerScrollSettings
-chopstick.headerScroll =
+var headerScroll = function()
 {
-    settings:
-    {
-        headerScroll: $('.js-header')
-    },
+    var $header = $('.js-header');
 
-    init: function()
-    {
-        headerScrollSettings = chopstick.headerScroll.settings;
-        chopstick.headerScroll.headerScrollContent();
-    },
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-    headerScrollContent: function ()
-    {
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 40) {
-                headerScrollSettings.headerScroll.addClass("shrink");
-            } else {
-                headerScrollSettings.headerScroll.removeClass("shrink");
-            }
-        });
-    }
+        if (scroll >= 40) {
+            $header.addClass("shrink");
+        } else {
+            $header.removeClass("shrink");
+        }
+    });
 };

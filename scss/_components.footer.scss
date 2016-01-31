@@ -1,0 +1,20 @@
+/*
+    Components: Footer
+    ---
+    The footer of the website
+*/
+
+.c-footer-link {
+    &,
+    &:visited {
+        //text-decoration: underline;
+        font-weight: $jota-font-weight;
+        color: palette(color-neutral,xxxx-light);
+    }
+
+    &:hover {
+        text-decoration: none;
+        opacity: .75;
+        color: palette(color-neutral,xxxx-light);
+    }
+}

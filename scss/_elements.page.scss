@@ -48,7 +48,6 @@ body {
     color: $body-color;
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern";
-    //@include padding-lr(1,1);
 
     @if $body-font-smoothing == true {
         -webkit-font-smoothing: antialiased;

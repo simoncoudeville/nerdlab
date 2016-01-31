@@ -17,9 +17,9 @@
  */
 
 // Settings
+@import 'settings.easing';
 @import 'settings.global';
 @import 'settings.colors';
-@import 'settings.easing';
 
 // Tools
 @import 'tools.functions';
@@ -49,7 +49,7 @@
 @import 'objects.tables';
 
 @if $flexbox {
-@import 'objects.flexbox';
+    @import 'objects.flexbox';
 }
 
 /* Components */
@@ -84,6 +84,8 @@
 @import 'utilities.ms';
 @import 'utilities.spacing';
 @import 'utilities.align';
+@import 'utilities.font-weight';
+@import 'utilities.font-family';
 @import 'utilities.flex';
 @import 'utilities.colors';
 @import 'utilities.layers';

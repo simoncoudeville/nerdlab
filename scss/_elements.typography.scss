@@ -19,39 +19,26 @@
 
 $h1-font-family                : $alpha-font-family !default;
 $h1-font-weight                : $delta-font-weight !default;
-
-$h1-font-size                  : $ms6 !default;
-$h1-line-height                : 2 !default;
 $h1-margin-bottom              : $beta-leading !default;
 
 $h2-font-family                : $alpha-font-family !default;
 $h2-font-weight                : $alpha-font-weight !default;
-$h2-font-size                  : $ms4 !default;
-$h2-line-height                : 1.5 !default;
 $h2-margin-bottom              : $alpha-leading !default;
 
 $h3-font-family                : $alpha-font-family !default;
 $h3-font-weight                : $alpha-font-weight !default;
-$h3-font-size                  : $ms3 !default;
-$h3-line-height                : 1.25 !default;
 $h3-margin-bottom              : $alpha-leading !default;
 
 $h4-font-family                : $alpha-font-family !default;
 $h4-font-weight                : $alpha-font-weight !default;
-$h4-font-size                  : $ms2 !default;
-$h4-line-height                : 1.25 !default;
 $h4-margin-bottom              : $alpha-leading !default;
 
 $h5-font-family                : $alpha-font-family !default;
 $h5-font-weight                : $alpha-font-weight !default;
-$h5-font-size                  : $ms2 !default;
-$h5-line-height                : 1 !default;
 $h5-margin-bottom              : $alpha-leading !default;
 
 $h6-font-family                : $alpha-font-family !default;
 $h6-font-weight                : $alpha-font-weight !default;
-$h6-font-size                  : $ms1 !default;
-$h6-line-height                : 1 !default;
 $h6-margin-bottom              : $alpha-leading !default;
 
 $base-font-size                : $alpha-font-size !default;
@@ -97,47 +84,45 @@ h1 {
     font-weight: $h1-font-weight;
     @include uppercase;
     @include ms4;
-    //@include text-dimensions($h1-font-size,$h1-line-height);
     @include margin-bottom($h1-margin-bottom);
 
     @include mq(bp3) {
         @include ms8;
     }
-
 }
 
 h2 {
     font-family: $h2-font-family;
     font-weight: $h2-font-weight;
-    @include text-dimensions($h2-font-size,$h2-line-height);
+    @include ms2;
     @include margin-bottom($h2-margin-bottom);
 }
 
 h3 {
     font-family: $h3-font-family;
     font-weight: $h3-font-weight;
-    @include text-dimensions($h3-font-size,$h3-line-height);
+    @include ms1;
     @include margin-bottom($h3-margin-bottom);
 }
 
 h4 {
     font-family: $h4-font-family;
     font-weight: $h4-font-weight;
-    @include text-dimensions($h4-font-size,$h4-line-height);
+    @include ms0;
     @include margin-bottom($h4-margin-bottom);
 }
 
 h5 {
     font-family: $h5-font-family;
     font-weight: $h5-font-weight;
-    @include text-dimensions($h5-font-size,$h5-line-height);
+    @include ms0;
     @include margin-bottom($h5-margin-bottom);
 }
 
 h6 {
     font-family: $h6-font-family;
     font-weight: $h6-font-weight;
-    @include text-dimensions($h6-font-size,$h6-line-height);
+    @include ms0;
     @include margin-bottom($h6-margin-bottom);
 }
 

@@ -6,22 +6,18 @@
 
 .c-header-row {
     background-color: palette(color-neutral,xxxx-light);
-
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-
     backface-visibility: hidden;
     transition: all $animation-duration-beta $animation-easing-alpha;
-    //transition-delay: $animation-duration-alpha;
 
     .is-finished & {
         transition-delay: 0;
     }
 
     .is-exiting & {
-        //transition-duration: $animation-duration-alpha;
         transition-delay: $animation-duration-beta;
     }
 

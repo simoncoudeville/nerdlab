@@ -31,25 +31,8 @@ $ms13                       : 100 !default;
 
 // Basic font settings
 
-//$alpha-font-family          : 'FF DIN Pro Bold', sans-serif;
-//$alpha-font-family          : 'purista-web', sans-serif;
-//$alpha-font-family          : 'PF Din Mono Medium', sans-serif;
-//$alpha-font-family           : 'Input Mono', sans-serif;
-$alpha-font-family           : 'Input Sans Narrow', sans-serif;
 $alpha-font-family           : 'Nitti Grotesk', sans-serif;
-//$alpha-font-family           : -apple-system-body, sans-serif;
-//$alpha-font-family           : 'Input Mono', monospace;
-//$beta-font-family           : 'nudista-web', sans-serif;
-//$beta-font-family           : 'Inconsolata', mono;
-//$beta-font-family           : 'Maison Neue Mono', mono;
-//$beta-font-family           : 'PF Din Mono Light', mono;
-//$beta-font-family           : 'Input Mono', monospace;
-//$beta-font-family           : 'Input Sans Narrow', monospace;
-//$beta-font-family           : 'Fira Mono', monospace;
 $beta-font-family           : 'Nitti', monospace;
-//$beta-font-family           : 'Droid Sans Mono', monospace;
-$gamma-font-family          : 'kulturista-web', sans-serif;
-$delta-font-family          : 'republic-web', sans-serif;
 
 $alpha-font-size            : $ms0;
 
@@ -82,7 +65,7 @@ $z-indexes: (
     beta                    : 2,
     gamma                   : 3,
     delta                   : 4,
-    jota                 : 5
+    jota                    : 5
 ) !default;
 
 // ---

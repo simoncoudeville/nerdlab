@@ -5,14 +5,9 @@
 */
 
 .c-row {
-    //max-width: 1500px;
-    //margin: 0 auto;
     position: relative;
     @include padding-tb($alpha-leading,0);
     @include padding-lr($columns-gutter,$columns-gutter);
-
-    //@include margin-lr($columns-gutter,$columns-gutter);
-    //@include margin-bottom(1);
 
     @include mq(bp1) {
         @include padding-tb($alpha-leading * 2,$alpha-leading);
@@ -22,9 +17,7 @@
     @include mq(bp4) {
         @include padding-lr(4,4);
     }
-
 }
-
 
 .c-row--md {
     @include mq(bp3) {
@@ -62,22 +55,11 @@
     @include mq(bp5) {
         @include padding-tb(12,13);
     }
-
-    //@include mq(bp5) {
-    //    @include padding-tb(15,14);
-    //}
 }
 
 .c-row--full {
-    //height: 100vh;
-    //padding-top: 0;
-    @include padding-tb(1,1);
-
-    //padding-bottom: 0;
     height: calc(90vh - 7.5rem);
-    //height: calc(100vh - 5.5rem);
-    //height: calc(100vh - 7.5rem);
-    //height: calc(100vh - 8.5rem);
+    @include padding-tb(1,1);
 
     @include mq(bp4) {
         @include padding-lr(4,4);

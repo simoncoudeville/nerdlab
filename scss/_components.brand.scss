@@ -68,6 +68,6 @@ $logo-width: $logo-height * $logo-ratio;
 
 .c-nerdlab {
     //font-family: $beta-font-family;
-    @include uppercase;
     font-weight: $jota-font-weight;
+    @include uppercase;
 }

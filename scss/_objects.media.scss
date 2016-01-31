@@ -33,6 +33,17 @@ $media-object-margin-bottom : $alpha-leading !default;
     @include clearfix;
 }
 
+.o-media--bb {
+    border-bottom: 1px solid rgba(palette(color-neutral,xxxx-dark),.1);
+    @include padding-bottom(1);
+
+    &:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
     .o-media__img {
         float: left;
         @include padding-lr(0,$media-object-gutter);

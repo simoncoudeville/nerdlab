@@ -7,13 +7,10 @@
 .c-nav-main {
     display: none;
     flex-basis: 100%;
-    //font-family: $alpha-font-family;
 
     @include mq(bp4) {
         display: block;
         display: flex;
-        //@include margin-right($columns-gutter * 1);
-        //@include margin-lr($columns-gutter * 1);
     }
 
     &.is-visible {
@@ -21,9 +18,6 @@
     }
 
     .c-header & {
-        @include mq(bp4) {
-            //@include padding-lr(1,1);
-        }
 
         &:first-of-type {
             order:1;
@@ -77,31 +71,15 @@
         display: block;
         color: palette(color-alpha);
         text-decoration: none;
-        //font-weight: $delta-font-weight;
-        //font-family: $beta-font-family;
         font-weight: $gamma-font-weight;
-        //font-weight: $alpha-font-weight;
-        //@include uppercase;
-        //@include padding-lr($columns-gutter, $columns-gutter);
-        @include text-dimensions($ms0    ,1,0,1,1);
-
-        @include mq(bp1) {
-            //@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
-        }
+        @include text-dimensions($ms0,1,0,1,1);
 
         @include mq(bp4) {
             @include padding-tb(1.25,1.25);
-            //@include padding-lr($columns-gutter, $columns-gutter);
-
-            //.c-nav-main__item:first-child & {
-            //    padding-left: 0;
-            //}
         }
 
         @include mq(bp4) {
             @include padding-tb(2,2);
-            //@include text-dimensions($ms-2,1);
-            //@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
         }
 
         &,
@@ -113,7 +91,6 @@
         &:focus,
         .is-selected & {
             text-decoration: none;
-            //color: palette(color-alpha);
             color: palette(color-beta);
         }
     }
