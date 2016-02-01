@@ -51,7 +51,7 @@ $beta-leading               : 2;
 // UI
 // ---
 
-$radius                     : 1px;
+$radius                     : 0;
 $border-width               : 1px;
 $border-style               : solid;
 
@@ -112,10 +112,10 @@ $flexbox: true !default;
 
 $increments: (
     alpha                   : 0,
-    beta                    : .75,
-    gamma                   : 1.5,
-    delta                   : 3,
-    jota                    : 4.5
+    beta                    : .4,
+    gamma                   : 0.8,
+    delta                   : 1.2,
+    jota                    : 1.6
 ) !default;
 
 // ---

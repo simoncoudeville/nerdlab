@@ -4,22 +4,46 @@
     Subscribe form
 */
 
-.c-stats {
-    text-align: center;
+.c-subscribe-form__input {
+    background-color: transparent;
+    //padding-top: 0;
+    padding-left: 0;
+    border-width: 0 0 1px;
+    border-color: palette(color-alpha,xx-light);
+    color: palette(color-alpha,xx-light);
+
+    &:focus {
+        color: palette(color-alpha,xxx-light);
+        border-color: palette(color-neutral,xxxx-light);
+    }
+
+    &::-webkit-input-placeholder {
+        color: palette(color-alpha,x-light);
+    }
+
+    &::-moz-placeholder {
+        color: palette(color-alpha,x-light);
+    }
+
+    &:-ms-input-placeholder {
+        color: palette(color-alpha,x-light);
+    }
 }
 
-.c-stats__title {
-    font-weight: $delta-font-weight;
-    font-family: $alpha-font-family;
-    margin-bottom: 0;
-    color: palette(color-neutral);
-    @include ms-2;
-    @include uppercase;
-}
+.c-subscribe-form__buton {
+    //background-color: palette(color-beta);
+    border-color: palette(color-alpha,xx-light);
+    color: palette(color-alpha,xx-light);
+    background-color: transparent;
+    border-width: 0 0 1px;
+    padding-right: 0;
+    padding-left: 0;
+    //border-color: palette(color-beta,xx-light);
+    //color: palette(color-beta,xx-light);
 
-.c-stats__number {
-    font-family: $alpha-font-family;
-    font-weight: $alpha-font-weight;
-    color: palette(color-beta);
-    @include ms7;
+    &:hover,
+    &:focus {
+        color: palette(color-alpha,xxx-light);
+        border-color: palette(color-neutral,xxxx-light);
+    }
 }

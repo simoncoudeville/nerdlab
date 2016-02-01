@@ -33,7 +33,7 @@
 }
 
 .c-main {
-    background-color: #fff;
+    //background-color: palette(color-alpha,xxx-light);
     backface-visibility: hidden;
     animation-fill-mode: both;
     animation-duration: $animation-duration-beta;
@@ -56,19 +56,19 @@
 .c-main-section {
     @include mq(bp3) {
         & + & {
-            @include padding-top(1);
+            @include padding-top($alpha-leading);
         }
     }
 
     @include mq(bp5) {
         & + & {
-            @include padding-top(2);
+            @include padding-top($alpha-leading * 2);
         }
     }
 
-    @include mq(bp6) {
-        & + & {
-            @include padding-top(3);
-        }
-    }
+    //@include mq(bp6) {
+    //    & + & {
+    //        @include padding-top($alpha-leading * 3);
+    //    }
+    //}
 }

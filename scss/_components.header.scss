@@ -23,6 +23,10 @@
         //transition-delay: $animation-duration-beta;
     }
 
+    //&.shrink {
+    //    background-color: palette(color-neutral,xxxx-light);
+    //}
+
     @include mq(bp4) {
         //height: $alpha-leading * 5rem;
         @include padding-tb($alpha-leading,$alpha-leading);

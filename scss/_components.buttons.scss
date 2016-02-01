@@ -36,6 +36,7 @@
     line-height: normal;
     appearance: none;
     box-shadow: none;
+    //font-weight: $jota-font-weight;
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
 
@@ -84,12 +85,12 @@
 
 .c-button--md {
     @include padding-lr(1,1);
-    @include input-dimensions($ms-1,1,0,.75,.75);
+    @include input-dimensions($ms-1,1,0,.7,.8);
 }
 
 .c-button--lg {
     @include padding-lr(1.25,1.25);
-    @include input-dimensions($alpha-font-size,1,0,1,1);
+    @include text-dimensions($alpha-font-size,1,0,$alpha-leading/2,$alpha-leading/2);
 }
 
 // Button colors

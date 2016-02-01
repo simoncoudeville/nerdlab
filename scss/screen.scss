@@ -53,17 +53,18 @@
 }
 
 /* Components */
+@import 'components.input';
+@import 'components.buttons';
 @import 'components.row';
 @import 'components.header';
 @import 'components.navigation';
 @import 'components.intro';
 @import 'components.brand';
 @import 'components.footer';
+@import 'components.subscribe';
 @import 'components.main';
 @import 'components.icons';
 @import 'components.alerts';
-@import 'components.buttons';
-@import 'components.input';
 @import 'components.label';
 @import 'components.lists';
 @import 'components.pagination';

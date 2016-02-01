@@ -18,11 +18,11 @@
     appearance: none; /* [1] */
     -webkit-font-smoothing: antialiased; /* [2] */
     -moz-osx-font-smoothing: grayscale; /* [2] */
-    background-color: palette(color-neutral,xxxx-light);
+    //background-color: palette(color-neutral,xxxx-light);
     border-radius: $radius;
-    border: $border-width $border-style palette(color-neutral,xxx-light);
-    color: palette(color-neutral,xxx-light);
-    font-family: $alpha-font-family;
+    //border: $border-width $border-style palette(color-neutral,xxx-light);
+    //color: palette(color-neutral,xxx-light);
+    //font-family: $beta-font-family;
     margin: 0;
     width: 100%;
     display: block;
@@ -30,17 +30,17 @@
     line-height: normal;
 
     &:focus {
-        color: palette(color-neutral,dark);
-        border-color: palette(color-alpha);
-        box-shadow: 0 0 2px palette(color-alpha,x-light);
+        //color: palette(color-neutral,dark);
+        //border-color: palette(color-alpha);
+        //box-shadow: 0 0 2px palette(color-alpha,x-light);
     }
 
     &.has-error {
-        border: 1px solid palette(color-error);
+        //border: 1px solid palette(color-error);
 
         &:focus {
-            border-color: palette(color-error);
-            box-shadow: 0 0 2px palette(color-error,x-light);
+            //border-color: palette(color-error);
+            //box-shadow: 0 0 2px palette(color-error,x-light);
         }
     }
 }
@@ -58,7 +58,7 @@
 
 .c-input-text--lg {
     @include padding-lr(1,1);
-    @include input-dimensions($alpha-font-size,1,0,1,1);
+    @include text-dimensions($alpha-font-size,1,0,$alpha-leading/2,$alpha-leading/2);
 }
 
 // Input modifiers
