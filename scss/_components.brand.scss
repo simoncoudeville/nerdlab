@@ -11,7 +11,7 @@
  */
 
 $logo-ratio: 3.3333;
-$logo-height: 1.5em;
+$logo-height: $alpha-leading * 1em;
 $logo-width: $logo-height * $logo-ratio;
 
 .c-logo {
@@ -35,7 +35,7 @@ $logo-width: $logo-height * $logo-ratio;
 
     .c-logo__link {
         display: block;
-        height: 5rem;
+        //height: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,7 +57,7 @@ $logo-width: $logo-height * $logo-ratio;
 
             .is-exiting & {
                 transform: rotate(-10deg);
-                transition-delay: $animation-duration-delta;
+                //transition-delay: $animation-duration-delta;
             }
 
             .is-finished & {

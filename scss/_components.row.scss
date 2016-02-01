@@ -27,6 +27,14 @@
     }
 }
 
+.c-row--sm {
+
+    @include mq(bp2) {
+        @include padding-tb($alpha-leading * 2, $alpha-leading);
+    }
+
+}
+
 .c-row--md {
 
     @include mq(bp2) {

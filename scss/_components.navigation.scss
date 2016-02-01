@@ -77,11 +77,8 @@
         @include text-dimensions($ms0,1,0,1,1);
 
         @include mq(bp4) {
-            @include padding-tb(1.25,1.25);
-        }
-
-        @include mq(bp4) {
-            @include padding-tb(2,2);
+            @include padding-tb($alpha-leading,$alpha-leading);
+            //@include padding-lr($alpha-leading,$alpha-leading);
         }
 
         &,

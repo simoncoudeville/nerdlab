@@ -7,7 +7,7 @@
 @keyframes mainTransitionIn {
     0% {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY($alpha-leading * 2rem);
             //transform: scale(0.99);
     }
 
@@ -27,7 +27,7 @@
 
     100% {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY($alpha-leading * 2rem);
             //transform: scale(0.99);
     }
 }
@@ -36,10 +36,11 @@
     background-color: #fff;
     backface-visibility: hidden;
     animation-fill-mode: both;
-    animation-duration: $animation-duration-gamma;
+    animation-duration: $animation-duration-beta;
     animation-name: mainTransitionIn;
+    //animation-name: fadeIn;
     animation-timing-function: $animation-easing-alpha;
-    @include padding-top(5);
+    @include padding-top($alpha-leading * 3);
 
     .is-exiting & {
         animation-name: mainTransitionOut;
@@ -47,7 +48,7 @@
     }
 
     @include mq(bp4) {
-        @include padding-top(7.5);
+        @include padding-top($alpha-leading * 5);
     }
 
 }
