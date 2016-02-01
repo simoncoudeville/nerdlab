@@ -7,7 +7,7 @@
 @keyframes mainTransitionIn {
     0% {
             opacity: 0;
-            transform: translateY($alpha-leading * 2rem);
+            transform: translateY($alpha-leading * 1rem);
             //transform: scale(0.99);
     }
 
@@ -27,7 +27,7 @@
 
     100% {
             opacity: 0;
-            transform: translateY($alpha-leading * 2rem);
+            transform: translateY($alpha-leading * 1rem);
             //transform: scale(0.99);
     }
 }
@@ -40,9 +40,11 @@
     animation-name: mainTransitionIn;
     //animation-name: fadeIn;
     animation-timing-function: $animation-easing-alpha;
+    //animation-timing-function: $ease-out-sine;
     @include padding-top($alpha-leading * 3);
 
     .is-exiting & {
+        //animation-timing-function: $ease-in-sine;
         animation-name: mainTransitionOut;
         //animation-direction: reverse;
     }

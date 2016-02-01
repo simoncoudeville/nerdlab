@@ -16,10 +16,12 @@
     transition: all $animation-duration-beta $animation-easing-alpha;
 
     .is-finished & {
+
         //transition-delay: 0;
     }
 
     .is-exiting & {
+        //animation-timing-function: $ease-in-sine;
         //transition-delay: $animation-duration-beta;
     }
 
