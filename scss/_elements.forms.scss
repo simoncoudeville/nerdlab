@@ -61,18 +61,21 @@ textarea {
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;
+    //font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
 
 ::-moz-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;
+    //font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
 
 :-ms-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;
+    //font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
 

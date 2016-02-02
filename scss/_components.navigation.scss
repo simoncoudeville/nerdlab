@@ -73,11 +73,13 @@
         display: block;
         color: palette(color-alpha);
         text-decoration: none;
-        font-weight: $gamma-font-weight;
+        //font-family: $beta-font-family;
+        //font-weight: $alpha-font-weight;
         @include text-dimensions($ms0,1,0,1,1);
 
         @include mq(bp4) {
             @include padding-tb($alpha-leading,$alpha-leading);
+            //@include text-dimensions($ms-1,1);
             //@include padding-lr($alpha-leading,$alpha-leading);
         }
 
