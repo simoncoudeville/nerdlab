@@ -1,16 +1,19 @@
 <nav class="c-nav-main js-nav">
     <ul class="o-list c-nav-main__list">
+        <li class="c-nav-main__item {% if page.url contains "index" %}is-selected{% endif %}">
+            <a href="index.html" class="c-nav-main__link">home</a>
+        </li>
         <li class="c-nav-main__item {% if page.url contains "fablab" %}is-selected{% endif %}">
             <a href="fablab.html" class="c-nav-main__link">Fablab</a>
         </li>
         <li class="c-nav-main__item {% if page.url contains "agenda" %}is-selected{% endif %}">
-            <a href="agenda.html" class="c-nav-main__link">Agenda</a>
+            <a href="agenda.html" class="c-nav-main__link">Workshops</a>
         </li>
         <li class="c-nav-main__item {% if page.url contains "styleguide" %}is-selected{% endif %}">
-            <a href="projecten.html" class="c-nav-main__link">Projecten</a>
+            <a href="projecten.html" class="c-nav-main__link">Uitvindingen</a>
         </li>
         <li class="c-nav-main__item {% if page.url contains "flexbox" %}is-selected{% endif %}">
-            <a href="flexbox.html" class="c-nav-main__link">Contact</a>
+            <a href="flexbox.html" class="c-nav-main__link">Agenda</a>
         </li>
     </ul>
 </nav>
