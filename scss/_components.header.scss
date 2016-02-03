@@ -16,23 +16,13 @@
     transition: all $animation-duration-beta $animation-easing-alpha;
 
     .is-finished & {
-
-        //transition-delay: 0;
     }
 
     .is-exiting & {
-        //animation-timing-function: $ease-in-sine;
-        //transition-delay: $animation-duration-beta;
     }
 
-    //&.shrink {
-    //    background-color: palette(color-neutral,xxxx-light);
-    //}
-
     @include mq(bp4) {
-        //height: $alpha-leading * 5rem;
         @include padding-tb($alpha-leading,$alpha-leading);
-        //@include padding-tb(1,1);
 
         &.shrink {
             padding-top: 0;
@@ -40,7 +30,6 @@
 
             .is-exiting & {
                 @include padding-tb($alpha-leading,$alpha-leading);
-                //@include padding-tb(1,1);
             }
         }
     }
@@ -48,36 +37,6 @@
 
 .c-header {
     display: flex;
-    //flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    //backface-visibility: hidden;
-    //transition: all $animation-duration-beta $animation-easing-alpha;
-    //
-    //.is-finished & {
-    //    transition-delay: 0;
-    //}
-    //
-    //.is-exiting & {
-    //    transition-delay: $animation-duration-beta;
-    //}
-
-    //@include mq(bp4) {
-    //    //flex-direction: row;
-    //    //justify-content: space-between;
-    //
-    //    height: $alpha-leading * 5rem;
-    //    //@include padding-tb($alpha-leading,$alpha-leading);
-    //    //@include padding-tb(1,1);
-    //
-    //    .shrink & {
-    //        height: $alpha-leading * 3rem;
-    //
-    //        .is-exiting & {
-    //            //@include padding-tb($alpha-leading,$alpha-leading);
-    //            //@include padding-tb(1,1);
-    //            height: $alpha-leading * 5rem;
-    //        }
-    //    }
-    //}
 }

@@ -1,0 +1,15 @@
+/*
+    Components: Carousel
+    ---
+    Custom carousel
+*/
+
+.c-gallery__cell {
+    @include margin-lr($columns-gutter,$columns-gutter)
+}
+
+.c-gallery__img {
+    width: auto;
+    max-width: none;
+    height: calc(95vh - 5rem);
+}
