@@ -37,13 +37,13 @@ html {
         font-size: $alpha-font-size/16*125%;
     }
 
-    @include mq(bp6) {
-        font-size: $alpha-font-size/16*137.5%;
-    }
+    //@include mq(bp6) {
+    //    font-size: $alpha-font-size/16*137.5%;
+    //}
 
-    @include mq(bp7) {
-        font-size: $alpha-font-size/16*150%;
-    }
+    //@include mq(bp7) {
+    //    font-size: $alpha-font-size/16*150%;
+    //}
 }
 
 body {

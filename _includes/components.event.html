@@ -1,15 +1,51 @@
-<article class="s-content o-media o-media--bb u-mb-gamma">
-    <div class="o-grid o-grid--gutter o-flex">
-        <p class="o-grid__item u-4-of-6-bp4">
-            {{ item.date }} - <strong>{{ item.title }}</strong>
-        </p>
-        <p class="o-grid__item u-2-of-6-bp4 u-text-align-right">
+<article class="s-content o-media o-media--bb u-mb-jota">
+    <div class="o-grid o-grid--gutter o-flex-bp3 o-flex--wrap">
+        <div class="o-grid__item u-1-of-2-bp3">
+            <div class="o-grid o-grid--gutter o-flex-bp2 o-flex--justify-start">
+                <div class="o-grid__item o-flex o-flex--align-center">
+                    <p class="c-event-list__date u-font-family-beta u-font-weight-alpha">
+                        {{ item.date }}
+                    </p>
+                </div>
+                <div class="o-grid__item o-flex o-flex--align-center">
+                    <p class="c-event-list__title">
+                        <strong>{{ item.title }}</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="o-grid__item u-1-of-2-bp3">
+            <div class="o-grid o-grid--gutter o-flex o-flex--justify-space-between">
+                <div class="o-grid__item o-flex o-flex--align-center u-1-of-2-bp3">
+                    <p>
+                        {{ item.place }}
+                    </p>
+                </div>
+                <div class="o-grid__item o-flex o-flex--align-center u-1-of-2-bp3 u-text-align-right">
+                    <p>
+                        <a href="#!">meer info</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="c-event-list">
+        <div class="c-event-list__header">
+            <p class="c-event-list__date">
+                {{ item.date }}
+            </p>
+        </div>
+        <p class="c-event-list__place">
             {{ item.place }}
         </p>
-    </div>
-    {% if item.desc != "" %}
-        <!-- <p class="u-max-width-md">
+        <p class="c-event-list__more">
+            <a href="#!">meer info</a>
+        </p>
+
+    </div> -->
+    <!-- {% if item.desc != "" %}
+        <p class="u-max-width-md">
             {{ item.desc }} {% if item.link != "" %}<a href="{{ item.link }}">Meer info</a>{% endif %}
-        </p> -->
-    {% endif %}
+        </p>
+    {% endif %} -->
 </article>

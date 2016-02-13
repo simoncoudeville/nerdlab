@@ -47,7 +47,7 @@ $grid-gutter    : $columns-gutter !default;
     .o-grid__item {
 
         @if $flexbox {
-            flex-basis: 100%;
+            //flex-basis: 100%;
         } @else {
             float: left;
             width: 100%;

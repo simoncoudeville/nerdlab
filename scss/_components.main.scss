@@ -36,7 +36,7 @@
     //background-color: palette(color-alpha,xxx-light);
     backface-visibility: hidden;
     animation-fill-mode: both;
-    animation-duration: $animation-duration-beta;
+    animation-duration: $animation-duration-alpha;
     animation-name: mainTransitionIn;
     //animation-name: fadeIn;
     animation-timing-function: $animation-easing-alpha;
@@ -62,11 +62,11 @@
         }
     }
 
-    @include mq(bp5) {
-        & + & {
-            @include padding-top($alpha-leading * 2);
-        }
-    }
+    //@include mq(bp5) {
+    //    & + & {
+    //        @include padding-top($alpha-leading * 2);
+    //    }
+    //}
 
     //@include mq(bp6) {
     //    & + & {

@@ -18,15 +18,15 @@
     }
 
     &::-webkit-input-placeholder {
-        color: palette(color-alpha,light);
+        color: palette(color-alpha,x-light);
     }
 
     &::-moz-placeholder {
-        color: palette(color-alpha,light);
+        color: palette(color-alpha,x-light);
     }
 
     &:-ms-input-placeholder {
-        color: palette(color-alpha,light);
+        color: palette(color-alpha,x-light);
     }
 }
 
@@ -39,6 +39,7 @@
     border-width: 0 0 1px;
     padding-right: 0;
     padding-left: 0;
+    //padding-top: 0;
     //border-color: palette(color-beta,xx-light);
     //color: palette(color-beta,xx-light);
 

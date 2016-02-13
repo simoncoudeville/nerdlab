@@ -63,8 +63,14 @@
     padding-top: 0;
 }
 
+.c-row--right {
+    padding-right: 0;
+}
+
 .c-row--top {
-    @include padding-top($alpha-leading * 2);
+    @include mq(bp3) {
+        @include padding-top($alpha-leading * 2);
+    }
 }
 
 .c-row--lg {

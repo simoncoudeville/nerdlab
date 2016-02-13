@@ -19,7 +19,7 @@ $label-font-size          : $alpha-font-size !default;
 $label-line-height        : $alpha-line-height !default;
 $label-margin-bottom      : $alpha-leading !default;
 
-$placeholder-font-family  : $alpha-font-family !default;
+$placeholder-font-family  : $beta-font-family !default;
 $placeholder-font-style   : normal !default;
 $placeholder-color        : palette(color-neutral, light) !default;
 
@@ -61,21 +61,21 @@ textarea {
 ::-webkit-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;
-    //font-weight: $alpha-font-weight;
+    font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
 
 ::-moz-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;
-    //font-weight: $alpha-font-weight;
+    font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
 
 :-ms-input-placeholder {
     font-family: $placeholder-font-family;
     font-style: $placeholder-font-style;
-    //font-weight: $alpha-font-weight;
+    font-weight: $alpha-font-weight;
     color: $placeholder-color;
 }
 

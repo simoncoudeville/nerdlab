@@ -6,11 +6,12 @@
 
 .c-nav-main {
     display: none;
-    flex-basis: 100%;
 
     @include mq(bp4) {
         display: block;
         display: flex;
+        flex-basis: 50%;
+        @include padding-left($columns-gutter);
     }
 
     &.is-visible {
@@ -39,7 +40,7 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
-                justify-content: flex-end;
+                //justify-content: flex-end;
             }
         }
     }
@@ -62,7 +63,7 @@
 
             & + & {
                 border-top: 0;
-                @include margin-left($columns-gutter*2);
+                //@include margin-left($columns-gutter*2);
             }
 
             .c-header & {
@@ -75,13 +76,13 @@
         display: block;
         color: palette(color-alpha);
         text-decoration: none;
-        //font-family: $beta-font-family;
-        //font-weight: $alpha-font-weight;
+        font-family: $beta-font-family;
+        //font-weight: $delta-font-weight;
         @include text-dimensions($ms0,1,0,1,1);
 
         @include mq(bp4) {
             @include padding-tb($alpha-leading,$alpha-leading);
-            //@include text-dimensions($ms-1,1);
+            @include text-dimensions($ms-1,1);
             //@include padding-lr($alpha-leading,$alpha-leading);
         }
 
@@ -95,6 +96,7 @@
         .is-selected & {
             text-decoration: none;
             color: palette(color-beta);
+            //color: palette(color-neutral,xx-dark);
         }
     }
 

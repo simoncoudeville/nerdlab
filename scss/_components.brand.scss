@@ -10,9 +10,11 @@
  *     Text-indent is set to prevent text from showing on top of the background-image.
  */
 
-$logo-ratio: 3.3333;
-$logo-height: 30px;
-$logo-width: $logo-height * $logo-ratio;
+$logo-ratio:     3.3333;
+$logo-height-sm: 25px;
+$logo-height-lg: 30px;
+$logo-width-sm:  $logo-height-sm * $logo-ratio;
+$logo-width-lg:  $logo-height-lg * $logo-ratio;
 
 .c-logo {
     margin-bottom: 0;
@@ -44,8 +46,8 @@ $logo-width: $logo-height * $logo-ratio;
 
     .c-logo__mark {
         display: block;
-        width: $logo-width;
-        height: $logo-height;
+        width: $logo-width-sm;
+        height: $logo-height-sm;
         background: transparent url(../img/svg/glasses.svg) 50% 50% no-repeat;
         background-size: contain;
         transition: all $animation-duration-beta $animation-easing-alpha;
@@ -65,14 +67,15 @@ $logo-width: $logo-height * $logo-ratio;
             }
         }
 
-        @include mq(bp3) {
-
+        @include mq(bp4) {
+            width: $logo-width-lg;
+            height: $logo-height-lg;
         }
 
     }
 
 .c-nerdlab {
     //font-family: $beta-font-family;
-    font-weight: $jota-font-weight;
+    font-weight: $delta-font-weight;
     @include uppercase;
 }

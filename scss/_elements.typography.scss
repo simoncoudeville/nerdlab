@@ -172,9 +172,14 @@ hr {
     @include margin-tb($horizontal-rule-margin-top,$horizontal-rule-margin-bottom);
 }
 
+strong {
+    font-weight: $delta-font-weight;
+}
+
 // Links
 
 a {
+    //font-family: $beta-font-family;
     text-decoration: $link-decoration;
     color: $link-color;
     transition: $link-transition;
