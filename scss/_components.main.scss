@@ -36,12 +36,12 @@
     //background-color: palette(color-alpha,xxx-light);
     backface-visibility: hidden;
     animation-fill-mode: both;
-    animation-duration: $animation-duration-alpha;
+    animation-duration: $animation-duration-beta;
     animation-name: mainTransitionIn;
     //animation-name: fadeIn;
     animation-timing-function: $animation-easing-alpha;
     //animation-timing-function: $ease-out-sine;
-    @include padding-top($alpha-leading * 3);
+    //@include padding-top($alpha-leading * 3);
 
     .is-exiting & {
         //animation-timing-function: $ease-in-sine;
@@ -49,8 +49,16 @@
         //animation-direction: reverse;
     }
 
+    //@include mq(bp4) {
+    //    @include padding-top($alpha-leading * 5);
+    //}
+    //
     @include mq(bp4) {
-        @include padding-top($alpha-leading * 5);
+        //@include padding-top($alpha-leading * 14);
+
+        //.has-fixed-header & {
+        //    @include padding-top($alpha-leading * 9);
+        //}
     }
 
 }

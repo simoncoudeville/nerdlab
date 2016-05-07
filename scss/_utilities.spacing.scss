@@ -27,3 +27,11 @@
         @include padding-bottom($value);
     }
 }
+
+.u-pr-0 {
+    padding-right: 0 !important;
+}
+
+.u-pt-0 {
+    padding-top: 0 !important;
+}

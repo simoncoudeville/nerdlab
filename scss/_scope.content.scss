@@ -6,6 +6,9 @@
 
 .s-content {
     //text-align: justify;
+    strong {
+        color: palette(color-neutral,xx-dark)
+    }
 
     a {
         display: inline-block;

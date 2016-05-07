@@ -4,17 +4,21 @@
     The footer of the website
 */
 
+.c-footer {
+    background-color: palette(color-neutral,xxx-light);
+}
+
 .c-footer-link {
     &,
     &:visited {
         //text-decoration: underline;
-        font-weight: $delta-font-weight;
-        color: palette(color-neutral,xxxx-light);
+        //font-weight: $delta-font-weight;
+        //color: palette(color-neutral,xxxx-light);
     }
 
     &:hover {
         text-decoration: none;
         opacity: .75;
-        color: palette(color-neutral,xxxx-light);
+        //color: palette(color-neutral,xxxx-light);
     }
 }

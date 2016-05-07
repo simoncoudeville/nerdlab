@@ -69,8 +69,14 @@
 
 .c-row--top {
     @include mq(bp3) {
-        @include padding-top($alpha-leading * 2);
+        //@include padding-top($alpha-leading * 2);
+        @include padding-top($alpha-leading * 3);
+        //padding-top: 0;
     }
+}
+
+.c-row--clear-top {
+    padding-top: 0;
 }
 
 .c-row--lg {

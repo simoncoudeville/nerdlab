@@ -74,7 +74,7 @@
 
     .c-nav-main__link {
         display: block;
-        color: palette(color-alpha);
+        //color: palette(color-alpha);
         text-decoration: none;
         font-family: $beta-font-family;
         //font-weight: $delta-font-weight;
@@ -82,13 +82,14 @@
 
         @include mq(bp4) {
             @include padding-tb($alpha-leading,$alpha-leading);
-            @include text-dimensions($ms-1,1);
+            //@include text-dimensions($ms-1,1);
             //@include padding-lr($alpha-leading,$alpha-leading);
         }
 
         &,
         &:visited {
-            color: palette(color-neutral,xx-dark);
+            color: palette(color-alpha);
+            //color: palette(color-neutral,x-dark);
         }
 
         &:hover,
@@ -97,6 +98,15 @@
             text-decoration: none;
             color: palette(color-beta);
             //color: palette(color-neutral,xx-dark);
+        }
+
+        .is-exiting & {
+            color: palette(color-alpha);
+            //color: palette(color-neutral,x-dark);
+
+            &:focus {
+                color: palette(color-beta);
+            }
         }
     }
 
