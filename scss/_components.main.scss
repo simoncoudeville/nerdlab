@@ -8,12 +8,14 @@
     0% {
             opacity: 0;
             transform: translateY($alpha-leading * 1rem);
+            //transform: scale(0.99) translateY($alpha-leading * 1rem);
             //transform: scale(0.99);
     }
 
     100% {
             opacity: 1;
             transform: translateY(0);
+            //transform: scale(1) translateY(0);
             //transform: scale(1);
     }
 }
@@ -22,45 +24,38 @@
     0% {
             opacity: 1;
             transform: translateY(0);
+            //transform: scale(1) translateY(0);
             //transform: scale(1);
     }
 
     100% {
             opacity: 0;
             transform: translateY($alpha-leading * 1rem);
+            //transform: scale(0.99) translateY($alpha-leading * 1rem);
             //transform: scale(0.99);
     }
 }
 
 .c-main {
-    //background-color: palette(color-alpha,xxx-light);
     backface-visibility: hidden;
     animation-fill-mode: both;
     animation-duration: $animation-duration-beta;
     animation-name: mainTransitionIn;
-    //animation-name: fadeIn;
     animation-timing-function: $animation-easing-alpha;
-    //animation-timing-function: $ease-out-sine;
-    //@include padding-top($alpha-leading * 3);
+    @include margin-top($alpha-leading * 3);
+
+    @include mq(bp5) {
+        @include margin-top($alpha-leading * 4);
+    }
+
+    @include mq(bp6) {
+        //@include margin-top($alpha-leading * 9);
+        @include margin-top($alpha-leading * 5);
+    }
 
     .is-exiting & {
-        //animation-timing-function: $ease-in-sine;
         animation-name: mainTransitionOut;
-        //animation-direction: reverse;
     }
-
-    //@include mq(bp4) {
-    //    @include padding-top($alpha-leading * 5);
-    //}
-    //
-    @include mq(bp4) {
-        //@include padding-top($alpha-leading * 14);
-
-        //.has-fixed-header & {
-        //    @include padding-top($alpha-leading * 9);
-        //}
-    }
-
 }
 
 .c-main-section {
@@ -69,16 +64,4 @@
             @include padding-top($alpha-leading);
         }
     }
-
-    //@include mq(bp5) {
-    //    & + & {
-    //        @include padding-top($alpha-leading * 2);
-    //    }
-    //}
-
-    //@include mq(bp6) {
-    //    & + & {
-    //        @include padding-top($alpha-leading * 3);
-    //    }
-    //}
 }

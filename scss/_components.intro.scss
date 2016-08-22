@@ -5,6 +5,8 @@
 */
 
 .c-intro {
+    background-color: palette(color-beta);
+
     @include mq(bp3) {
         min-height: 20rem;
         height: calc(90vh - 5rem);
@@ -12,19 +14,36 @@
 
     @include mq(bp4) {
         display: flex;
-        //align-items: center;
-        //justify-content: flex-end;
         align-items: flex-end;
         height: calc(90vh - 7.5rem);
-        //background: transparent url('../img/photos/alphabet.jpg') right 0 bottom 0 no-repeat;
-        //background-size: 356px 613px;
-
-        //background: url('../img/photos/alphabet.jpg') right 0 bottom -280px no-repeat transparent;
         background-size: 445px 766px;
 
         .o-container {
             margin-left: 0;
             width: 100%;
         }
+    }
+}
+
+.c-intro__text {
+    @include ms3;
+}
+
+.c-intro__img {
+    position: relative;
+
+    img {
+        position: relative;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(palette(color-alpha),.075);
+        display: block;
     }
 }

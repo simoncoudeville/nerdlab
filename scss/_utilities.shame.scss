@@ -7,3 +7,63 @@
 .c-event-list {
     display: flex;
 }
+
+.c-typo-intro {
+    @include ms1;
+
+    @include mq(bp3) {
+        @include ms3;
+    }
+}
+
+.c-typo-project-title {
+    font-weight: $alpha-font-weight;
+
+    @include mq(bp3) {
+        //color: palette(color-neutral) !important;
+        margin-top: -.35em;
+        //@include ms0;
+        @include margin-bottom(2);
+    }
+}
+
+.u-clear-row-left {
+    //@include margin-left($columns-gutter * -1);
+
+    @include mq(bp3) {
+        @include margin-left($columns-gutter * -2);
+    }
+
+    @include mq(bp5) {
+        @include margin-left($columns-gutter * -3);
+    }
+
+    @include mq(bp6) {
+        @include margin-left($columns-gutter * -4);
+    }
+
+    @include mq(bp7) {
+        @include margin-left($columns-gutter * -5);
+    }
+}
+
+
+.u-clear-row-right {
+    //@include margin-right($columns-gutter * -1);
+
+    @include mq(bp3) {
+        @include margin-right($columns-gutter * -2);
+    }
+
+    @include mq(bp5) {
+        @include margin-right($columns-gutter * -3);
+    }
+
+    @include mq(bp6) {
+        @include margin-right($columns-gutter * -4);
+    }
+
+    @include mq(bp7) {
+        @include margin-right($columns-gutter * -5);
+    }
+}

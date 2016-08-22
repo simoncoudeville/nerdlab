@@ -52,31 +52,6 @@
     @include mq(bp7) {
         @include padding-tb($alpha-leading * 5, $alpha-leading * 4);
     }
-
-    //@include mq(bp3) {
-    //    @include padding-lr(4,4);
-    //}
-}
-
-.c-row--special {
-    padding-right: 0;
-    padding-top: 0;
-}
-
-.c-row--right {
-    padding-right: 0;
-}
-
-.c-row--top {
-    @include mq(bp3) {
-        //@include padding-top($alpha-leading * 2);
-        @include padding-top($alpha-leading * 3);
-        //padding-top: 0;
-    }
-}
-
-.c-row--clear-top {
-    padding-top: 0;
 }
 
 .c-row--lg {
@@ -107,7 +82,19 @@
     }
 }
 
-.c-row--full {
-    height: calc(90vh - 7.5rem);
-    @include padding-tb(1,1);
+.c-row--border-top {
+    border-top: 1px solid palette(color-neutral,xxx-light);
+}
+
+.c-row--intro {
+    @include mq(bp3) {
+        display: flex;
+        align-items: center;
+        //align-items: flex-end;
+        height: calc(100vh - 14rem);
+
+        .o-container {
+            width: 100%;
+        }
+    }
 }

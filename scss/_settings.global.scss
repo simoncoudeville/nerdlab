@@ -40,8 +40,17 @@ $ms13                       : 100 !default;
 //$alpha-font-family          : 'acumin-pro', sans-serif;
 //$beta-font-family           : 'acumin-pro', monospace;
 
-$alpha-font-family          : 'Suisse', sans-serif;
-$beta-font-family           : 'Suisse Mono', monospace;
+//$alpha-font-family          : 'futura-pt', sans-serif;
+//$alpha-font-family          : 'FF DIN Pro', sans-serif;
+//$alpha-font-family          : 'Suisse', sans-serif;
+//$alpha-font-family          : 'Lab Grotesque', sans-serif;
+$alpha-font-family          : 'Graphik', sans-serif;
+//$alpha-font-family          : 'Cooper Hewitt', sans-serif;
+//$alpha-font-family          : 'nudista-web', sans-serif;
+//$alpha-font-family          : 'lores-12', sans-serif;
+//$alpha-font-family           : 'Suisse Mono', monospace;
+//$beta-font-family           : 'futura-pt', sans-serif;
+$beta-font-family           : 'lores-21-serif', monospace;
 
 //$alpha-font-family          : 'nudista-web', sans-serif;
 //$beta-font-family           : 'purista-web', monospace;
@@ -54,13 +63,11 @@ $beta-font-family           : 'Suisse Mono', monospace;
 
 $alpha-font-size            : $ms0;
 
-$alpha-font-weight          : 200;
-$beta-font-weight           : 300;
-$gamma-font-weight          : 400;
-$delta-font-weight          : 600;
-$jota-font-weight           : 700;
+$alpha-font-weight          : 400;
+$beta-font-weight           : 600;
+$gamma-font-weight          : 700;
 
-$alpha-line-height          : 1.8;
+$alpha-line-height          : 1.6;
 
 $alpha-leading              : 1.6;
 $beta-leading               : 2;
@@ -130,10 +137,10 @@ $flexbox: true !default;
 
 $increments: (
     alpha                   : 0,
-    beta                    : .4,
-    gamma                   : 0.8,
-    delta                   : 1.2,
-    jota                    : 1.6
+    beta                    : .8,
+    gamma                   : 1.6,
+    delta                   : 2.4,
+    jota                    : 3.2
 ) !default;
 
 // ---

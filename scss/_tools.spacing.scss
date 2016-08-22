@@ -43,7 +43,14 @@
 // vertical padding based on the alpha font size in rem
 // use: @include padding-tb(#top, #bottom);
 
-@mixin padding-tb($top: $alpha-leading, $bottom: 0) {
+@mixin padding($top: $alpha-leading, $right: $top, $bottom: $top, $left: $top) {
+    padding-top: $top * 1rem;
+    padding-right: $right * 1rem;
+    padding-bottom: $bottom * 1rem;
+    padding-left: $left * 1rem;
+}
+
+@mixin padding-tb($top: $alpha-leading, $bottom: $top) {
     padding-top: $top * 1rem;
     padding-bottom: $bottom * 1rem;
 }
@@ -64,8 +71,12 @@
     margin-bottom: $bottom * 1rem;
 }
 
-@mixin margin-bottom($bottom: $alpha-leading) {
-    margin-bottom: $bottom * 1rem;
+@mixin margin-bottom($bottom: $alpha-leading, $important: false) {
+    @if $important == false {
+        margin-bottom: $bottom * 1rem;
+    } @else {
+        margin-bottom: $bottom * 1rem !important;
+    }
 }
 
 @mixin margin-top($top: 1) {

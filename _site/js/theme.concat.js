@@ -49,92 +49,58 @@ if (Modernizr.history) {
 
 var chopstick =
 {
-        // init, something like a constructor
-        init: function()
-        {
-                // chopstick.loadObject(chopstick.mobileNav, 'chopstick.mobileNav');
-                // chopstick.loadObject(chopstick.headerScroll, 'chopstick.headerScroll');
-                // chopstick.loadObject(chopstick.ready, 'chopstick.ready');
+    // init, something like a constructor
+    init: function()
+    {
+        headerScroll();
+        mobileNav();
 
-                // chopstick.mobileNav;
-                // chopstick.headerScroll;
-                // chopstick.ready;
-
-                headerScroll();
-
-                var $gallery = $('.js-gallery').flickity({
-                        accessibility: true,
-                        autoPlay: false,
-                        cellAlign: 'left',
-                        cellSelector: undefined,
-                        contain: true,
-                        draggable: true,
-                        freeScroll: false,
-                        selectedAttraction: 0.2,
-                        friction: 0.8,
-                        initialIndex: 0,
-                        lazyLoad: true,
-                        percentPosition: true,
-                        prevNextButtons: false,
-                        pageDots: false,
-                        resize: true,
-                        rightToLeft: false,
-                        setGallerySize: false,
-                        watchCSS: false,
-                        wrapAround: true
-                });
-
-                // var flky = new Flickity( '.js-gallery', {
-                //         accessibility: true,
-                //         autoPlay: false,
-                //         cellAlign: 'left',
-                //         cellSelector: undefined,
-                //         contain: true,
-                //         draggable: true,
-                //         freeScroll: false,
-                //         selectedAttraction: 0.2,
-                //         friction: 0.8,
-                //         initialIndex: 0,
-                //         lazyLoad: true,
-                //         percentPosition: true,
-                //         prevNextButtons: false,
-                //         pageDots: false,
-                //         resize: true,
-                //         rightToLeft: false,
-                //         setGallerySize: false,
-                //         watchCSS: false,
-                //         wrapAround: false
-                // });
-
-                // $gallery.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
-                //         if ( typeof cellIndex == 'number' ) {
-                //                 $gallery.flickity( 'select', cellIndex );
-                //         }
-                // });
-
-                console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
-        },
+        var $gallery = $('.js-gallery').flickity({
+            accessibility: true,
+            autoPlay: false,
+            cellAlign: 'left',
+            cellSelector: undefined,
+            contain: true,
+            draggable: true,
+            freeScroll: false,
+            selectedAttraction: 0.2,
+            friction: 0.8,
+            initialIndex: 0,
+            lazyLoad: true,
+            percentPosition: true,
+            prevNextButtons: false,
+            pageDots: false,
+            resize: true,
+            rightToLeft: false,
+            setGallerySize: false,
+            watchCSS: false,
+            wrapAround: true,
+            arrowShape: {
+                x0: 10,
+                x1: 60, y1: 50,
+                x2: 70, y2: 40,
+                x3: 30
+            }
+        });
+    }
 };
 
 var headerScroll = function()
 {
     var header = $('.js-header');
-    var body = $('body');
-    var headerOffset = $('.js-header').offset().top;
+    var headerOffset = $('.js-header').outerHeight();
+    console.log(headerOffset);
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-
-        // if (scroll >= 1) {
-        //     body.addClass("shrink");
-        // } else {
-        //     header.removeClass("shrink");
-        // }
-
-        if (scroll >= headerOffset) body.addClass('has-fixed-header');
-        else body.removeClass('has-fixed-header');
-
+        if (scroll >= headerOffset/3) {
+            header.addClass("is-shrinken");
+            console.log(scroll);
+        } else {
+            header.removeClass("is-shrinken");
+            console.log(scroll);
+        }
     });
 };
 
@@ -143,36 +109,15 @@ var mobileNav = function()
     var $navItem = $('.js-nav-main-item');
 };
 
-var mobileNavSettings
-chopstick.mobileNav =
+var mobileNav = function()
 {
-    settings:
-    {
-        navigation: $('.js-nav'),
-        trigger: $('.js-nav-trigger')
-    },
+    var header = $('.js-header');
+    var trigger = $('.js-nav-trigger');
 
-    init: function()
-    {
-        // Initialize mobile nav settings
-        mobileNavSettings = chopstick.mobileNav.settings;
-        // Bind toggle events
-        chopstick.mobileNav.bindUIEvents();
-    },
-
-    bindUIEvents: function()
-    {
-        mobileNavSettings.trigger.on('click', function() {
-            chopstick.mobileNav.toggleNavigation();
-        });
-    },
-
-    // build mobile nav
-    toggleNavigation: function()
-    {
-        mobileNavSettings.navigation.toggleClass('is-visible');
-        mobileNavSettings.trigger.toggleClass('is-active');
-    }
+    trigger.on('click', function() {
+        $(this).toggleClass('is-active');
+        header.toggleClass('has-visible-nav');
+    });
 };
 
 var readySettings

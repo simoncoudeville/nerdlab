@@ -6,90 +6,61 @@
 
 .c-nav-main {
     display: none;
+    position: absolute;
+    bottom: $columns-gutter * .5rem;
+    left: $columns-gutter * 1rem;
+    right: $columns-gutter * 1rem;
+
+    .has-visible-nav & {
+        display: block;
+    }
+
+    @include mq(bp3) {
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        left: $columns-gutter * 2rem;
+    }
 
     @include mq(bp4) {
-        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: translateY(0);
         display: flex;
         flex-basis: 50%;
         @include padding-left($columns-gutter);
     }
-
-    &.is-visible {
-        display: block;
-    }
-
-    .c-header & {
-
-        @if $flexbox == false {
-            @include mq(bp4) {
-                float: right;
-            }
-        }
-    }
 }
 
     .c-nav-main__list {
-        border: 1px solid palette(color-neutral,xx-light);
-        border-width: 1px 0;
         margin-bottom: 0;
 
         @include mq(bp4) {
-            border: 0;
-
-            @if $flexbox {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                //justify-content: flex-end;
-            }
-        }
-    }
-
-    .c-nav-main__item {
-        display: none;
-
-        & + & {
-            border-top: 1px solid palette(color-neutral,xx-light);
-        }
-
-        .c-header & {
-            display: none;
-        }
-
-        @include mq(bp4) {
-            @if $flexbox == false {
-                float: left;
-            }
-
-            & + & {
-                border-top: 0;
-                //@include margin-left($columns-gutter*2);
-            }
-
-            .c-header & {
-                display: block;
-            }
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 
     .c-nav-main__link {
         display: block;
-        //color: palette(color-alpha);
         text-decoration: none;
-        font-family: $beta-font-family;
-        //font-weight: $delta-font-weight;
-        @include text-dimensions($ms0,1,0,1,1);
+        //font-weight: $beta-font-weight;
+        @include text-dimensions($alpha-font-size,1,0,1,1);
+        //@include text-dimensions($ms-1,1,0,1,1);
 
         @include mq(bp4) {
             @include padding-tb($alpha-leading,$alpha-leading);
-            //@include text-dimensions($ms-1,1);
-            //@include padding-lr($alpha-leading,$alpha-leading);
         }
 
         &,
         &:visited {
-            color: palette(color-alpha);
-            //color: palette(color-neutral,x-dark);
+            //color: palette(color-alpha);
+            //color: palette(color-neutral,xxxx-dark);
+            color: palette(color-neutral,xx-dark);
         }
 
         &:hover,
@@ -97,15 +68,42 @@
         .is-selected & {
             text-decoration: none;
             color: palette(color-beta);
-            //color: palette(color-neutral,xx-dark);
         }
 
         .is-exiting & {
-            color: palette(color-alpha);
-            //color: palette(color-neutral,x-dark);
+            //color: palette(color-alpha);
+            color: palette(color-neutral,xxxx-dark);
 
             &:focus {
                 color: palette(color-beta);
+            }
+        }
+    }
+
+    .c-nav-main__link--button {
+        @include mq(bp4) {
+            border: 1px solid currentColor;
+            //border: 2px solid palett();
+            //background-color: palette(color-alpha);
+            //font-family: $beta-font-family;
+            //font-weight: $beta-font-weight;
+            //color: #fff;
+            @include padding-lr(1,1);
+            @include padding-tb(.75,.75);
+
+            &,
+            &:visited,
+            .is-exiting & {
+                color: palette(color-alpha);
+                //color: #fff;
+            }
+
+            &:hover,
+            &:focus {
+                color: palette(color-beta);
+                //background-color: palette(color-beta);
+                //border-color: palette(color-beta);
+                //color: #fff;
             }
         }
     }
@@ -119,6 +117,7 @@
     height: 5rem;
     background-color: transparent;
     padding: 0;
+    margin-left: auto;
 
     &.is-active {
         color: palette(color-neutral);
@@ -131,8 +130,8 @@
 
 $trigger-line-height:        3px;
 $trigger-line-offset:        8px;
-$trigger-color:              palette(color-neutral,xx-dark);
-$trigger-active-color:       palette(color-neutral,xx-dark);
+$trigger-color:              palette(color-neutral,xxxx-dark);
+$trigger-active-color:       palette(color-neutral,xxxx-dark);
 $trigger-animation-duration: $animation-duration-gamma;
 
 .c-nav-main-trigger__icon {
@@ -143,6 +142,7 @@ $trigger-animation-duration: $animation-duration-gamma;
     background-color: $trigger-color;
     transition-property: all;
     transition-duration: $trigger-animation-duration;
+    border-radius: 1px;
 
     &:before,
     &:after {
@@ -154,24 +154,29 @@ $trigger-animation-duration: $animation-duration-gamma;
         background-color: $trigger-color;
         transition-property: all;
         transition-duration: $trigger-animation-duration;
+        border-radius: 1px;
     }
 
     &:before {
+        //width: 90%;
         transform: translateY($trigger-line-offset * -1);
     }
 
     &:after {
         transform: translateY($trigger-line-offset);
+        //width: 80%;
     }
 
     .c-nav-main-trigger.is-active & {
         transform: rotate(45deg);
 
         &:before {
+            width: 100%;
             transform: rotate(90deg);
         }
 
         &:after {
+            width: 100%;
             transform: rotate(90deg);
         }
     }

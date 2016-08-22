@@ -5,20 +5,56 @@
 */
 
 .c-footer {
-    background-color: palette(color-neutral,xxx-light);
+    //background-color: palette(color-alpha);
+    //background: linear-gradient(135deg, palette(color-alpha,light), palette(color-alpha));
+    //background-color: palette(color-neutral,xxx-light);
+    background-color: palette(color-neutral,xxxxx-light);
+    //background-color: palette(color-alpha,xxx-light);
+    //background-color: palette(color-neutral,xxx-dark);
+    border-top: 1px solid palette(color-neutral,xxx-light);
+    //color: rgba(palette(color-neutral,xxxx-light),.75);
+    //color: palette(color-neutral,xxxx-light);
+
+
+    a {
+        //color: palette(color-neutral,xxxx-light);
+        //font-weight: $beta-font-weight;
+        //font-weight: $jota-font-weight;
+
+        &:hover,
+        &:focus {
+            //opacity: .75;
+            //color: palette(color-beta);
+        }
+    }
 }
 
-.c-footer-link {
+.c-footer__link {
     &,
     &:visited {
         //text-decoration: underline;
-        //font-weight: $delta-font-weight;
+        //font-weight: $beta-font-weight;
         //color: palette(color-neutral,xxxx-light);
     }
 
-    &:hover {
-        text-decoration: none;
-        opacity: .75;
-        //color: palette(color-neutral,xxxx-light);
+    //&:hover {
+    //    text-decoration: none;
+    //    opacity: .75;
+    //    //color: palette(color-neutral,xxxx-light);
+    //}
+}
+
+.c-footer__cta {
+    //font-weight: bold;
+    font-family: $beta-font-family;
+    //@include ms2;
+    //color: rgba(palette(color-neutral,xxxx-light),.85);
+    //@include ms8;
+    @include ms4;
+
+    strong {
+        font-weight: normal;
+        //color: rgba(palette(color-neutral,xxxx-light),1);
+        //font-family: $alpha-font-family;
     }
 }

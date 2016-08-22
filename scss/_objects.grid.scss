@@ -9,7 +9,7 @@
 // Variables
 // ---
 
-$grid-max-width : map-get($breakpoints,bp4) !default;
+$grid-max-width : map-get($breakpoints,bp6) !default;
 $grid-gutter    : $columns-gutter !default;
 
 // ---
@@ -42,12 +42,17 @@ $grid-gutter    : $columns-gutter !default;
 .o-grid--gutter {
     @include margin-lr(-($grid-gutter),-($grid-gutter));
 }
+
+.o-grid--gutter-sm {
+    @include margin-lr(-($grid-gutter/2),-($grid-gutter/2));
+}
     // Grid item, takes the full width by default
 
     .o-grid__item {
 
         @if $flexbox {
             //flex-basis: 100%;
+            width: 100%;
         } @else {
             float: left;
             width: 100%;
@@ -55,5 +60,9 @@ $grid-gutter    : $columns-gutter !default;
 
         .o-grid--gutter > & {
             @include padding-lr($grid-gutter,$grid-gutter);
+        }
+
+        .o-grid--gutter-sm > & {
+            @include padding-lr($grid-gutter/2,$grid-gutter/2);
         }
     }

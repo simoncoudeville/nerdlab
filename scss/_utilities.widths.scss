@@ -15,8 +15,8 @@
             .u-#{$numerator}-of-#{$denominator} {
 
                 @if $flexbox {
-                    flex-basis: ($numerator / $denominator) * 100% !important;
-                    //max-width: ($numerator / $denominator) * 100% !important;
+                    //flex-basis: ($numerator / $denominator) * 100% !important;
+                    width: ($numerator / $denominator) * 100% !important;
                 } @else {
                     width: ($numerator / $denominator) * 100% !important;
                 }
@@ -40,8 +40,8 @@
                     .u-#{$numerator}-of-#{$denominator}-#{$breakpoint} {
 
                         @if $flexbox {
-                            flex-basis: ($numerator / $denominator) * 100% !important;
-                            //max-width: ($numerator / $denominator) * 100% !important;
+                            //flex-basis: ($numerator / $denominator) * 100% !important;
+                            width: ($numerator / $denominator) * 100% !important;
                         } @else {
                             width: ($numerator / $denominator) * 100% !important;
                         }
@@ -51,4 +51,8 @@
             }
         }
     }
+}
+
+.u-width-auto {
+    width: auto !important;
 }

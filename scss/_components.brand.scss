@@ -4,40 +4,30 @@
     Brand image/logo
 */
 
-/**
- *  1. Needs to be the width of the logo you are using.
- *  2. Logo is set as background-image.
- *     Text-indent is set to prevent text from showing on top of the background-image.
- */
-
 $logo-ratio:     3.3333;
-$logo-height-sm: 25px;
-$logo-height-lg: 1.5rem;
+$logo-height-sm: 1.35em;
+$logo-height-lg: 1.35em;
 $logo-width-sm:  $logo-height-sm * $logo-ratio;
 $logo-width-lg:  $logo-height-lg * $logo-ratio;
 
 .c-logo {
     margin-bottom: 0;
-    font-weight: $delta-font-weight;
+    font-weight: $beta-font-weight;
+    font-weight: $gamma-font-weight;
     color: palette(color-neutral, x-dark);
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     backface-visibility: hidden;
-    @include uppercase;
+    height: 5rem;
 
-    .c-header & {
-        @if $flexbox == false {
-            @include mq(bp3) {
-                float: left;
-            }
-        }
+    @include mq(bp3) {
+        height: auto;
     }
 }
 
     .c-logo__link {
         display: block;
-        //height: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,20 +44,15 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
         transition-delay: $animation-duration-beta;
         transform: rotate(-10deg);
 
-        .shrink & {
+        .is-shrinken & {
             transform: rotate(0deg);
 
             .is-exiting & {
                 transform: rotate(-10deg);
-                //transition-delay: $animation-duration-delta;
-            }
-
-            .is-finished & {
-                transition-delay: $animation-duration-beta;
             }
         }
 
-        @include mq(bp4) {
+        @include mq(bp3) {
             width: $logo-width-lg;
             height: $logo-height-lg;
         }
@@ -75,7 +60,7 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
     }
 
 .c-nerdlab {
-    font-family: $beta-font-family;
-    font-weight: $delta-font-weight;
+    font-family: $alpha-font-family;
+    font-weight: $gamma-font-weight;
     //@include uppercase;
 }

@@ -1,73 +1,95 @@
-<footer class="c-row c-row--md c-footer">
+{% comment %}
+<div class="c-row c-row--md u-bgcolor-alpha-base">
     <div class="o-container">
-        <!-- <div class="c-main-section">
-            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
-                <div class="o-grid__item u-1-of-2-bp4">
-                    <p class="u-color-alpha-xxx-light u-max-width-md s-content u-text-align-justify">
-                        We’d love to hear from you. If you’d like to chat about a project, have a press inquiry, or just want to say hi, please get in touch
+        <div class="o-grid o-grid--gutter o-flex o-flex--wrap o-flex--align-end">
+            <div class="o-grid__item u-1-of-2-bp4">
+                <div class="c-main-section">
+                    <p class="u-max-width-md u-font-family-beta u-ms2 u-ms3-bp3 u-color-neutral-xxxx-light">
+                        Ons lab is elke <strong>woensdagavond</strong> open vanaf 18u. Kom gerust langs om
+                        <svg class="c-icon c-icon--pacman"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 260">
+                            <title>pacman</title>
+                            <polygon class="c-icon__body" points="0 260 20 260 20 240 40 240 40 220 60 220 60 240 80 240 80 260 120 260 120 220 160 220 160 260 200 260 200 240 220 240 220 220 240 220 240 240 260 240 260 260 280 260 280 120 260 120 260 60 240 60 240 40 220 40 220 20 180 20 180 0 100 0 100 20 60 20 60 40 40 40 40 60 20 60 20 120 0 120 0 260"/>
+                            <polygon class="c-icon__eye" points="60 80 60 140 80 140 80 160 120 160 120 140 140 140 140 80 120 80 120 60 80 60 80 80 60 80"/>
+                            <polygon class="c-icon__eye" points="180 80 180 140 200 140 200 160 240 160 240 140 260 140 260 80 240 80 240 60 200 60 200 80 180 80"/>
+                            <polygon class="c-icon__pupil" points="100 80 140 80 140 120 100 120 100 80 100 80"/>
+                            <polygon class="c-icon__pupil" points="220 80 260 80 260 120 220 120 220 80 220 80"/>
+                        </svg> te spelen, lorem ipsum dolor sit amet of gewoon om een
+                        <svg class="c-icon c-icon--beer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300">
+                          <title>pint</title>
+                          <g>
+                            <path class="c-icon__glass" d="M240,120V100H200V80H20V280H40v20H180V280h20V240h40V220h20V120H240Zm0,80H200V140h40v60Z"/>
+                            <polygon class="c-icon__foam" points="200 40 200 20 160 20 160 0 60 0 60 20 20 20 20 40 0 40 0 140 20 140 20 80 40 80 40 100 120 100 120 120 140 120 140 180 160 180 160 140 180 140 180 100 180 100 180 80 200 80 200 100 220 100 220 40 200 40"/>
+                          </g>
+                        </svg> te drinken.
                     </p>
-                </div>
-                <div class="o-grid__item u-1-of-2-bp4 u-mb-jota">
-                    <p class="u-color-alpha-x-light u-max-width-md s-content u-mb-alpha">
-                        Next event
-                    </p>
-                    {% for item in site.data.events-future limit:3 %}
-                    <p class="u-color-neutral-xxxx-light u-max-width-md s-content u-mb-alpha">
-                        {{ item.date }} - <strong>{{ item.title }}</strong>
-                    </p>
-                    {% endfor %}
                 </div>
             </div>
-        </div> -->
-        <!-- <div class="c-main-section"> -->
-            <!-- <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
+        </div>
+    </div>
+</div>
+{% endcomment %}
+<footer class="c-row c-row--md c-footer">
+    <div class="o-container">
+
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
                 <div class="o-grid__item u-1-of-2-bp4">
-                    <p class="u-color-alpha-xxx-light u-font-weight-jota u-max-width-md s-content u-text-align-justify">
-                        We’d love to hear from you. If you’d like to chat about a project, have a press inquiry, or just want to say hi, please get in touch
-                    </p>
-                </div>
-            </div> -->
-            <!-- <div class="c-main-section">
-                <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
-                    <div class="o-grid__item u-1-of-2-bp4">
-                        <div class="c-main-section">
-                            <p class="s-content u-max-width-md u-text-align-justify">
-                                We’d love to hear from you. If you’d like to chat about a project, have a press inquiry, or just want to say hi, please get in touch. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptates?
-                            </p>
-                        </div>
+                    {% comment %}
+                    <div class="c-main-section">
+                        <p class="c-footer__cta u-max-width-md">
+                            Ons lab is elke <strong>woensdagavond</strong> open vanaf 18u. Kom gerust langs om
+                            <svg class="c-icon c-icon--pacman"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 260">
+                                <title>pacman</title>
+                                <polygon class="c-icon__body" points="0 260 20 260 20 240 40 240 40 220 60 220 60 240 80 240 80 260 120 260 120 220 160 220 160 260 200 260 200 240 220 240 220 220 240 220 240 240 260 240 260 260 280 260 280 120 260 120 260 60 240 60 240 40 220 40 220 20 180 20 180 0 100 0 100 20 60 20 60 40 40 40 40 60 20 60 20 120 0 120 0 260"/>
+                                <polygon class="c-icon__eye" points="60 80 60 140 80 140 80 160 120 160 120 140 140 140 140 80 120 80 120 60 80 60 80 80 60 80"/>
+                                <polygon class="c-icon__eye" points="180 80 180 140 200 140 200 160 240 160 240 140 260 140 260 80 240 80 240 60 200 60 200 80 180 80"/>
+                                <polygon class="c-icon__pupil" points="100 80 140 80 140 120 100 120 100 80 100 80"/>
+                                <polygon class="c-icon__pupil" points="220 80 260 80 260 120 220 120 220 80 220 80"/>
+                            </svg> te spelen, lorem ipsum dolor sit amet of gewoon om een
+                            <svg class="c-icon c-icon--beer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300">
+                              <title>pint</title>
+                              <g>
+                                <path class="c-icon__glass" d="M240,120V100H200V80H20V280H40v20H180V280h20V240h40V220h20V120H240Zm0,80H200V140h40v60Z"/>
+                                <polygon class="c-icon__foam" points="200 40 200 20 160 20 160 0 60 0 60 20 20 20 20 40 0 40 0 140 20 140 20 80 40 80 40 100 120 100 120 120 140 120 140 180 160 180 160 140 180 140 180 100 180 100 180 80 200 80 200 100 220 100 220 40 200 40"/>
+                              </g>
+                            </svg> te drinken.
+                        </p>
                     </div>
-                </div>
-            </div> -->
-            <div class="c-main-section">
-                <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
-                        <div class="o-grid__item u-1-of-4-bp4">
-                            <p class="u-max-width-md">
-                                Nerdlab HQ <br>
-                                Nieuwland 67 <br>
-                                9000 Gent <br>
-                                <a class="c-footer-link" href="mailto:info@nerdlab.be">info@nerdlab.be</a>
-                            </p>
-                        </div>
-                        <div class="o-grid__item u-1-of-4-bp4">
-                            <p class="u-mb-alpha">Connect</p>
-                            <ul class="o-list c-footer-list">
-                                <li><a class="c-footer-link" href="#!">Twitter</a></li>
-                                <li><a class="c-footer-link" href="#!">Facebook</a></li>
-                                <li><a class="c-footer-link" href="#!">Instagram</a></li>
-                            </ul>
-                        </div>
-                    <div class="o-grid__item u-1-of-2-bp4">
-                        <div class="u-max-width-md">
-                            <p class="u-mb-gamma u-text-align-justify">
-                                Schrijf je in op onze nieuwsbrief. Vul je email-adres in to get occasional updates on Ableton.
-                            </p>
-                            <div class="u-mb-jota">
-                                {% include components.subscribe-form.html %}
+                    {% endcomment %}
+                    <div class="c-main-section">
+                        <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
+                            <div class="o-grid__item u-1-of-2-bp2">
+                                <p class="u-max-width-md">
+                                    <strong class="c-nerdlab u-color-neutral-xxxx-dark">Nerdlab</strong> <br>
+                                    Nieuwland 67 <br>
+                                    9000 Gent <br>
+                                    <a class="c-footer__link" href="mailto:info@nerdlab.be">info@nerdlab.be</a>
+                                </p>
+                            </div>
+                            <div class="o-grid__item u-1-of-2-bp2">
+                                <p class="u-mb-alpha">Volg ons</p>
+                                <ul class="o-list c-footer-list">
+                                    <li><a class="c-footer__link" href="#!">Twitter</a></li>
+                                    <li><a class="c-footer__link" href="#!">Facebook</a></li>
+                                    <li><a class="c-footer__link" href="#!">Instagram</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="o-grid__item u-1-of-2-bp4">
+                    <div class="u-max-width-md">
+                        <!-- <div class="c-card c-card--alpha u-mb-jota">
+                            <div class="c-card__body"> -->
+                                <p class="u-mb-beta">
+                                    Enter your email address to get occasional updates on Ableton special offers, products and events.
+                                </p>
+                                <div class="u-mb-gamma">
+                                {% include components.subscribe-form.html %}
+                                </div>
+                            <!-- </div>
+                        </div> -->
+                    </div>
+                </div>
         <!-- </div> -->
     </div>
 </footer>
