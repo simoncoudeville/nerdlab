@@ -47,6 +47,24 @@
     }
 }
 
+.u-clear-row-md-top {
+    @include mq(bp2) {
+        @include margin-top($alpha-leading * -2);
+    }
+
+    @include mq(bp5) {
+        @include margin-top($alpha-leading * -3);
+    }
+
+    @include mq(bp6) {
+        @include margin-top($alpha-leading * -4);
+    }
+
+    @include mq(bp7) {
+        @include margin-top($alpha-leading * -5);
+    }
+}
+
 
 .u-clear-row-right {
     //@include margin-right($columns-gutter * -1);
