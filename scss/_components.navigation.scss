@@ -49,8 +49,8 @@
         display: block;
         text-decoration: none;
         //font-weight: $beta-font-weight;
-        @include text-dimensions($alpha-font-size,1,0,1,1);
-        //@include text-dimensions($ms-1,1,0,1,1);
+        //@include text-dimensions($alpha-font-size,1,0,1,1);
+        @include text-dimensions($ms-1,1,0,1,1);
 
         @include mq(bp4) {
             @include padding-tb($alpha-leading,$alpha-leading);
@@ -83,6 +83,7 @@
     .c-nav-main__link--button {
         @include mq(bp4) {
             border: 1px solid currentColor;
+            //border: 3px solid currentColor;
             //border: 2px solid palett();
             //background-color: palette(color-alpha);
             //font-family: $beta-font-family;
@@ -94,7 +95,7 @@
             &,
             &:visited,
             .is-exiting & {
-                color: palette(color-alpha);
+                //color: palette(color-alpha);
                 //color: #fff;
             }
 
