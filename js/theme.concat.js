@@ -52,7 +52,7 @@ var chopstick =
 
         var $gallery = $('.js-gallery').flickity({
             accessibility: true,
-            // cellAlign: 'left',
+            cellAlign: 'left',
             contain: true,
             freeScroll: false,
             selectedAttraction: 0.2,
