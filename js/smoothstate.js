@@ -36,11 +36,6 @@ if (Modernizr.history) {
                     pluginLoader();
                 }
             }
-            // ,
-            // onAfter: function($container, $newContent) {
-            //     // load javascript
-            //     pluginLoader();
-            // }
         },
 
         smoothState = $('#js-smoothstate').smoothState(options).data('smoothState');

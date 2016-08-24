@@ -36,11 +36,6 @@ if (Modernizr.history) {
                     pluginLoader();
                 }
             }
-            // ,
-            // onAfter: function($container, $newContent) {
-            //     // load javascript
-            //     pluginLoader();
-            // }
         },
 
         smoothState = $('#js-smoothstate').smoothState(options).data('smoothState');
@@ -57,30 +52,18 @@ var chopstick =
 
         var $gallery = $('.js-gallery').flickity({
             accessibility: true,
-            autoPlay: false,
-            cellAlign: 'left',
-            cellSelector: undefined,
+            // cellAlign: 'left',
             contain: true,
-            draggable: true,
             freeScroll: false,
             selectedAttraction: 0.2,
             friction: 0.8,
-            initialIndex: 0,
             lazyLoad: true,
             percentPosition: true,
             prevNextButtons: false,
             pageDots: false,
             resize: true,
-            rightToLeft: false,
             setGallerySize: false,
-            watchCSS: false,
             wrapAround: true,
-            arrowShape: {
-                x0: 10,
-                x1: 60, y1: 50,
-                x2: 70, y2: 40,
-                x3: 30
-            }
         });
     }
 };
@@ -106,11 +89,6 @@ var headerScroll = function()
 
 var mobileNav = function()
 {
-    var $navItem = $('.js-nav-main-item');
-};
-
-var mobileNav = function()
-{
     var header = $('.js-header');
     var trigger = $('.js-nav-trigger');
 
@@ -120,31 +98,8 @@ var mobileNav = function()
     });
 };
 
-var readySettings
-chopstick.ready =
-{
-    settings:
-    {
-        ready: $('body')
-    },
-
-    init: function()
-    {
-        readySettings = chopstick.ready.settings;
-        chopstick.ready.readyContent();
-    },
-
-    readyContent: function ()
-    {
-        readySettings.ready.addClass("is-ready");
-        setTimeout(function(){
-            readySettings.ready.addClass("is-finished");
-        }, 450);
-    }
-};
-
 // Load all your plugins in the pluginLoader function.
 var pluginLoader = function() {
     $(chopstick.init);
-}
+};
 pluginLoader();

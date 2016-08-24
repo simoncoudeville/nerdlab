@@ -8,6 +8,7 @@
 
     // Z-index utility class (e.g. .u-z-alpha)
     .u-z-#{$z-index} {
+        //position: relative;
         z-index: $value;
     }
 
