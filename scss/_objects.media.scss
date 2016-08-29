@@ -38,7 +38,7 @@ $media-object-margin-bottom : $alpha-leading !default;
     //@include padding-bottom($alpha-leading);
 
     &:last-child {
-        border: none;
+        border: 0;
         margin-bottom: 0;
         padding-bottom: 0;
     }

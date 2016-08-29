@@ -45,7 +45,7 @@ html {
 body {
     color: $body-color;
     text-rendering: optimizeLegibility;
-    font-feature-settings: "kern";
+    font-feature-settings: 'kern';
 
     @if $body-font-smoothing == true {
         -webkit-font-smoothing: antialiased;

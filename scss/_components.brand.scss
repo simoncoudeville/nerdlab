@@ -12,7 +12,6 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
 
 .c-logo {
     margin-bottom: 0;
-    font-weight: $beta-font-weight;
     font-weight: $gamma-font-weight;
     color: palette(color-neutral, x-dark);
     display: flex;
@@ -27,7 +26,6 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
 }
 
     .c-logo__link {
-        display: block;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,7 +36,7 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
         display: block;
         width: $logo-width-sm;
         height: $logo-height-sm;
-        background: transparent url(../img/svg/glasses.svg) 50% 50% no-repeat;
+        background: transparent url('../img/svg/glasses.svg') 50% 50% no-repeat;
         background-size: contain;
         transition: all $animation-duration-beta $animation-easing-alpha;
         transition-delay: $animation-duration-beta;
