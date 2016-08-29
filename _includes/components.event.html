@@ -1,51 +1,20 @@
-<article class="s-content o-media o-media--bb u-mb-jota">
-    <div class="o-grid o-grid--gutter o-flex-bp3 o-flex--wrap">
-        <div class="o-grid__item u-1-of-2-bp3">
-            <div class="o-grid o-grid--gutter o-flex-bp2 o-flex--justify-start">
-                <div class="o-grid__item o-flex o-flex--align-center">
-                    <p class="c-event-list__date u-font-family-beta u-font-weight-alpha">
-                        {{ item.date }}
-                    </p>
-                </div>
-                <div class="o-grid__item o-flex o-flex--align-center">
-                    <p class="c-event-list__title">
-                        <strong>{{ item.title }}</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="o-grid__item u-1-of-2-bp3">
-            <div class="o-grid o-grid--gutter o-flex o-flex--justify-space-between">
-                <div class="o-grid__item o-flex o-flex--align-center u-1-of-2-bp3">
-                    <p>
-                        {{ item.place }}
-                    </p>
-                </div>
-                <div class="o-grid__item o-flex o-flex--align-center u-1-of-2-bp3 u-text-align-right">
-                    <p>
-                        <a href="#!">meer info</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="c-event-list">
-        <div class="c-event-list__header">
-            <p class="c-event-list__date">
+<article class="s-content o-media">
+    <div class="o-grid o-grid--gutter o-flex-bp3">
+        <div class="o-grid__item u-1-of-2-bp3 u-1-of-4-bp4 u-1-of-2-bp5">
+            <p class="u-mb-alpha">
                 {{ item.date }}
             </p>
         </div>
-        <p class="c-event-list__place">
-            {{ item.place }}
-        </p>
-        <p class="c-event-list__more">
-            <a href="#!">meer info</a>
-        </p>
-
-    </div> -->
-    <!-- {% if item.desc != "" %}
-        <p class="u-max-width-md">
-            {{ item.desc }} {% if item.link != "" %}<a href="{{ item.link }}">Meer info</a>{% endif %}
-        </p>
-    {% endif %} -->
+        <div class="o-grid__item u-1-of-2-bp3 u-3-of-4-bp4 u-1-of-2-bp5">
+            <h2 class="u-ms0">
+                {% if item.link != "" %}
+                <a href="{{ item.link }}">
+                {% endif %}
+                    {{ item.title }}
+                {% if item.link != "" %}
+                </a>
+                {% endif %}
+            </h2>
+        </div>
+    </div>
 </article>
