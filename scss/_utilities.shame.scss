@@ -4,10 +4,6 @@
         Hacks and quick fixes
 */
 
-.c-event-list {
-    display: flex;
-}
-
 .c-typo-intro {
     @include ms1;
 
@@ -20,16 +16,11 @@
     font-weight: $alpha-font-weight;
 
     @include mq(bp3) {
-        //color: palette(color-neutral) !important;
-        //margin-top: -.35em;
-        //@include ms0;
         @include margin-bottom(2);
     }
 }
 
 .u-clear-row-left {
-    //@include margin-left($columns-gutter * -1);
-
     @include mq(bp3) {
         @include margin-left($columns-gutter * -2);
     }
@@ -65,10 +56,7 @@
     }
 }
 
-
 .u-clear-row-right {
-    //@include margin-right($columns-gutter * -1);
-
     @include mq(bp3) {
         @include margin-right($columns-gutter * -2);
     }

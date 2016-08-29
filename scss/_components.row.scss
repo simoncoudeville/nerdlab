@@ -28,15 +28,12 @@
 }
 
 .c-row--sm {
-
     @include mq(bp2) {
         @include padding-tb($alpha-leading * 2, $alpha-leading);
     }
-
 }
 
 .c-row--md {
-
     @include mq(bp2) {
         @include padding-tb($alpha-leading * 2, $alpha-leading);
     }
@@ -87,14 +84,14 @@
 }
 
 .c-row--intro {
-    @include mq(bp3) {
-        display: flex;
-        align-items: center;
-        //align-items: flex-end;
-        height: calc(100vh - 14rem);
-
-        .o-container {
-            width: 100%;
-        }
-    }
+    //@include mq(bp3) {
+    //    display: flex;
+    //    align-items: center;
+    //    //align-items: flex-end;
+    //    height: calc(100vh - 14rem);
+    //
+    //    .o-container {
+    //        width: 100%;
+    //    }
+    //}
 }
