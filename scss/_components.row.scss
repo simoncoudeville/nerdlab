@@ -14,11 +14,11 @@
         @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
     }
 
-    @include mq(bp5) {
+    @include mq(bp4) {
         @include padding-lr($columns-gutter * 3, $columns-gutter * 3);
     }
 
-    @include mq(bp6) {
+    @include mq(bp5) {
         @include padding-lr($columns-gutter * 4, $columns-gutter * 4);
     }
 
@@ -38,11 +38,11 @@
         @include padding-tb($alpha-leading * 2, $alpha-leading);
     }
 
-    @include mq(bp5) {
+    @include mq(bp4) {
         @include padding-tb($alpha-leading * 3, $alpha-leading * 2);
     }
 
-    @include mq(bp6) {
+    @include mq(bp5) {
         @include padding-tb($alpha-leading * 4, $alpha-leading * 3);
     }
 
@@ -51,47 +51,18 @@
     }
 }
 
-.c-row--lg {
-    @include mq(bp3) {
-        @include padding-tb(4,3);
-    }
-
-    @include mq(bp5) {
-        @include padding-lr(4,4);
-    }
-
-    @include mq(bp6) {
-        @include padding-tb(6,5);
-    }
-}
-
-.c-row--xl {
-    @include mq(bp3) {
-        @include padding-tb(4,3);
-    }
-
-    @include mq(bp5) {
-        @include padding-lr(4,4);
-    }
-
-    @include mq(bp5) {
-        @include padding-tb(12,13);
-    }
-}
-
 .c-row--border-top {
     border-top: 1px solid palette(color-neutral,xxx-light);
 }
 
 .c-row--intro {
-    //@include mq(bp3) {
-    //    display: flex;
-    //    align-items: center;
-    //    //align-items: flex-end;
-    //    height: calc(100vh - 14rem);
-    //
-    //    .o-container {
-    //        width: 100%;
-    //    }
-    //}
+    @include mq(bp3) {
+        display: flex;
+        align-items: flex-end;
+        height: calc(100vh - 14rem);
+
+        .o-container {
+            width: 100%;
+        }
+    }
 }
