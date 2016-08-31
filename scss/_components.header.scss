@@ -27,7 +27,7 @@
     }
 
     &.is-shrinken {
-        box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.1);
+        box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
 
         @include mq(bp2) {
             padding-top: 0;

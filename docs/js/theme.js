@@ -15,10 +15,10 @@ var chopstick =
             friction: 0.8,
             lazyLoad: true,
             percentPosition: true,
-            prevNextButtons: false,
+            prevNextButtons: true,
             pageDots: false,
             resize: true,
-            setGallerySize: false,
+            setGallerySize: true,
             wrapAround: true,
         });
     }

@@ -5,61 +5,15 @@
 */
 
 @font-face {
-    font-family: 'Suisse';
-    src: url('../fonts/SuisseIntl-Regular-WebS.ttf') format('truetype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Suisse';
-    src: url('../fonts/SuisseIntl-SemiBold-WebS.ttf') format('truetype');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Suisse Mono';
-    src: url('../fonts/SuisseIntlMono-Regular-WebS.ttf') format('truetype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Suisse Mono';
-    src: url('../fonts/SuisseIntlMono-Bold-WebS.ttf') format('truetype');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Lab Grotesque';
-    src: url('../fonts/LabGrotesque-Regular.ttf') format('truetype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Lab Grotesque';
-    src: url('../fonts/LabGrotesque-Bold.ttf') format('truetype');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('../fonts/CooperHewitt-Book.woff') format('truetype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('../fonts/CooperHewitt-Semibold.eot.woff') format('truetype');
-    font-weight: 600;
-}
-
-@font-face {
     font-family: 'Graphik';
-    src: url('../fonts/Graphik-Regular-Web.woff2') format('woff2');
+    src: url('../fonts/Graphik-Regular-Web.woff2') format('woff2'),
+         url('../fonts/Graphik-Regular-Web.woff') format('woff');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Graphik';
-    src: url('../fonts/Graphik-Bold-Web.woff2') format('woff2');
+    src: url('../fonts/Graphik-Bold-Web.woff2') format('woff2'),
+         url('../fonts/Graphik-Bold-Web.woff') format('woff');
     font-weight: 700;
 }

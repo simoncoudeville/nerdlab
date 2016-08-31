@@ -49,8 +49,8 @@
         display: block;
         text-decoration: none;
         //font-weight: $beta-font-weight;
-        //@include text-dimensions($alpha-font-size,1,0,1,1);
-        @include text-dimensions($ms-1,1,0,1,1);
+        @include text-dimensions($alpha-font-size,1,0,1,1);
+        //@include text-dimensions($ms-1,1,0,1,1);
 
         @include mq(bp4) {
             @include padding-tb($alpha-leading,$alpha-leading);
@@ -60,7 +60,7 @@
         &:visited {
             //color: palette(color-alpha);
             //color: palette(color-neutral,xxxx-dark);
-            color: palette(color-neutral,xx-dark);
+            color: palette(color-neutral,xxx-dark);
         }
 
         &:hover,
@@ -82,15 +82,18 @@
 
     .c-nav-main__link--button {
         @include mq(bp4) {
-            border: 1px solid currentColor;
+            //border: 1px solid currentColor;
+            //border-radius: 2rem;
+            //background-color: palette(color-neutral,xxx-light);
             //border: 3px solid currentColor;
             //border: 2px solid palett();
             //background-color: palette(color-alpha);
             //font-family: $beta-font-family;
             //font-weight: $beta-font-weight;
             //color: #fff;
-            @include padding-lr(1,1);
-            @include padding-tb(.75,.75);
+            //@include padding-lr(1,1);
+            //@include padding-lr(2,2);
+            //@include padding-tb(.75,.75);
 
             &,
             &:visited,
@@ -101,7 +104,7 @@
 
             &:hover,
             &:focus {
-                color: palette(color-beta);
+                //color: palette(color-beta);
                 //background-color: palette(color-beta);
                 //border-color: palette(color-beta);
                 //color: #fff;
