@@ -4,4 +4,4 @@ description: 'Chopstick is a framework based on the ITCSS architecture and a ser
 destination: 'docs'
 exclude: ['docs','scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json','docroot','node_modules','gulpfile.js','install.sh','lint.yml']
 permalink: 'pretty'
-baseurl: '/nerdlab'
+# baseurl: '/nerdlab'
