@@ -1,6 +1,6 @@
 title: 'Nerdlab'
-author: 'Wijs'
-description: 'Chopstick is a framework based on the ITCSS architecture and a series of principles. It creates a structure to easily set-up and build bespoke web projects.'
+author: 'Nerdlab'
+description: 'Nerdlab is een open collectief van makers. We bouwen installaties en machines, organiseren evenementen en veroveren de wereld. Oh, en daarnaast hebben een ook fablab in Gent waar iedereen welkom is.'
 destination: 'docs'
 exclude: ['docs','scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json','docroot','node_modules','gulpfile.js','install.sh','lint.yml']
 permalink: 'pretty'
