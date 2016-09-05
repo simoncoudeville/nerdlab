@@ -6,29 +6,21 @@
 
 .c-nav-main {
     display: none;
-    position: absolute;
-    bottom: $columns-gutter * .5rem;
-    left: $columns-gutter * 1rem;
-    right: $columns-gutter * 1rem;
 
     .has-visible-nav & {
         display: block;
     }
 
     @include mq(bp3) {
+        position: relative;
         bottom: auto;
-        top: 50%;
-        transform: translateY(-50%);
-        left: $columns-gutter * 2rem;
+        left: auto;
+        right: auto;
+        display: flex;
+        flex-basis: 75%;
     }
 
     @include mq(bp4) {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        transform: translateY(0);
-        display: flex;
         flex-basis: 50%;
         @include padding-left($columns-gutter);
     }
@@ -36,30 +28,30 @@
 
     .c-nav-main__list {
         margin-bottom: 0;
+        text-align: right;
+        @include padding-bottom(1);
 
-        @include mq(bp4) {
+        @include mq(bp3) {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            text-align: left;
+            padding-bottom: 0;
         }
     }
 
     .c-nav-main__link {
         display: block;
         text-decoration: none;
-        //font-weight: $beta-font-weight;
         @include text-dimensions($alpha-font-size,1,0,1,1);
-        //@include text-dimensions($ms-1,1,0,1,1);
 
-        @include mq(bp4) {
+        @include mq(bp3) {
             @include padding-tb($alpha-leading,$alpha-leading);
         }
 
         &,
         &:visited {
-            //color: palette(color-alpha);
-            //color: palette(color-neutral,xxxx-dark);
             color: palette(color-neutral,xxx-dark);
         }
 
@@ -71,7 +63,6 @@
         }
 
         .is-exiting & {
-            //color: palette(color-alpha);
             color: palette(color-neutral,xxxx-dark);
 
             &:focus {
@@ -80,37 +71,13 @@
         }
     }
 
-    .c-nav-main__link--button {
-        @include mq(bp4) {
-            //border: 1px solid currentColor;
-            //border-radius: 2rem;
-            //background-color: palette(color-neutral,xxx-light);
-            //border: 3px solid currentColor;
-            //border: 2px solid palett();
-            //background-color: palette(color-alpha);
-            //font-family: $beta-font-family;
-            //font-weight: $beta-font-weight;
-            //color: #fff;
-            //@include padding-lr(1,1);
-            //@include padding-lr(2,2);
-            //@include padding-tb(.75,.75);
-
-            &,
-            &:visited,
-            .is-exiting & {
-                //color: palette(color-alpha);
-                //color: #fff;
-            }
-
-            &:hover,
-            &:focus {
-                //color: palette(color-beta);
-                //background-color: palette(color-beta);
-                //border-color: palette(color-beta);
-                //color: #fff;
-            }
-        }
-    }
+    //.c-nav-main__link--button {
+    //    @include mq(bp3) {
+    //        border: 1px solid currentColor;
+    //        @include padding-lr(1,1);
+    //        @include padding-tb(.75,.75);
+    //    }
+    //}
 
 .c-nav-main-trigger {
     user-select: none;
@@ -122,12 +89,15 @@
     background-color: transparent;
     padding: 0;
     margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: $columns-gutter * 1rem;
 
     &.is-active {
         color: palette(color-neutral);
     }
 
-    @include mq(bp4) {
+    @include mq(bp3) {
         display: none;
     }
 }
@@ -138,50 +108,48 @@ $trigger-color:              palette(color-neutral,xxxx-dark);
 $trigger-active-color:       palette(color-neutral,xxxx-dark);
 $trigger-animation-duration: $animation-duration-gamma;
 
-.c-nav-main-trigger__icon {
-    position: relative;
-    display: block;
-    width: 1.5rem;
-    height: $trigger-line-height;
-    background-color: $trigger-color;
-    transition-property: all;
-    transition-duration: $trigger-animation-duration;
-    border-radius: 1px;
-
-    &:before,
-    &:after {
-        content: '';
+    .c-nav-main-trigger__icon {
+        position: relative;
         display: block;
-        width: 100%;
+        width: 1.5rem;
         height: $trigger-line-height;
-        position: absolute;
         background-color: $trigger-color;
         transition-property: all;
         transition-duration: $trigger-animation-duration;
         border-radius: 1px;
-    }
 
-    &:before {
-        //width: 90%;
-        transform: translateY($trigger-line-offset * -1);
-    }
-
-    &:after {
-        transform: translateY($trigger-line-offset);
-        //width: 80%;
-    }
-
-    .c-nav-main-trigger.is-active & {
-        transform: rotate(45deg);
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: $trigger-line-height;
+            position: absolute;
+            background-color: $trigger-color;
+            transition-property: all;
+            transition-duration: $trigger-animation-duration;
+            border-radius: 1px;
+        }
 
         &:before {
-            width: 100%;
-            transform: rotate(90deg);
+            transform: translateY($trigger-line-offset * -1);
         }
 
         &:after {
-            width: 100%;
-            transform: rotate(90deg);
+            transform: translateY($trigger-line-offset);
+        }
+
+        .c-nav-main-trigger.is-active & {
+            transform: rotate(45deg);
+
+            &:before {
+                width: 100%;
+                transform: rotate(90deg);
+            }
+
+            &:after {
+                width: 100%;
+                transform: rotate(90deg);
+            }
         }
     }
-}

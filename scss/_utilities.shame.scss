@@ -42,18 +42,6 @@
     @include mq(bp3) {
         @include margin-left($columns-gutter * -2);
     }
-    //
-    //@include mq(bp5) {
-    //    @include margin-left($columns-gutter * -3);
-    //}
-
-    //@include mq(bp6) {
-    //    @include margin-left($columns-gutter * -4);
-    //}
-    //
-    //@include mq(bp7) {
-    //    @include margin-left($columns-gutter * -5);
-    //}
 }
 
 .u-clear-row-md-top {

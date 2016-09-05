@@ -56,17 +56,14 @@
 }
 
 .c-header {
-    display: flex;
-    //justify-content: space-between;
-    //align-items: center;
 
-    .has-visible-nav & {
-        height: 100vh;
-    }
-
-    @include mq(bp4) {
+    @include mq(bp3) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .has-visible-nav & {
+            height: auto;
+        }
     }
 }
