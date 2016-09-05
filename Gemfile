@@ -8,4 +8,7 @@ group :development do
 
     # Jekyll
     gem 'jekyll'
+
+    # Github pages
+    gem 'github-pages', group: :jekyll_plugins
 end
