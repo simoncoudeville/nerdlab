@@ -1,7 +1,5 @@
 title: 'Nerdlab'
 author: 'Nerdlab'
 description: 'Nerdlab is een open collectief van makers. We bouwen installaties en machines, organiseren evenementen en veroveren de wereld. Oh, en daarnaast hebben een ook fablab in Gent waar iedereen welkom is.'
-# destination: '_site'
 exclude: ['docs','scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json','docroot','node_modules','gulpfile.js','install.sh','lint.yml']
 permalink: 'pretty'
-# baseurl: '/nerdlab'

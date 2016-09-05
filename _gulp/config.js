@@ -13,7 +13,7 @@ module.exports = {
             outputStyle: 'compressed'
         },
         cssDest: path + 'css/',
-        jekyllCssDes: path + 'docs/css/',
+        jekyllCssDes: path + '_site/css/',
         prefix: [                          // Autoprefixer supported browsers
             'last 2 version',
             '> 1%',
@@ -39,7 +39,7 @@ module.exports = {
             path + 'js/loader.js'
         ],
         concatFilename: 'theme.concat.js', // result filename
-        jekyllJsDest: path + 'docs/js/',
+        jekyllJsDest: path + '_site/js/',
         jsDest: path + 'js/'
     },
 
@@ -77,7 +77,7 @@ module.exports = {
 
     compressjs: {
         src: path + 'js/*.js',
-        dest: path + 'docs/js/'
+        dest: path + '_site/js/'
     },
 
     svg2png: {
