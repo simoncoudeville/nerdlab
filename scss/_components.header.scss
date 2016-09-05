@@ -56,6 +56,7 @@
 }
 
 .c-header {
+    position: relative;
 
     @include mq(bp3) {
         display: flex;

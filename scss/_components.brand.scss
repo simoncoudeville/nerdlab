@@ -5,14 +5,11 @@
 */
 
 $logo-ratio:     3.3333;
-$logo-height-sm: 1.35em;
-$logo-height-lg: 1.35em;
-$logo-width-sm:  $logo-height-sm * $logo-ratio;
-$logo-width-lg:  $logo-height-lg * $logo-ratio;
+$logo-height:    1.35rem;
+$logo-width:     $logo-height * $logo-ratio;
 
 .c-logo {
     margin-bottom: 0;
-    font-weight: $gamma-font-weight;
     color: palette(color-neutral, x-dark);
     display: flex;
     justify-content: left;
@@ -29,13 +26,12 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
         display: flex;
         justify-content: center;
         align-items: center;
-        @include text-dimensions($alpha-font-size,1);
     }
 
     .c-logo__mark {
         display: block;
-        width: $logo-width-sm;
-        height: $logo-height-sm;
+        width: $logo-width;
+        height: $logo-height;
         background: transparent url('../img/svg/glasses.svg') 50% 50% no-repeat;
         background-size: contain;
         transition: all $animation-duration-beta $animation-easing-alpha;
@@ -50,15 +46,9 @@ $logo-width-lg:  $logo-height-lg * $logo-ratio;
             }
         }
 
-        @include mq(bp3) {
-            width: $logo-width-lg;
-            height: $logo-height-lg;
-        }
-
     }
 
 .c-nerdlab {
     font-family: $alpha-font-family;
     font-weight: $gamma-font-weight;
-    //@include uppercase;
 }

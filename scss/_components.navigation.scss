@@ -91,7 +91,7 @@
     margin-left: auto;
     position: absolute;
     top: 0;
-    right: $columns-gutter * 1rem;
+    right: 0;
 
     &.is-active {
         color: palette(color-neutral);
@@ -111,7 +111,7 @@ $trigger-animation-duration: $animation-duration-gamma;
     .c-nav-main-trigger__icon {
         position: relative;
         display: block;
-        width: 1.5rem;
+        width: $columns-gutter * 1rem;
         height: $trigger-line-height;
         background-color: $trigger-color;
         transition-property: all;

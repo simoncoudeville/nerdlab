@@ -6,23 +6,16 @@
 
 .c-gallery {
     overflow: hidden;
-    //height: 0;
-    //padding-bottom: 56%;
-
-    //.flickity-viewport {
-    //    position: absolute;
-    //    width: 100%;
-    //}
-
-    //@include mq(bp4) {
-    //    padding-bottom: calc(56% - 12.8rem);
-    //}
 }
 
 .c-gallery__img {
     display: block;
     width: calc(100vw - #{$columns-gutter * 2rem});
     @include margin-left($columns-gutter);
+
+    @include mq(bp2) {
+        width: calc(100vw - #{$columns-gutter * 3rem});
+    }
 
     @include mq(bp3) {
         width: calc(100vw - #{$columns-gutter * 8rem});
@@ -92,7 +85,7 @@ http://flickity.metafizzy.co
     background-color: palette(color-neutral,xxxxx-light);
     //box-shadow: 0 0 25px rgba(palette(color-neutral,xxxx-dark),.125);
 
-    @include mq(bp2, max) {
+    @include mq(bp3, max) {
         display: none;
     }
 }
