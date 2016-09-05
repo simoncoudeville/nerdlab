@@ -49,7 +49,7 @@ module.exports = {
 
     browsersync: {
         server: {
-            baseDir: path + 'docs',
+            baseDir: path + '_site',
             reloadDelay: 2000,
             debounce: 200,
             notify: true,
