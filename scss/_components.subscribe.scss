@@ -4,19 +4,29 @@
     Subscribe form
 */
 
+.c-subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+}
+
 .c-subscribe-form__input {
     background-color: transparent;
     //background-color: rgba(palette(color-neutral,xxxx-light),.25);
     //padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-    border-width: 0 0 1px;
+    border-width: 0 0 1px 0;
     //border-style: dotted;
     border-color: palette(color-neutral,xx-light);
+    //border-color: palette(color-alpha);
     //color: palette(color-alpha,xx-light);
     //border-color: palette(color-neutral,xxxx-light);
     //color: palette(color-neutral,xxxx-light);
     //border: none;
+    //flex-basis: 80%;
+    flex-grow: 1;
+    width: auto;
 
     &:focus {
         //color: palette(color-neutral,xxxx-light);
@@ -57,6 +67,7 @@
     //padding-top: 0;
     //border-color: palette(color-beta,xx-light);
     //color: palette(color-beta,xx-light);
+    //flex-basis: auto;
 
     &:hover,
     &:focus {

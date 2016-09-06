@@ -20,7 +20,7 @@
     -moz-osx-font-smoothing: grayscale; /* [2] */
     //background-color: palette(color-neutral,xxxx-light);
     border-radius: $radius;
-    //border: $border-width $border-style palette(color-neutral,xxx-light);
+    border: $border-width $border-style palette(color-neutral,xxx-light);
     //color: palette(color-neutral,xxx-light);
     font-family: $alpha-font-family;
     font-weight: $alpha-font-weight;
