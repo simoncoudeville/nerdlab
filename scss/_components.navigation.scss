@@ -72,8 +72,28 @@
     }
 
     .c-nav-main__link--button {
+
+        //&,
+        //&:visited {
+        //    color: palette(color-alpha);
+        //}
+        //
+        //.is-selected &,
+        //&:hover {
+        //    color: palette(color-beta);
+        //}
+        //
+        //.is-exiting & {
+        //    color: palette(color-alpha);
+        //
+        //    &:focus {
+        //        color: palette(color-beta);
+        //    }
+        //}
+
         @include mq(bp4) {
             border: 1px solid currentColor;
+            //background-color: rgba(palette(color-alpha),.05);
             @include padding-lr(1,1);
             @include padding-tb(.75,.75);
         }
