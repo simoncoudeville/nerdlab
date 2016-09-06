@@ -108,6 +108,12 @@
     z-index: -1;
 }
 
+.c-cta__text {
+    @include mq(bp3) {
+        //@include margin-bottom($alpha-leading * 1.25);
+    }
+}
+
 .u-opacity-alpha {
     opacity: .5;
 }

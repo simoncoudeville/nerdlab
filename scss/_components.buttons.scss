@@ -29,9 +29,9 @@
     border-radius: $radius;
     border-style: solid;
     border-width: 1px;
-    transition-duration: .1s;
-    transition-timing-function: ease-in-out;
-    transition-property: background, color, border;
+    //transition-duration: .1s;
+    //transition-timing-function: ease-in-out;
+    //transition-property: background, color, border;
     outline: none;
     line-height: normal;
     appearance: none;
@@ -91,8 +91,8 @@
 }
 
 .c-button--lg {
-    @include padding-lr(1.25,1.25);
-    @include text-dimensions($alpha-font-size,1,0,$alpha-leading/2,$alpha-leading/2);
+    @include padding-lr(1.5,1.5);
+    @include text-dimensions($alpha-font-size,1,0,$alpha-leading/1.5,$alpha-leading/1.5);
 }
 
 // Button colors
@@ -135,6 +135,18 @@
 
     &:active {
         background-color: palette(color-beta);
+    }
+}
+
+.c-button--cta {
+    &,
+    &:visited {
+        color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+        opacity: .75;
     }
 }
 

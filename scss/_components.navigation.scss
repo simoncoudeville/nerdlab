@@ -71,13 +71,13 @@
         }
     }
 
-    //.c-nav-main__link--button {
-    //    @include mq(bp3) {
-    //        border: 1px solid currentColor;
-    //        @include padding-lr(1,1);
-    //        @include padding-tb(.75,.75);
-    //    }
-    //}
+    .c-nav-main__link--button {
+        @include mq(bp4) {
+            border: 1px solid currentColor;
+            @include padding-lr(1,1);
+            @include padding-tb(.75,.75);
+        }
+    }
 
 .c-nav-main-trigger {
     user-select: none;
