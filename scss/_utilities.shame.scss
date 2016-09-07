@@ -117,3 +117,7 @@
 .u-opacity-alpha {
     opacity: .5;
 }
+
+.c-subscribe-text {
+    @include margin-bottom(.4);
+}

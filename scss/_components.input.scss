@@ -28,7 +28,7 @@
     width: 100%;
     display: block;
     outline: none;
-    line-height: normal;
+    line-height: $alpha-leading;
 
     &:focus {
         //color: palette(color-neutral,dark);
@@ -59,7 +59,7 @@
 
 .c-input-text--lg {
     @include padding-lr(1,1);
-    @include text-dimensions($alpha-font-size,1,0,$alpha-leading/2,$alpha-leading/2);
+    @include input-dimensions($alpha-font-size,1,0,$alpha-leading/2,$alpha-leading/2);
 }
 
 // Input modifiers

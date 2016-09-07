@@ -18,5 +18,6 @@
 
     @include mq(bp4) {
         padding-top: 0;
+        @include margin-bottom($alpha-leading * -1);
     }
 }
