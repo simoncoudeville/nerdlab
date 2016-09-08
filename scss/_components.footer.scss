@@ -13,7 +13,7 @@
 
 .c-footer__subscribe {
     @include mq(bp3) {
-        @include padding-top($alpha-leading);
+        @include padding-top($alpha-leading * 2);
     }
 
     @include mq(bp4) {

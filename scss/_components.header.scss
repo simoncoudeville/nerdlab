@@ -18,7 +18,7 @@
         @include padding-top($alpha-leading * 1);
     }
 
-    @include mq(bp4) {
+    @include mq(bp3) {
         @include padding-top($alpha-leading * 2);
     }
 
@@ -33,7 +33,7 @@
             padding-top: 0;
         }
 
-        @include mq(bp4) {
+        @include mq(bp3) {
             @include padding-tb($alpha-leading * 1, $alpha-leading * 1);
         }
     }
@@ -45,7 +45,7 @@
             @include padding-top($alpha-leading * 1);
         }
 
-        @include mq(bp4) {
+        @include mq(bp3) {
             @include padding-top($alpha-leading * 2);
         }
 

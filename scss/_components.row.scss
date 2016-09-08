@@ -14,7 +14,7 @@
         @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
     }
 
-    @include mq(bp4) {
+    @include mq(bp3) {
         @include padding-lr($columns-gutter * 3, $columns-gutter * 3);
     }
 
@@ -34,7 +34,7 @@
         @include padding-tb($alpha-leading * 2, $alpha-leading);
     }
 
-    @include mq(bp4) {
+    @include mq(bp3) {
         @include padding-tb($alpha-leading * 3, $alpha-leading * 2);
     }
 
@@ -56,7 +56,7 @@
 }
 
 .c-row--intro {
-    @include mq(bp4) {
+    @include mq(bp3) {
         display: flex;
         align-items: flex-end;
         height: calc(100vh - 14rem);
@@ -73,7 +73,7 @@
         @include padding-tb($alpha-leading * 4, $alpha-leading);
     }
 
-    @include mq(bp4) {
+    @include mq(bp3) {
         @include padding-tb($alpha-leading * 6, $alpha-leading * 2);
     }
 

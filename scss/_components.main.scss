@@ -44,7 +44,7 @@
     animation-timing-function: $animation-easing-alpha;
     @include margin-top($alpha-leading * 3);
 
-    @include mq(bp4) {
+    @include mq(bp3) {
         @include margin-top($alpha-leading * 4);
     }
 
