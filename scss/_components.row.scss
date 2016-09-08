@@ -75,9 +75,18 @@
     //background: transparent url() 0 0 no-repeat;
     background-image: url('../img/svg/doodles.svg');
     background-position: 50% 50%;
+    background-size: 150%;
 
-    @include mq(bp3) {
-        background-size: 50%;
+    @include mq(bp2) {
+        background-size: 100%;
+    }
+
+    @include mq(bp4) {
+        background-size: 75%;
+    }
+
+    @include mq(bp6) {
+        background-size: 62.5%;
     }
 }
 
