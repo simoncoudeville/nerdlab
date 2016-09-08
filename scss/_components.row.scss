@@ -67,6 +67,20 @@
     }
 }
 
+.c-row--full {
+    height: 100vh;
+}
+
+.c-row--404 {
+    //background: transparent url() 0 0 no-repeat;
+    background-image: url('../img/svg/doodles.svg');
+    background-position: 50% 50%;
+
+    @include mq(bp3) {
+        background-size: 50%;
+    }
+}
+
 
 .c-row--cta {
     @include mq(bp2) {
