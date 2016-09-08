@@ -5,13 +5,9 @@ section: agenda
 ---
 <div class="c-row c-row--md u-bgcolor-neutral-xxxxx-light u-z-gamma">
     <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-2-bp5">
-                {% for item in site.data.events-future %}
-                    {% include components.event.html %}
-                {% endfor %}
-            </div>
-        </div>
+        {% for item in site.data.events-future %}
+            {% include components.event.html %}
+        {% endfor %}
     </div>
 </div>
 {% include components.cta.html %}

@@ -1,11 +1,11 @@
 <article class="s-content o-media">
-    <div class="o-grid o-grid--gutter o-flex-bp3">
-        <div class="o-grid__item u-1-of-2-bp3 u-1-of-4-bp4 u-1-of-2-bp5">
-            <p class="u-mb-alpha">
+    <div class="o-grid o-grid--gutter o-flex-bp3 o-flex--wrap">
+        <div class="o-grid__item u-1-of-4-bp3 u-1-of-2-bp4">
+            <p class="u-mb-alpha u-text-align-right-bp3">
                 {{ item.date }}
             </p>
         </div>
-        <div class="o-grid__item u-1-of-2-bp3 u-3-of-4-bp4 u-1-of-2-bp5">
+        <div class="o-grid__item u-3-of-4-bp3 u-1-of-2-bp4">
             <h2 class="u-ms0">
                 {% if item.link != "" %}
                 <a href="{{ item.link }}">
@@ -17,4 +17,15 @@
             </h2>
         </div>
     </div>
+    {% if item.description != "" %}
+        <div class="o-grid o-grid--gutter o-flex-bp3 o-flex--wrap">
+            <div class="o-grid__item u-3-of-4-bp3 u-push-1-of-4-bp3 u-1-of-2-bp4 u-push-1-of-2-bp4">
+                <div class="s-content u-max-width-md">
+                    <p>
+                        {{ item.description }} {% if item.link != "" %} <a href="{{ item.link }}">Meer info</a>{% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 </article>
