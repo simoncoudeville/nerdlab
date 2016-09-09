@@ -41,8 +41,8 @@
     text-align: justify;
 }
 
-.u-text-align-right-bp3 {
-    @include mq(bp3) {
+.u-text-align-right-bp4 {
+    @include mq(bp4) {
         text-align: right;
     }
 }
