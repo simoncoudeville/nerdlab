@@ -91,7 +91,8 @@
 }
 
 .c-button--lg {
-    @include padding-lr(1.5,1.5);
+    border-radius: 4rem;
+    @include padding-lr(1.75,1.75);
     @include text-dimensions($alpha-font-size,1,0,$alpha-leading/1.5,$alpha-leading/1.5);
 }
 

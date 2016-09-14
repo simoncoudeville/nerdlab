@@ -5,6 +5,7 @@
 */
 
 .c-subscribe-form {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     //justify-content: space-between;
@@ -51,6 +52,9 @@
 }
 
 .c-subscribe-form__buton {
+    //position: absolute;
+    //bottom: 0;
+    //right: 0;
     //background-color: palette(color-beta);
     //font-weight: $jota-font-weight;
     //font-weight: $gamma-font-weight;
@@ -63,6 +67,8 @@
     border-width: 0 0 1px;
     //border: none;
     padding-right: 0;
+    //border: none;
+    border-radius: 0;
     //padding-left: 0;
     //padding-top: 0;
     //border-color: palette(color-beta,xx-light);

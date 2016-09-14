@@ -68,6 +68,7 @@
         &,
         &:visited {
             color: palette(color-neutral,xxx-dark);
+            //color: palette(color-neutral,light);
         }
 
         &:hover,
@@ -75,42 +76,57 @@
         .is-selected & {
             text-decoration: none;
             color: palette(color-beta);
+            //color: palette(color-neutral,xxx-dark);
         }
 
         .is-exiting & {
-            color: palette(color-neutral,xxxx-dark);
+            color: palette(color-neutral,xxx-dark);
+            //color: palette(color-neutral,light);
 
             &:focus {
                 color: palette(color-beta);
+                //color: palette(color-neutral,xxx-dark);
             }
         }
     }
 
     .c-nav-main__link--button {
 
-        //&,
-        //&:visited {
-        //    color: palette(color-alpha);
-        //}
-        //
-        //.is-selected &,
-        //&:hover {
-        //    color: palette(color-beta);
-        //}
-        //
-        //.is-exiting & {
-        //    color: palette(color-alpha);
-        //
-        //    &:focus {
-        //        color: palette(color-beta);
-        //    }
-        //}
+        &,
+        &:visited {
+            color: palette(color-neutral,xxx-dark);
+        }
 
         @include mq(bp4) {
-            border: 1px solid currentColor;
-            //background-color: rgba(palette(color-alpha),.05);
-            @include padding-lr(1,1);
-            @include padding-tb(.75,.75);
+            border: 1px solid palette(color-neutral,xx-light);
+            border-radius: 4rem;
+            @include padding-lr(1.75,1.75);
+            @include padding-tb($alpha-leading/1.5,$alpha-leading/1.5);
+
+            &,
+            &:visited {
+                color: palette(color-neutral,xxx-dark);
+            }
+
+            &:hover,
+            &:focus,
+            .is-selected & {
+                //border-color: palette(color-neutral,xx-dark);
+                //border-color: palette(color-beta,light);
+                color: palette(color-beta);
+            }
+
+            .is-exiting & {
+                //border-color: palette(color-neutral,xx-light);
+                color: palette(color-neutral,xxx-dark);
+
+                &:focus {
+                    //color: palette(color-neutral,xxx-dark);
+                    //border-color: palette(color-neutral,xx-dark);
+                    //border-color: palette(color-beta,light);
+                    color: palette(color-beta);
+                }
+            }
         }
     }
 
