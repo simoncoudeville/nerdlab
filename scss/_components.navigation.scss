@@ -62,7 +62,9 @@
         @include text-dimensions($alpha-font-size,1,0,1,1);
 
         @include mq(bp3) {
-            @include padding-tb($alpha-leading,$alpha-leading);
+            //@include padding-tb($alpha-leading,$alpha-leading);
+            @include padding-tb(1,1);
+            //@include padding-tb($alpha-leading/1.5,$alpha-leading/1.5);
         }
 
         &,
@@ -101,7 +103,7 @@
             border: 1px solid palette(color-neutral,xx-light);
             border-radius: 4rem;
             @include padding-lr(1.75,1.75);
-            @include padding-tb($alpha-leading/1.5,$alpha-leading/1.5);
+            //@include padding-tb($alpha-leading/1.5,$alpha-leading/1.5);
 
             &,
             &:visited {

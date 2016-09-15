@@ -51,6 +51,7 @@
     @include mq(bp5) {
         //@include margin-top($alpha-leading * 9);
         @include margin-top($alpha-leading * 5);
+        //margin-top: 7.35rem;
     }
 
     .is-exiting & {

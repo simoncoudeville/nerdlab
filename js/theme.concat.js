@@ -63,7 +63,7 @@ var chopstick =
             pageDots: false,
             resize: true,
             setGallerySize: true,
-            wrapAround: true,
+            wrapAround: true
         });
     }
 };

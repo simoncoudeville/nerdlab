@@ -19,11 +19,12 @@
     }
 
     @include mq(bp3) {
-        @include padding-top($alpha-leading * 2);
+        @include padding-bottom($alpha-leading * 1);
+        @include padding-top($alpha-leading * 2.375);
     }
 
     @include mq(bp5) {
-        @include padding-top($alpha-leading * 3);
+        @include padding-top($alpha-leading * 3.375);
     }
 
     &.is-shrinken {
@@ -46,11 +47,12 @@
         }
 
         @include mq(bp3) {
-            @include padding-top($alpha-leading * 2);
+            @include padding-bottom($alpha-leading * 1);
+            @include padding-top($alpha-leading * 2.375);
         }
 
         @include mq(bp5) {
-            @include padding-top($alpha-leading * 3);
+            @include padding-top($alpha-leading * 3.375);
         }
     }
 }
