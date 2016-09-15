@@ -4,7 +4,7 @@ title: Word nerd
 section: word-nerd
 ---
 
-<div class="c-row c-row--border-bottom c-row--md u-z-delta">
+<div class="c-row c-row--md u-z-delta">
     <div class="o-container">
         <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
             <div class="o-grid__item u-1-of-2-bp6">
@@ -16,4 +16,57 @@ section: word-nerd
             </div>
         </div>
     </div>
+</div>
+<div class="c-row c-row--empty">
+    <div id="map" class="c-map gmap">
+
+    </div>
+
+    <script>
+
+        function initMap() {
+
+            var myLatlng = {lat: 51.0626986, lng: 3.730424200000016};
+            var dragging = true;
+
+            if (Modernizr.touch) {
+                dragging = false;
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: myLatlng,
+                disableDefaultUI: true,
+                scrollwheel: false,
+                draggable: dragging,
+                draggableCursor: 'default',
+                draggingCursor: 'move'
+            });
+
+            var contentString =
+                '<p class="c-map__content s-content">'+
+                '<strong class="c-nerdlab u-color-neutral-xxxx-dark">Nerdlab</strong> <br>'+
+                'Nieuwland 67 <br>'+
+                '9000 Gent <br>'+
+                '</p>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Nerdlab'
+            });
+
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe5X4MjHJA17x0Uainh91mGi2EJwF3mH0&callback=initMap">
+    </script>
+
 </div>

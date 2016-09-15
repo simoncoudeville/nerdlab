@@ -13,12 +13,14 @@
     padding-bottom: 0;
     padding-top: 0;
     transition: all $animation-duration-beta $animation-easing-alpha;
+    box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
 
     @include mq(bp2) {
         @include padding-top($alpha-leading * 1);
     }
 
     @include mq(bp3) {
+        box-shadow: none;
         @include padding-bottom($alpha-leading * 1);
         @include padding-top($alpha-leading * 2.375);
     }
