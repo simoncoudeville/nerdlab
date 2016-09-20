@@ -28,6 +28,27 @@
     }
 }
 
+.c-gallery-2__img {
+    display: block;
+    width: calc(100vw - #{$columns-gutter * 2rem});
+    max-width: $grid-max-width;
+    @include margin-right($columns-gutter);
+
+    @include mq(bp2) {
+        width: calc(100vw - #{$columns-gutter * 4rem});
+    }
+
+    @include mq(bp3) {
+        width: calc(100vw - #{$columns-gutter * 6rem});
+        @include margin-lr($columns-gutter,$columns-gutter);
+    }
+
+    @include mq(bp5) {
+        width: calc(100vw - #{$columns-gutter * 8rem});
+        //width: calc(100vw - #{$columns-gutter * 16rem});
+    }
+}
+
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
 ---------------------------------------------- */

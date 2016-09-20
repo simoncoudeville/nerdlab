@@ -50,7 +50,7 @@
 @import 'objects.tables';
 
 @if $flexbox {
-@import 'objects.flexbox';
+    @import 'objects.flexbox';
 }
 
 /* Components */
@@ -64,7 +64,7 @@
 @import 'components.footer';
 @import 'components.subscribe';
 @import 'components.main';
-@import 'components.carousel';
+//@import 'components.carousel';
 @import 'components.typo';
 //@import 'components.icons';
 //@import 'components.alerts';
@@ -75,7 +75,9 @@
 //@import 'components.styleguide';
 
 /* Plugins */
-@import 'plugins.syntax';
+//@import 'plugins.syntax';
+@import 'plugins.slick';
+@import 'plugins.slick-theme';
 @import 'plugins.googlemaps';
 
 /* Scope */

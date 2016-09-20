@@ -21,6 +21,10 @@
     @include mq(bp5) {
         @include padding-lr($columns-gutter * 4, $columns-gutter * 4);
     }
+
+    //@include mq(bp6) {
+    //    @include padding-lr($columns-gutter * 5, $columns-gutter * 5);
+    //}
 }
 
 .c-row--sm {
@@ -92,23 +96,7 @@
 
 
 .c-row--cta {
-    @include mq(bp2) {
-        @include padding-tb($alpha-leading * 4, $alpha-leading);
-    }
-
-    @include mq(bp3) {
-        @include padding-tb($alpha-leading * 6, $alpha-leading * 2);
-    }
-
-    @include mq(bp5) {
-        @include padding-tb($alpha-leading * 8, $alpha-leading * 3);
-    }
-
     background-color: palette(color-alpha);
-
-    @include mq(bp3) {
-        background-image: linear-gradient(145deg, palette(color-alpha,xx-dark), palette(color-beta));
-    }
 
     .c-background-image {
         display: none;
@@ -117,6 +105,34 @@
             display: block;
             opacity: .675;
         }
+    }
+
+    //@include mq(bp2) {
+    //    @include margin-lr($columns-gutter * 2, $columns-gutter * 2);
+    //}
+    //
+    //@include mq(bp3) {
+    //    @include margin-lr($columns-gutter * 3, $columns-gutter * 3);
+    //}
+    //
+    //@include mq(bp5) {
+    //    @include margin-lr($columns-gutter * 4, $columns-gutter * 4);
+    //}
+
+    @include mq(bp3) {
+        display: flex;
+        align-items: flex-end;
+        height: 50vh;
+        background-image: linear-gradient(145deg, palette(color-alpha,xx-dark), palette(color-beta));
+
+        .o-container {
+            width: 100%;
+        }
+    }
+
+    @include mq(bp4) {
+        //height: 75vh;
+        height: calc(100vh - 7rem);
     }
 }
 
