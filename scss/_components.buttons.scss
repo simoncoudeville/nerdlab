@@ -145,6 +145,8 @@
     color: palette(color-alpha);
     background-color: rgba(#fff,1);
     border-color: #fff;
+    border: 0;
+    box-shadow: 0 15px 25px rgba(palette(color-neutral,xxxx-dark),.125);
 
     &,
     &:visited {
@@ -154,9 +156,10 @@
 
     &:hover,
     &:focus {
-        opacity: .75;
-        //color: #fff;
-        //color: palette(color-alpha);
+        //opacity: .75;
+        color: #fff;
+        background-color: palette(color-alpha);
+        border-color: palette(color-alpha);
         //background-color: rgba(#fff,1);
         //border-color: #fff;
     }
