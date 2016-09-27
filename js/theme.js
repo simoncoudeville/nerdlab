@@ -12,6 +12,7 @@ var chopstick =
             mobileFirst: true,
             variableWidth: true,
             arrows: false,
+            lazyLoad: 'progressive',
 
             responsive: [{
 

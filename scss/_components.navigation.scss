@@ -94,38 +94,32 @@
 
     .c-nav-main__link--button {
 
-        &,
-        &:visited {
-            color: palette(color-neutral,xxx-dark);
-        }
-
         @include mq(bp4) {
             border: 1px solid palette(color-neutral,xx-light);
+            //border: 1px solid palette(color-alpha,xx-light);
             border-radius: 4rem;
             @include padding-lr(1.75,1.75);
-            //@include padding-tb($alpha-leading/1.5,$alpha-leading/1.5);
 
             &,
             &:visited {
-                color: palette(color-neutral,xxx-dark);
+                //color: palette(color-alpha);
             }
 
             &:hover,
             &:focus,
             .is-selected & {
-                //border-color: palette(color-neutral,xx-dark);
-                //border-color: palette(color-beta,light);
-                color: palette(color-beta);
+                //color: palette(color-beta);
+                //border-color: palette(color-beta,xx-light);
             }
 
             .is-exiting & {
-                //border-color: palette(color-neutral,xx-light);
+                border-color: palette(color-neutral,xx-light);
                 color: palette(color-neutral,xxx-dark);
+                //color: palette(color-alpha);
+                //border: 1px solid palette(color-alpha,xx-light);
 
                 &:focus {
-                    //color: palette(color-neutral,xxx-dark);
-                    //border-color: palette(color-neutral,xx-dark);
-                    //border-color: palette(color-beta,light);
+                    //border-color: palette(color-beta,xx-light);
                     color: palette(color-beta);
                 }
             }
