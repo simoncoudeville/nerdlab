@@ -8,7 +8,7 @@
     display: none;
 
     .has-visible-nav & {
-        display: block;
+        //display: block;
     }
 
     @include mq(bp3) {
@@ -16,7 +16,8 @@
         bottom: auto;
         left: auto;
         right: auto;
-        display: flex;
+        display: flex !important;
+        height: auto !important;
         flex-basis: 75%;
     }
 
@@ -144,7 +145,8 @@
     margin-left: auto;
     position: absolute;
     top: 0;
-    right: 0;
+    right: $columns-gutter * -1rem;
+    @include padding-lr($columns-gutter,$columns-gutter);
 
     &.is-active {
         color: palette(color-neutral);
