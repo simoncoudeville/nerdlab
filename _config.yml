@@ -1,7 +1,33 @@
-title: 'Nerdlab'
-author: 'Nerdlab'
-description: 'Nerdlab is een open collectief van makers. We bouwen installaties en machines, organiseren evenementen en veroveren de wereld. Oh, en daarnaast hebben een ook fablab in Gent waar iedereen welkom is.'
-exclude: ['scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json','docroot','node_modules','gulpfile.js','install.sh','lint.yml']
-permalink: 'pretty'
+---
+title: Nerdlab
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+author: Nerdlab
+description: Nerdlab is een open collectief van makers. We bouwen installaties en
+  machines, organiseren evenementen en veroveren de wereld. Oh, en daarnaast hebben
+  een ook fablab in Gent waar iedereen welkom is.
+exclude:
+- scss
+- "*scss"
+- Gem*
+- Guard*
+- "*rb"
+- ".sass-cache"
+- ".git*"
+- config.rb
+- "*.md"
+- "*.json"
+- docroot
+- node_modules
+- gulpfile.js
+- install.sh
+- lint.yml
+permalink: pretty
 gems:
-  - jekyll-redirect-from
+- jekyll-redirect-from
