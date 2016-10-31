@@ -53,6 +53,31 @@
     }
 }
 
+@include mq(bp4) {
+    @each $increment, $value in $increments {
+
+        // Increment utility class (e.g. .u-mt-alpha)
+        .u-mt-#{$increment}-bp4 {
+            @include margin-top($value);
+        }
+
+        // Increment utility class (e.g. .u-mb-alpha)
+        .u-mb-#{$increment}-bp4 {
+            @include margin-bottom($value,true);
+        }
+
+        // Increment utility class (e.g. .u-pt-alpha)
+        .u-pt-#{$increment}-bp4 {
+            @include padding-top($value);
+        }
+
+        // Increment utility class (e.g. .u-pb-alpha)
+        .u-pb-#{$increment}-bp4 {
+            @include padding-bottom($value);
+        }
+    }
+}
+
 .u-pr-0 {
     padding-right: 0 !important;
 }

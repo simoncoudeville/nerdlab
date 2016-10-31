@@ -65,6 +65,12 @@
 
 }
 
+.o-flex--vertical-rev-bp4 {
+    @include mq(bp4) {
+        flex-direction: column-reverse;
+    }
+}
+
 // Alignment
 
 .o-flex--align-start {
