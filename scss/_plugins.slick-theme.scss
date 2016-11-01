@@ -53,10 +53,6 @@
         @include margin-lr($columns-gutter,$columns-gutter);
     }
 
-    //@include mq(bp6) {
-    //    width: calc(100vw - #{$columns-gutter * 10rem});
-    //}
-
     &.slick-current {
         cursor: default;
     }

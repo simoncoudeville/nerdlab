@@ -92,6 +92,33 @@
     z-index: -1;
 }
 
+    .c-background-image--fallback {
+        .videoautoplay & {
+            display: none;
+        }
+    }
+
+.c-background-video {
+    z-index: -1;
+    display: none;
+
+    .videoautoplay & {
+        display: block;
+    }
+}
+
+    .c-background-video__meta {
+        position: absolute;
+        bottom: 0;
+        right: $columns-gutter * 1rem;
+        color: rgba(#fff,.75);
+        @include ms-3;
+
+        @include mq(bp3,max) {
+            display: none;
+        }
+    }
+
 .u-opacity-alpha {
     opacity: .5;
 }
