@@ -113,6 +113,10 @@
         right: $columns-gutter * 1rem;
         color: rgba(#fff,.75);
         @include ms-3;
+
+        @include mq(bp3,max) {
+            display: none;
+        }
     }
 
 .u-opacity-alpha {
