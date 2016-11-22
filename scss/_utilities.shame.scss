@@ -141,3 +141,26 @@
         @include padding-lr(1,1);
         @include padding-tb(1,1);
     }
+
+.c-nerd {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+    .c-nerd__info {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        @include padding-lr($columns-gutter);
+    }
+
+    .c-nerd__name {
+        margin-bottom: 0;
+        @include ms0;
+    }
