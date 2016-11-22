@@ -6,14 +6,13 @@
 
 .c-header-row {
     background-color: rgba(palette(color-neutral,xxxxx-light),.975);
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     padding-bottom: 0;
     padding-top: 0;
     transition: all $animation-duration-beta $animation-easing-alpha;
-    //box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
 
     @include mq(bp2) {
         @include padding-top($alpha-leading * 1);
@@ -22,27 +21,31 @@
     @include mq(bp3) {
         box-shadow: none;
         @include padding-bottom($alpha-leading * 1);
-        @include padding-top($alpha-leading * 2.375);
+        //@include padding-top($alpha-leading * 2.375);
     }
 
     @include mq(bp5) {
-        @include padding-top($alpha-leading * 3.375);
+        top: $alpha-leading * 2.375rem;
+        //@include padding-top($alpha-leading * 3.375);
     }
 
-    &.is-shrinken {
+    &.scroll-to-fixed-fixed {
+        //position: fixed;
+        //top: 0;
         box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
 
-        @include mq(bp2) {
-            padding-top: 0;
-        }
-
-        @include mq(bp3) {
-            @include padding-tb($alpha-leading * 1, $alpha-leading * 1);
-        }
+        //@include mq(bp2) {
+        //    padding-top: 0;
+        //}
+        //
+        //@include mq(bp3) {
+        //    @include padding-tb($alpha-leading * 1, $alpha-leading * 1);
+        //}
     }
 
     .is-exiting & {
         box-shadow: none;
+        //transform: translate
 
         @include mq(bp2) {
             @include padding-top($alpha-leading * 1);
@@ -54,7 +57,8 @@
         }
 
         @include mq(bp5) {
-            @include padding-top($alpha-leading * 3.375);
+            top: $alpha-leading * 2.375rem;
+            //@include padding-top($alpha-leading * 3.375);
         }
     }
 }
