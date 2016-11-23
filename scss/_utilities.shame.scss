@@ -89,7 +89,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    //z-index: -1;
 }
 
     .c-background-image--fallback {
@@ -99,7 +99,8 @@
     }
 
 .c-background-video {
-    z-index: -1;
+    //z-index: -1;
+    position: relative;
     display: none;
 
     .videoautoplay & {
@@ -149,7 +150,12 @@
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
+    background-color: palette(color-neutral,x-dark);
 }
+
+    .c-nerd__image {
+        opacity: .75;
+    }
 
     .c-nerd__info {
         position: absolute;
