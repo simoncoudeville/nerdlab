@@ -12,7 +12,8 @@
     left: 0;
     padding-bottom: 0;
     padding-top: 0;
-    transition: all $animation-duration-beta $animation-easing-alpha;
+    transition: transform $animation-duration-beta $animation-easing-alpha;
+    box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
 
     @include mq(bp2) {
         @include padding-top($alpha-leading * 1);
@@ -29,35 +30,48 @@
         //@include padding-top($alpha-leading * 3.375);
     }
 
-    &.scroll-to-fixed-fixed {
-        //position: fixed;
-        //top: 0;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        //height: 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        //bottom: -30px;
+        left: 0;
+        //background-image: linear-gradient(to bottom, palette(color-neutral,xxxx-dark), transparent);
         box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity $animation-duration-beta $animation-easing-alpha;
+    }
 
-        //@include mq(bp2) {
-        //    padding-top: 0;
-        //}
-        //
-        //@include mq(bp3) {
-        //    @include padding-tb($alpha-leading * 1, $alpha-leading * 1);
-        //}
+    &.scroll-to-fixed-fixed {
+        top: 0;
+        //box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
+
+        &:after {
+            opacity: 1;
+        }
     }
 
     .is-exiting & {
-        box-shadow: none;
+        //box-shadow: none;
         //transform: translate
 
-        @include mq(bp2) {
-            @include padding-top($alpha-leading * 1);
-        }
-
-        @include mq(bp3) {
-            @include padding-bottom($alpha-leading * 1);
-            @include padding-top($alpha-leading * 2.375);
-        }
+        //@include mq(bp2) {
+        //    @include padding-top($alpha-leading * 1);
+        //}
+        //
+        //@include mq(bp3) {
+        //    @include padding-bottom($alpha-leading * 1);
+        //    @include padding-top($alpha-leading * 2.375);
+        //}
 
         @include mq(bp5) {
-            top: $alpha-leading * 2.375rem;
+            //top: $alpha-leading * 2.375rem;
+            transform: translateY($alpha-leading * 2.375rem);
             //@include padding-top($alpha-leading * 3.375);
         }
     }
