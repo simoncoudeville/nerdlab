@@ -14,6 +14,7 @@
     padding-top: 0;
     transition: transform $animation-duration-beta $animation-easing-alpha;
     box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
+    will-change: transform, scroll-position;
 
     @include mq(bp2) {
         @include padding-top($alpha-leading * 1);
@@ -31,25 +32,22 @@
     }
 
     &:after {
-        content: '';
-        display: block;
+        //content: '';
+        //display: block;
         position: absolute;
-        height: 50px;
-        //top: 0;
+        height: 25px;
         right: 0;
-        //bottom: 0;
-        bottom: -50px;
+        bottom: -25px;
         left: 0;
-        background-image: linear-gradient(to bottom, rgba(palette(color-neutral,xxxx-dark),.125) -25%, transparent 50%);
-        //box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
+        background-image: linear-gradient(to bottom, rgba(palette(color-neutral,xxxx-dark),.125) 0, transparent 100%);
         pointer-events: none;
         opacity: 0;
-        transition: opacity $animation-duration-beta $animation-easing-alpha;
+        transition: opacity $animation-duration-alpha $animation-easing-alpha;
     }
 
     &.scroll-to-fixed-fixed {
         top: 0;
-        //box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
+        box-shadow: 0 0 50px rgba(palette(color-neutral,xxxx-dark),.125);
 
         &:after {
             opacity: 1;
@@ -57,7 +55,7 @@
     }
 
     .is-exiting & {
-        //box-shadow: none;
+        box-shadow: none;
         //transform: translate
 
         //@include mq(bp2) {

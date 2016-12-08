@@ -34,8 +34,8 @@ $logo-width:     $logo-height * $logo-ratio;
         height: $logo-height;
         background: transparent url('../img/svg/glasses.svg') 50% 50% no-repeat;
         background-size: contain;
-        transition: all $animation-duration-gamma $animation-easing-alpha;
-        transition-delay: $animation-duration-beta;
+        transition: transform $animation-duration-gamma $animation-easing-alpha;
+        transition-delay: $animation-duration-alpha;
         transform: rotate(-10deg);
 
         .scroll-to-fixed-fixed & {
