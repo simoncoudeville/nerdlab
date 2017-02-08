@@ -17,10 +17,19 @@ section: word-nerd
         </div>
     </div>
 </div>
-<div class="c-row c-row--empty">
+<div class="c-row c-row--map">
     <div id="map" class="c-map gmap">
 
     </div>
+    <div class="c-map-content">
+        <p class="u-max-width-md s-content">
+            <strong class="c-nerdlab u-color-neutral-xxxx-dark">Nerdlab</strong> <br>
+            Nieuwland 67 <br>
+            9000 Gent <br>
+            <a class="c-footer__link" href="mailto:info@nerdlab.be">info@nerdlab.be</a>
+        </p>
+    </div>
+</div>
 
     <script>
         function initMap() {
@@ -232,15 +241,25 @@ section: word-nerd
                 content: contentString
             });
 
+            // var rocketIcon = '<p>&#x2122;</p>';
+
             var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map,
-                title: 'Nerdlab'
+                title: 'Nerdlab',
+                // icon: rocketIcon
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 10,
+                    strokeWeight: 2,
+                    strokeColor: '#FF0000',
+                    fillColor: '#FF0000'
+                }
             });
 
-            marker.addListener('click', function() {
-                infowindow.open(map, marker);
-            });
+            // marker.addListener('click', function() {
+            //     infowindow.open(map, marker);
+            // });
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe5X4MjHJA17x0Uainh91mGi2EJwF3mH0&callback=initMap"></script>
