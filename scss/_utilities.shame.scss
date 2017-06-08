@@ -129,18 +129,38 @@
 }
 
 .c-map {
-    height: 50vh;
+    min-height: 50vh;
 
     @include mq(bp4) {
         height: 75vh;
     }
 }
 
-    .c-map__content {
-        font-family: $alpha-font-family;
-        margin-bottom: 0;
-        @include padding-lr(1,1);
-        @include padding-tb(1,1);
+    .c-map {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .c-map-content {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+        //@include padding-tb($alpha-leading,0);
+        @include padding-lr($columns-gutter,$columns-gutter);
+
+        @include mq(bp2) {
+            //@include padding-lr($columns-gutter * 2, $columns-gutter * 2);
+        }
+
+        p {
+            margin-bottom: 0;
+        }
     }
 
 .c-nerd {

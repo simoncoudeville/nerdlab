@@ -9,6 +9,9 @@ section: agenda
         {% for item in site.data.events-future %}
             {% include components.event.html %}
         {% endfor %}
+        {% for item in site.data.events-past limit:5 %}
+            {% include components.event-past.html %}
+        {% endfor %}
     </div>
 </div>
 {% include components.cta.html %}
