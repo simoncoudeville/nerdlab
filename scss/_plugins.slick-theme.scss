@@ -61,3 +61,31 @@
         outline: none;
     }
 }
+
+.p-slick-theme__nerd {
+    width: calc(100vw - #{$columns-gutter * 2rem});
+    //width: 100vw;
+    max-width: $grid-max-width;
+    cursor: pointer;
+    @include margin-right($columns-gutter);
+
+    @include mq(bp3) {
+        //width: calc(100vw - #{$columns-gutter * 6rem});
+        //@include margin-lr($columns-gutter / 2,$columns-gutter / 2);
+    }
+
+    @include mq(bp5) {
+        width: calc(50vw - #{$columns-gutter * 8rem});
+        //width: calc(33.3333vw - #{$columns-gutter * 8rem});
+        //width: 25vw;
+        @include margin-lr($columns-gutter,$columns-gutter);
+    }
+
+    &.slick-current {
+        cursor: default;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
