@@ -4,12 +4,12 @@
     The footer of the website
 */
 
-//.c-footer {
-//    //background-color: palette(color-neutral,xxxx-light);
-//    //border-top: 1px solid palette(color-neutral,xxx-light);
-//    //background-color: palette(color-neutral,xxxx-dark);
-//    //background-color: palette(color-alpha: ;);
-//}
+.c-footer {
+    //background-color: palette(color-neutral,xxxx-light);
+    //border-top: 1px solid palette(color-neutral,xxx-light);
+    //background-color: palette(color-neutral,xxxx-dark);
+    //background-color: palette(color-alpha);
+}
 
 .c-footer__subscribe {
     @include mq(bp3) {

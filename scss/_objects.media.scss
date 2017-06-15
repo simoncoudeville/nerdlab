@@ -44,6 +44,10 @@ $media-object-margin-bottom : $alpha-leading !default;
     }
 }
 
+.o-media--past {
+    opacity: .5;
+}
+
     .o-media__img {
         float: left;
         @include padding-lr(0,$media-object-gutter);
