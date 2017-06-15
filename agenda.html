@@ -6,11 +6,8 @@ section: agenda
 
 <div class="c-row c-row--md u-bgcolor-neutral-xxxxx-light u-z-gamma">
     <div class="o-container">
-        {% for item in site.data.events-future %}
+        {% for item in site.agenda %}
             {% include components.event.html %}
-        {% endfor %}
-        {% for item in site.data.events-past limit:5 %}
-            {% include components.event-past.html %}
         {% endfor %}
     </div>
 </div>
