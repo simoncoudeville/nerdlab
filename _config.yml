@@ -17,7 +17,7 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: Agenda
+    type: agenda
   values:
     when: ''
     link: ''
@@ -42,5 +42,6 @@ exclude:
 - gulpfile.js
 - install.sh
 - lint.yml
+permalink: pretty
 gems:
 - jekyll-redirect-from
