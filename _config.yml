@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  pictures:
+    title: pictures
+    output: true
 author: Nerdlab
 description: Nerdlab is een open collectief van makers. We bouwen installaties en
   machines, organiseren evenementen en veroveren de wereld. Oh, en daarnaast hebben
