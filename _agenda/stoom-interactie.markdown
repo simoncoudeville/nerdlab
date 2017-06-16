@@ -1,7 +1,7 @@
 ---
 title: STOOM interactie
 date: 2017-08-29 19:00:00 Z
-position: 5
+position: 4
 when: 29 augustus
 ---
 

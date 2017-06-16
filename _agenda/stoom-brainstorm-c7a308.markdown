@@ -1,7 +1,7 @@
 ---
 title: STOOM brainstorm
 date: 2017-06-16 22:23:00 Z
-position: 7
+position: 6
 when: 5 september
 ---
 
