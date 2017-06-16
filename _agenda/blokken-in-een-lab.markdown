@@ -1,7 +1,7 @@
 ---
 title: Blokken in een lab
 date: 2017-06-17 01:40:00 Z
-position: 2
+position: 1
 when: 17, 21, 24 & 28 juni
 ---
 
