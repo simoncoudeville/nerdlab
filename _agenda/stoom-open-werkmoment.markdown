@@ -1,6 +1,7 @@
 ---
 title: STOOM open werkmoment
 date: 2017-08-01 19:00:00 Z
+position: 5
 when: 1, 8 & 22 augustus
 ---
 

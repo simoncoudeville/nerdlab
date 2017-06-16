@@ -1,6 +1,7 @@
 ---
 title: STOOM coaching
 date: 2017-09-19 19:00:00 Z
+position: 10
 when: 19 september
 ---
 
