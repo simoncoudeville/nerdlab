@@ -6,7 +6,7 @@ var headerScroll = function()
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= headerOffset/3) {
+        if (scroll >= headerOffset/4) {
             header.addClass("is-shrinken");
         } else {
             header.removeClass("is-shrinken");
