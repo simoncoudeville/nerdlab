@@ -1,7 +1,7 @@
 ---
 title: Midi Warrior, DIY Midi Controller Workshop
 date: 2017-06-15 17:36:00 Z
-position: 1
+position: 0
 when: 9, 16 & 23 september
 link: https://www.facebook.com/events/656947047822450
 ---
