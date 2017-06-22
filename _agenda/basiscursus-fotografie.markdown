@@ -1,6 +1,7 @@
 ---
 title: Basiscursus Fotografie
 date: 2017-09-30 14:00:00 Z
+position: 10
 when: 30 september
 ---
 
