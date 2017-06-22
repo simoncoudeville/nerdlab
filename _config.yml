@@ -2,12 +2,26 @@
 title: Nerdlab
 timezone: UTC
 collections:
+  agenda:
+    title: Agenda
+    output: false
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
+  pictures:
+    title: pictures
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: agenda
+  values:
+    when: ''
+    link: ''
+permalink: pretty
 author: Nerdlab
 description: Nerdlab is een open collectief van makers. We bouwen installaties en
   machines, organiseren evenementen en veroveren de wereld. Oh, en daarnaast hebben
@@ -28,6 +42,5 @@ exclude:
 - gulpfile.js
 - install.sh
 - lint.yml
-permalink: pretty
 gems:
 - jekyll-redirect-from
