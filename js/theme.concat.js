@@ -67,6 +67,16 @@ var chopstick =
 
             }]
         });
+
+        $('.js-nerd-gallery').slick({
+            focusOnSelect: true,
+            edgeFriction: 2,
+            mobileFirst: true,
+            variableWidth: true,
+            arrows: false,
+            centerMode: true,
+            lazyLoad: 'progressive'
+        });
     }
 };
 

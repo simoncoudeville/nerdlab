@@ -63,22 +63,29 @@
 }
 
 .p-slick-theme__nerd {
+    display: block;
     width: calc(100vw - #{$columns-gutter * 2rem});
-    //width: 100vw;
-    max-width: $grid-max-width;
+    //max-width: $grid-max-width;
     cursor: pointer;
-    @include margin-right($columns-gutter);
+    //@include margin-bottom($alpha-leading);
+    @include margin-lr($columns-gutter / 2,$columns-gutter / 2);
+
+    @include mq(bp1) {
+        width: calc(100vw - #{$columns-gutter * 4rem});
+    }
 
     @include mq(bp3) {
-        //width: calc(100vw - #{$columns-gutter * 6rem});
+        width: calc(50vw - #{$columns-gutter * 4rem});
+        @include margin-lr($columns-gutter,$columns-gutter);
+    }
+
+    @include mq(bp4) {
+        width: calc(33.333vw - #{$columns-gutter * 3.375rem});
         //@include margin-lr($columns-gutter / 2,$columns-gutter / 2);
     }
 
     @include mq(bp5) {
-        width: calc(50vw - #{$columns-gutter * 8rem});
-        //width: calc(33.3333vw - #{$columns-gutter * 8rem});
-        //width: 25vw;
-        @include margin-lr($columns-gutter,$columns-gutter);
+        width: calc(33.333vw - #{$columns-gutter * 4rem});
     }
 
     &.slick-current {
