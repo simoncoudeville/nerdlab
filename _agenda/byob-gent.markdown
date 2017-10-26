@@ -6,4 +6,4 @@ when: 20 oktober
 link: http://byobgent.nerdlab.be/
 ---
 
-Het is weer zover: Bring Your Own Beamer brengt weer licht in de duisternis! Eind oktober palmen we samen met 100 kunstenaars het prachtige NEST Gent in. Gewapend met onze projectoren schilderen we de muren en witte doeken vol mooie verhalen. 
+Het is weer zover: Bring Your Own Beamer brengt weer licht in de duisternis! Eind oktober palmen we samen met 100 kunstenaars het prachtige NEST Gent in. Gewapend met onze projectoren schilderen we de muren en witte doeken vol mooie verhalen!
